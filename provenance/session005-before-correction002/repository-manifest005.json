@@ -1,0 +1,848 @@
+{
+  "schema_version": 1,
+  "session": "session005",
+  "primary_task": "kimi-vl-bw-vllm",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 70,
+      "sha256": "07ed25d004aab40f00af93f32e022907e875a4eb6e2100bd96b09291354511d3"
+    },
+    {
+      "path": "COPYRIGHT-SCOPE.txt",
+      "bytes": 414,
+      "sha256": "dbe9d6d2f9f068c14f1ce44ed2e870d44248286defb25a020d07889e92cbfb1c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 13362,
+      "sha256": "371410489000629dd768ba9c67f16871f675995984c95cb9a7f0ce82e623e1a9"
+    },
+    {
+      "path": "README_origin.md",
+      "bytes": 14619,
+      "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794"
+    },
+    {
+      "path": "ROOT_TASK.json",
+      "bytes": 19764,
+      "sha256": "1b55bf1bb8c47f6409d1e4627eb6606a156873b2b50ee9c2dc6174bd96628dce"
+    },
+    {
+      "path": "bench.sh",
+      "bytes": 173,
+      "sha256": "ce2110942424a5a22b2f9d3993cc48b5722c4ab0c760549608a07bd0e76769f1"
+    },
+    {
+      "path": "dist/session005-kimi-cpu-002.zip",
+      "bytes": 181849,
+      "sha256": "27dcfad4c472690eeb80b8e1933dcd2d8c45310c6f7c8b243e3d595a04bc35ef"
+    },
+    {
+      "path": "docs/report-005-kimi-vl-bw-vllm.md",
+      "bytes": 13440,
+      "sha256": "e9f2d1d6e4c5a08e5eee93a2005dfa1c98bb6629d238258260356369d2c57a5b"
+    },
+    {
+      "path": "env.sh",
+      "bytes": 185,
+      "sha256": "76de956bd63411ff07f6ed457085190ca0605e03553bb944f5e1063f7c6cced4"
+    },
+    {
+      "path": "env_check.sh",
+      "bytes": 177,
+      "sha256": "1d3d56720f88ef7f300a29c4ec231f86b165aaba4036e76d4177ec1a85fc4a3a"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/bundle-002.json",
+      "bytes": 721,
+      "sha256": "80b05a1c4e5cfb70f343b969dd0bc59186c4c62b4ab7acffffc061ecf42df18c"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/cpu-preflight-helper-validation-004/validation.json",
+      "bytes": 1304,
+      "sha256": "d3a887f4e5f4035a13f7d455f0a27c15232075808073dc470f506e6c48850d5c"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/huggingface-metadata.json",
+      "bytes": 7933,
+      "sha256": "49d565af111fd2f1f9035fdb9da2f4416f3a0f57e92e743153290ef5a0bf90a7"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/metadata-fetch-attempts.json",
+      "bytes": 354,
+      "sha256": "58d4a9064ff7fa850af2a284061bf9b088cb622b899cf74f4a5f7d885dc3d881"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/README.md",
+      "bytes": 14619,
+      "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/chat_template.jinja",
+      "bytes": 1032,
+      "sha256": "172c7450a66b9b3644538888ffa24d02047e535e9d1f911564460203fbf7e8e8"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/config.json",
+      "bytes": 2005,
+      "sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/configuration_kimi_vl.py",
+      "bytes": 13151,
+      "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/generation_config.json",
+      "bytes": 149,
+      "sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/image_processing_kimi_vl.py",
+      "bytes": 4680,
+      "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/model.safetensors.index.json",
+      "bytes": 588207,
+      "sha256": "178ba3a15cb12f6ceac42aecfe665a8f041d47e948220d75b073088957efedd8"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/modeling_kimi_vl.py",
+      "bytes": 105649,
+      "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/preprocessor_config.json",
+      "bytes": 401,
+      "sha256": "d968a7d7f83f82c3b0e1061079dcdbefd6f2c75b7ee4240cce995afaeae1f622"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/processing_kimi_vl.py",
+      "bytes": 7537,
+      "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/tokenization_moonshot.py",
+      "bytes": 10958,
+      "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/model-small-files/tokenizer_config.json",
+      "bytes": 3857,
+      "sha256": "d7861718cab22c7962e14b4693b4009dd526115cd392dc779069a8173be95703"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/modelscope-metadata.json",
+      "bytes": 10762,
+      "sha256": "c380b4a2fd408839a4dd7e8cd0bea6122d3302e3ddad6f265e8c3f89160566f9"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/source-review.json",
+      "bytes": 3012,
+      "sha256": "52258756f21ebcc3b52e1aae695b627f3fc8f97f29fd6ee50187cdd920b2df76"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-001/validation.json",
+      "bytes": 7320,
+      "sha256": "23d103c7395c94be5d8749c2b7facf44e3e58d4a18d3ed7ced6795b4e897aa13"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-001/windows.stderr.log",
+      "bytes": 2403,
+      "sha256": "a75eccc4471f8699902f01f75498f103aef51cc055543d1407a29e4de4c04f66"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-001/windows.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-001/wsl.stderr.log",
+      "bytes": 2473,
+      "sha256": "9b78a2a38649efc9eab52511305a44d181604ec87ac23b5fe6ddb4e99e3c0b6c"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-001/wsl.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-002/validation.json",
+      "bytes": 10733,
+      "sha256": "2c9c31478f1bdd7fc5bb70b023b05dff28cfcf16488026df1b59be4f406b439e"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-002/windows.stderr.log",
+      "bytes": 2403,
+      "sha256": "e1de6ba14153ac42b68e1c6dce6bae7cd565b732ec0165d8d17c8d37c9c743bf"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-002/windows.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-002/wsl.stderr.log",
+      "bytes": 2473,
+      "sha256": "ada9a92475c9fc62590ddf62e326843e01b322e367a89fb6a31090ae07964fb3"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-002/wsl.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-003/validation.json",
+      "bytes": 703,
+      "sha256": "2bd7db5c3a2c0dce1df52f13103be23a541d8f8563ff2a9e2538def840b188f2"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-003/wsl.stderr.log",
+      "bytes": 2636,
+      "sha256": "932bbbb04be95fa1c5f9d57e6b2cf09606345997496dd949d2ba3999579525e6"
+    },
+    {
+      "path": "evidence/kimi-vl-preparation-20261023/validation-003/wsl.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/session005/kimi-final-001-audit.json",
+      "bytes": 17736,
+      "sha256": "5c86429335a196866b4440075e7bb7153d2f483f92d325dca3ab099c3c31cb1b"
+    },
+    {
+      "path": "evidence/session005/kimi-pilot-shared-export-001-audit.json",
+      "bytes": 13274,
+      "sha256": "d76313a6a7e2875bbc3db86ffd170e9c0b62cebb27900391f306a19d1d2f26b3"
+    },
+    {
+      "path": "evidence/session005/remote-intermediate-001/export-manifest.json",
+      "bytes": 41281,
+      "sha256": "f9d9d94de4374fe2150437195f57e48f6dc323b24165e0d2db1b6d02d5902b25"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001.local-verification.json",
+      "bytes": 39181,
+      "sha256": "2f82117d7f989d0d480dc2491da7ff1b7181665a864b35bfe844cff61e2c2fee"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/candidate-download-reports/checkpoint-transfer-6d5b349c4c58441086617115252f83f4.json",
+      "bytes": 2776,
+      "sha256": "f6eb4f36133853497674b62b9620178a947a6e8ffabde3debbb553bc5bd2bce5"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/candidate-download-reports/checkpoint-transfer-e2e1346358184c7fbff2338fb9f3ef41.json",
+      "bytes": 4688,
+      "sha256": "edaf3db6a46a2f38ff9127c7909b130b1d420b013bb1839dc78cc49751609fdb"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/export-manifest.json",
+      "bytes": 69958,
+      "sha256": "1ff1dcea7e7480d7a2d2a60885d4f4d5e34b201c8283fb689e1812d9251bda75"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/export-snapshots/after/kimi-vl-bw-vllm/state.json",
+      "bytes": 1374,
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/export-snapshots/before/kimi-vl-bw-vllm/state.json",
+      "bytes": 1374,
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/000-task.json",
+      "bytes": 21838,
+      "sha256": "3b1b9ef4f725aa4cab4d8c0008e36a47771567b00e81f202a5e76a7a589dffd0"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/001-kimi-download-005-resume002.log",
+      "bytes": 4036,
+      "sha256": "764094fdaefb68c6ea50745fd592e086fa9e9de441dcaeacf9434aeebced7edf"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/002-kimi-download-resume002-start.json",
+      "bytes": 469,
+      "sha256": "6ce584224b74c2d5a874f356f080922680779fdc31e22ad1ff4d79d2127b042c"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/003-kimi-cpu-preflight-001.log",
+      "bytes": 226,
+      "sha256": "9250f3b24336df0c06e3362bb6ca59a84f67698bf7a6871a92271c6d98c7a33e"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/004-kimi-cpu-preflight-002.log",
+      "bytes": 12228,
+      "sha256": "8ef6f59e408e5e871a6b889d1bc4991e1bde43aa8c38dcc75be745aae2fe94f6"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/005-kimi-cpu-preflight-003.log",
+      "bytes": 12021,
+      "sha256": "10e70356fd8e1eea39993233189e1dcad04d29275da8cf5f393d47cda06b3579"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/006-kimi-cpu-preflight-004.log",
+      "bytes": 12005,
+      "sha256": "17a5ab4b58498aad8af38da5b8dc1c81424b017e862d381a5ed9e8abe082b7cc"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/007-kimi-download-005.log",
+      "bytes": 2244,
+      "sha256": "04f1154436fa5b79a33290ad4cf21496164f671838ad307e95be90ed07788fbd"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/extra/008-kimi-checkpoint-verification-005.json",
+      "bytes": 4308,
+      "sha256": "8cc2fc591c72d7cd915096b88614c82c15f80fe17a63890cab3bab823eceba0e"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-checkpoint-verification-A-001.json",
+      "bytes": 4286,
+      "sha256": "0b0a487100e3b5a77c85056d11e4a38041e9955d95a6b1ede21679cbf7a84994"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-cpu-preflight-002/result.json",
+      "bytes": 12195,
+      "sha256": "1a103cd9527e9a10c1baacf6ce42e02335467f96ce04d535780a8656e0375bcb"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-cpu-preflight-003/result.json",
+      "bytes": 12020,
+      "sha256": "c7c86bee9ff518731cd2a3f091af115beb81fa61b4da0aa03e2db9211561f61d"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-cpu-preflight-004/result.json",
+      "bytes": 12004,
+      "sha256": "eeaa30742c29ceecaa2a53345ff64206ec6e93d604a1afeec44b84fd5422288a"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-cpu-upload-repair-002.json",
+      "bytes": 414,
+      "sha256": "e303b6836ce1cd29b278c4110c518913eb6087227604019e2b9df1d8513e123c"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-final-cleanup-A-001.json",
+      "bytes": 1955,
+      "sha256": "e64e6ed76465da62cd9f4780fb24bbd4f028c7147330b3a855029cccf87c808e"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-pilot-A-001-start.json",
+      "bytes": 548,
+      "sha256": "334398eb59964e55d482143f5acbc1dcd39d832a540216ea5b5b87446871b5f2"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-pilot-A-001.log",
+      "bytes": 151,
+      "sha256": "92e43ddd48b777bab1ad8474024873025d12d2340d06d75062ab874bb007c557"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/kimi-upload-manifest-005.json",
+      "bytes": 11369,
+      "sha256": "f7e77ae4a475b3d1aad9bab3aedb60136902f21db9f88e5302ad0d3e7d8891f3"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/download-sources.json",
+      "bytes": 24955,
+      "sha256": "f8e06c48281584c608e3106222cb9dbb1be68e2ddeed3bd16d0edfbb69cc61ad"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/model-lock.json",
+      "bytes": 5786,
+      "sha256": "82c20d751fcffa171359c55480dd2ad140bccc470d647335e219f54824f5e918"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/config.json",
+      "bytes": 1683,
+      "sha256": "db2fffa4b085ebd65790b1db2c8989e253841501254a2c939edb7acea766cbcc"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/env.log",
+      "bytes": 3355,
+      "sha256": "3a8524ac7da6d1946fd247e7fed5782321846033354e5d82dbf6b3a63bc38178"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/pilot-result.json",
+      "bytes": 2614,
+      "sha256": "3c80f0fc613940f9251837363170fda59508f3774efc3f0e5ca1a97f31fa8923"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/run-id.txt",
+      "bytes": 33,
+      "sha256": "60f242cff2e9804525c6dc5df4acea092c01d61848c95f35c7c75d57d9620c2b"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/server.log",
+      "bytes": 16338,
+      "sha256": "33ede16e7124b71bcd41a88d3c75fd8f388e21dc78d7d17f1e377c4ce33a0a54"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/smoke.log",
+      "bytes": 8899,
+      "sha256": "f50b811ab893a2cd8f017a7a537b28e20f952fddcfab83a9c7a83af5b7d78a2e"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/start.log",
+      "bytes": 1330,
+      "sha256": "edb862b50097b8c86c496868ad992909359c9d3707523b20ca7c0dd90c38c7f9"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/state.json",
+      "bytes": 1374,
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/stop.log",
+      "bytes": 67,
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/supervisor.log",
+      "bytes": 2342,
+      "sha256": "fae44d4d0eeabe0dff0f91fbc413537c3ad0d28ec8ccaa222ca9b02355249a65"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/runtime/config-3f9dcea419780e535594e16d1df6b2b5.json",
+      "bytes": 1683,
+      "sha256": "db2fffa4b085ebd65790b1db2c8989e253841501254a2c939edb7acea766cbcc"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/runtime/server.log",
+      "bytes": 16338,
+      "sha256": "33ede16e7124b71bcd41a88d3c75fd8f388e21dc78d7d17f1e377c4ce33a0a54"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "bytes": 1374,
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/runtime/supervisor.log",
+      "bytes": 2342,
+      "sha256": "fae44d4d0eeabe0dff0f91fbc413537c3ad0d28ec8ccaa222ca9b02355249a65"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/smoke.log",
+      "bytes": 8899,
+      "sha256": "f50b811ab893a2cd8f017a7a537b28e20f952fddcfab83a9c7a83af5b7d78a2e"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/source-review-approved.json",
+      "bytes": 1634,
+      "sha256": "714eda86ce7928a27c07c587acff19596002e4f238975229d7a00bb6ddda9433"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/task.json",
+      "bytes": 1762,
+      "sha256": "8626c70a91a57a92454a4180b6b601bbb615978727512128b5dcd62a2e5a1fde"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/upstream-lock.json",
+      "bytes": 3881,
+      "sha256": "5e743cda25cb2e4c87f748eead2bfdfaacd3bf2ea847e359a6b02d3c8bae478e"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/kimi-tools/unpack-ready-005.json",
+      "bytes": 523,
+      "sha256": "9d39da1dbd0e6f19a5015974ecd741fda0e5b9acd44dbaf8bcc52443ab638d45"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/bench-controller.log",
+      "bytes": 381,
+      "sha256": "6fa1916f6e94e85303797de60853486ccf43786a79de553ea55b88783cdbbdf8"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/independent-cleanup.json",
+      "bytes": 2174,
+      "sha256": "5adc50a5bb9990e99d222812a3d181711e5f2ea6ee579d82617bf071ee10eabf"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/launch.log",
+      "bytes": 1305,
+      "sha256": "c012fe5a6b9dd87da0704067219eabf5bce0cb7de9ab425fd9f178b056585e2c"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/archive-manifest.json",
+      "bytes": 4530,
+      "sha256": "97a1f5802ac02c00e46cd2629722ebc02b34c51dfd84da49752dd49f428b6cb4"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/client-identity.log",
+      "bytes": 594,
+      "sha256": "cb19fd4213b934cc18fd6011831e6a82fb99abefa36d5dc74b4b876af63d9a66"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/native/round1_16384_1024_c1.jsonl",
+      "bytes": 23035,
+      "sha256": "7c38970642f376f3f3d43361ebbeffa2eee7d2b20d2123d01ca061eee6b10b9e"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/native/round1_4096_1024_c1.jsonl",
+      "bytes": 21473,
+      "sha256": "c62319476c812b0b87265c928b9c2ce073821f77095a9e9f490a8fc4d6b6c658"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/native/round2_16384_1024_c1.jsonl",
+      "bytes": 21192,
+      "sha256": "a9f3c997eda351b180c5ea9b4f35b8c3bcc9d3190016bb8210b2238e578aaae9"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/native/round2_4096_1024_c1.jsonl",
+      "bytes": 20835,
+      "sha256": "a531036b43195af6453088d5236a20e548d1b250b9c6aa98d8e32e318f7a6997"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/round1.jsonl",
+      "bytes": 4530,
+      "sha256": "f6370292cdfac0ff7483773d38c97af796519be0e43bec7473d60cc32ef5ea9a"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/round1_16384_1024_c1.log",
+      "bytes": 7656,
+      "sha256": "d418a78c223d7b48027f493928fe43604306ec02f6700744462e451d09cba837"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/round1_4096_1024_c1.log",
+      "bytes": 7651,
+      "sha256": "63574e2ba9637b13e9369204402ae70d09831bee86b1b7fa953560e33cba11b8"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/round2.jsonl",
+      "bytes": 4527,
+      "sha256": "b64f377dc78b17ded3dd1b89790398fce62757592e2109a32e835cd74b80aae8"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/round2_16384_1024_c1.log",
+      "bytes": 7656,
+      "sha256": "6b38b2ff2e58889d42717d6d529b12c00b487c9bf83404c408d2d4cb38e699d0"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/round2_4096_1024_c1.log",
+      "bytes": 7651,
+      "sha256": "84e33f3f1dad7ec8d7e5d569975d6d7c892b5a118dc31ff4a72a10d38e788612"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/run.json",
+      "bytes": 21707,
+      "sha256": "1a63e0b1fb16878d62457729fbcb3650c2b43f7327f3c56f7b5bc75431356cea"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/runtime/after/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "bytes": 1478,
+      "sha256": "1859ef01da445be2374aae9fbe477455171167a996239172980d86e4430d0878"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/runtime/after/server.log",
+      "bytes": 62429,
+      "sha256": "5497a66697b4fc7a27127662dc74a6c670832aa23127ea313e82094f5dc8887c"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/runtime/after/state.json",
+      "bytes": 1236,
+      "sha256": "c9bdf60c20219f36f5080b10e201eb0b310d0c795c02f7a88327e08ca3c819bb"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/runtime/after/supervisor.log",
+      "bytes": 1097,
+      "sha256": "a27899042a4537bf2486e28b0477222fcfaf16711e3cf18eff2c2df89fe9e47c"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/runtime/before/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "bytes": 1478,
+      "sha256": "1859ef01da445be2374aae9fbe477455171167a996239172980d86e4430d0878"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/runtime/before/server.log",
+      "bytes": 13938,
+      "sha256": "da01b47da20bad569138bb9fae8c446aa66de9b2a7c4af1add4b19c82bcb5d94"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/runtime/before/state.json",
+      "bytes": 1236,
+      "sha256": "c9bdf60c20219f36f5080b10e201eb0b310d0c795c02f7a88327e08ca3c819bb"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/runtime/before/supervisor.log",
+      "bytes": 1097,
+      "sha256": "a27899042a4537bf2486e28b0477222fcfaf16711e3cf18eff2c2df89fe9e47c"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/matrix/summary.md",
+      "bytes": 920,
+      "sha256": "741f1ebf4690804e58b7ed3ea4ae4fc5c4441aa7b389aa8b7026a11dcf8467db"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/metrics-after-client.txt",
+      "bytes": 81580,
+      "sha256": "e396c1f93085e765936f4d6ca3b5d1c5e473a8ef084981c1803149d74ae4070c"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/metrics-after-client.txt.identity.json",
+      "bytes": 267,
+      "sha256": "42fd4c430aa3316a55c6c44a2c95a471cad1474fa79e2cccce8c9c8a0a4d1acb"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/metrics-before-client.txt",
+      "bytes": 79036,
+      "sha256": "2124a9083e5ea8479f2ef7e85ff6e549428a35125b8c092e521717a01a9f7d1a"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/metrics-before-client.txt.identity.json",
+      "bytes": 267,
+      "sha256": "c22160d3d5e4e43635f14f4866da63f06a7f765340aacd623ea89631ce58c4e3"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/run-final.json",
+      "bytes": 3081,
+      "sha256": "9d59aa75942ff7be996bb172f950e82c8007048fb928ed1a3e4bf87fdb2a0f2e"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/run-start.json",
+      "bytes": 741,
+      "sha256": "fcb479c447c437d7098bd74e1a602c9ed735b88fb0af06329b49bb238a82db82"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/runtime-after-stop/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "bytes": 1478,
+      "sha256": "1859ef01da445be2374aae9fbe477455171167a996239172980d86e4430d0878"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/runtime-after-stop/server.log",
+      "bytes": 63236,
+      "sha256": "b565a53db7474f911937b2c17ec90ca02aeff4c57bb0a982b00a96572172355f"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/runtime-after-stop/state.json",
+      "bytes": 1350,
+      "sha256": "5144f42920d57da812dd926aae84344b77dfb049bd1a1230b92a59ee02724281"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/runtime-after-stop/supervisor.log",
+      "bytes": 2332,
+      "sha256": "c3b4fb26eba4e1af52159d323904a7554f2802684b93ed0efe6d5655f5cf34fa"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/source-manifest.json",
+      "bytes": 1905,
+      "sha256": "a565ddadf959a71ac8b0cdc2a1d9052cbb89e263ab59cf4a31571266ce764ac0"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-001/stop.log",
+      "bytes": 67,
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+    },
+    {
+      "path": "evidence/session005/remote-kimi-final-001/project/evidence/session005/recon-c1-controller.log",
+      "bytes": 367,
+      "sha256": "e656147339be30a72f73e1284425994f1b837c4c9f414a4b374c2f1b9d893240"
+    },
+    {
+      "path": "evidence/session005/remote-recon-c1-final-001/export-manifest.json",
+      "bytes": 84592,
+      "sha256": "ac8787321a5e448c6f2ba0b7f5da381571981bb790739a583edd44af09ae80ae"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/export-manifest.json",
+      "bytes": 51801,
+      "sha256": "d1d63542eb0bc5489763bb0c7a34b57532a927bd630bbb8afba42fd43bbf1179"
+    },
+    {
+      "path": "provenance/session005-delivery-inputs.json",
+      "bytes": 52213,
+      "sha256": "5754823cba6dbdb2272b0b8ad7f180716866e73885657fc04a457855b35a5c85"
+    },
+    {
+      "path": "provenance/session005/canonical-task-before-delivery-metadata.json",
+      "bytes": 1762,
+      "sha256": "8626c70a91a57a92454a4180b6b601bbb615978727512128b5dcd62a2e5a1fde"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 171,
+      "sha256": "be0a23485387784f54e9f27fbaba5c93c3ddf9347ae5e1561ad7d0e4210856bd"
+    },
+    {
+      "path": "scripts/download_candidate_models_20261023.py",
+      "bytes": 13592,
+      "sha256": "c7365bb68795679669cb41cb91768317bf7e93ad2c6447c1713ee17b91e646e0"
+    },
+    {
+      "path": "scripts/download_kimi_vl_005.py",
+      "bytes": 8582,
+      "sha256": "9042548641ef5fe4a47e5d8abaa15c5084583cf57ed8517d60048141cb30b149"
+    },
+    {
+      "path": "scripts/kimi_cpu_preflight_005.py",
+      "bytes": 11322,
+      "sha256": "8bcd3320f68008a66cba2bc6cbb8a6cd1b8c79c22a9b1bda58d7ab572a154f1b"
+    },
+    {
+      "path": "scripts/kimi_vl_runtime_005.py",
+      "bytes": 9057,
+      "sha256": "9794c1e1ef918a5a07bebc20746768291df81f15103428a987f4398ff378ffc1"
+    },
+    {
+      "path": "scripts/recon2reason_runtime.py",
+      "bytes": 34890,
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b"
+    },
+    {
+      "path": "scripts/recon2reason_smoke.py",
+      "bytes": 10802,
+      "sha256": "21d2f90e7a1df414cb260f029a5e42a677cc06867e1222f537487b53b8a1fe2d"
+    },
+    {
+      "path": "smoke.sh",
+      "bytes": 173,
+      "sha256": "b502e0eff7a959ab6d032367248bb722c1903298cab0e986b51caebbf5c4a444"
+    },
+    {
+      "path": "stop.sh",
+      "bytes": 172,
+      "sha256": "1448dc45df69648454d875c540d90a444271edefd161d38af1b5e23a5131a3f1"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/COPYRIGHT-SCOPE.txt",
+      "bytes": 414,
+      "sha256": "dbe9d6d2f9f068c14f1ce44ed2e870d44248286defb25a020d07889e92cbfb1c"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/LICENSE_upstream",
+      "bytes": 1083,
+      "sha256": "f0c89806155f93f4ea5cb9e81ef70aad1a7729240132df9706db9584024547db"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/README.md",
+      "bytes": 5751,
+      "sha256": "e9d8453fef26a812e2bb4a02fde7641232faabf68d9ce7d0f10b34f30d630988"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/README_origin.md",
+      "bytes": 14619,
+      "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/bench.sh",
+      "bytes": 229,
+      "sha256": "743a164b1f139080e2eb2d5b9d2d5e8b520f7537b1c30bdf0e89ff3393d00198"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/download-sources.json",
+      "bytes": 24955,
+      "sha256": "f8e06c48281584c608e3106222cb9dbb1be68e2ddeed3bd16d0edfbb69cc61ad"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/env.sh",
+      "bytes": 1920,
+      "sha256": "cee4173ecc53bbed55ed93aa9d3e8fdb02e039b5cec14992ab38ff418b97ab62"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/env_check.sh",
+      "bytes": 227,
+      "sha256": "f4559981600739e2257609592dd85cfbedbbe9f49481cb3224d3661dd48308f4"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/fixtures/blue.png",
+      "bytes": 3463,
+      "sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/fixtures/manifest.json",
+      "bytes": 519,
+      "sha256": "698fd5ab6159dd0b10d60671d71ee55d9a7d78cde4db61950391f77e91c7c76c"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/fixtures/red.png",
+      "bytes": 2915,
+      "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/model-lock.json",
+      "bytes": 5786,
+      "sha256": "82c20d751fcffa171359c55480dd2ad140bccc470d647335e219f54824f5e918"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/pilot.sh",
+      "bytes": 2525,
+      "sha256": "250de21b161adebcad18663d8306bcf4f1c9343da8095448510ef09b0022dee1"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/preflight.sh",
+      "bytes": 233,
+      "sha256": "cf0ae1368703477ebbc06595b27af4129c171e0067e04845d5df78ee50aecd67"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/run.sh",
+      "bytes": 230,
+      "sha256": "ef4c7659b7283c826f0c72366c019c46c5f9f095f780d38c846167e99db0b27b"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/smoke.sh",
+      "bytes": 589,
+      "sha256": "726fa28ba495944cc5b103db22b39a166e79a1d50695c726adcca2632ee8f2cb"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/source-review-approved.json",
+      "bytes": 1634,
+      "sha256": "714eda86ce7928a27c07c587acff19596002e4f238975229d7a00bb6ddda9433"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/stop.sh",
+      "bytes": 228,
+      "sha256": "c4e5497f12fbe5c5702f2f2c41128f98cdd909f5eeafe6c0ab976f3606ddf666"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/task.json",
+      "bytes": 2831,
+      "sha256": "77471147614f8eee6eeff9bb2b5d9443747c063de2b64998d25be8ac5edf5b68"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/upstream-lock.json",
+      "bytes": 3881,
+      "sha256": "5e743cda25cb2e4c87f748eead2bfdfaacd3bf2ea847e359a6b02d3c8bae478e"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/upstream-source.zip",
+      "bytes": 42718,
+      "sha256": "7fa511c12f6e63c02cea28723346ea5e32293cb63604b777ef5f349ee6f2a781"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/verify.py",
+      "bytes": 245,
+      "sha256": "2fb282d62b9e48da50b7723f437af1e94c80d884390deea61284c90f433df608"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/verify.sh",
+      "bytes": 230,
+      "sha256": "ac174130cf5a5c269a2ab15e76421497a84891c441599665c65746cd7eb4fc1d"
+    },
+    {
+      "path": "tests/test_kimi_cpu_preflight_005.py",
+      "bytes": 3793,
+      "sha256": "88725e7e95249733157e68a55d97e95c55b09f2a55f319b1c229ea471ce2de6b"
+    },
+    {
+      "path": "tests/test_kimi_vl_preparation_005.py",
+      "bytes": 11891,
+      "sha256": "8e0786bd6ee7fe56e70c9c2b51750f8f21b14cad3936b8fb57b74a09e3aee878"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 392,
+      "sha256": "a0f5d362648268aa7866489323f136993201c4b183ba85d62771ea7b01a5ee10"
+    },
+    {
+      "path": "verify.sh",
+      "bytes": 174,
+      "sha256": "3cc9f12f173014d5b54a83cbce8b0d5962660128f7564d55cdc6a382cfe84945"
+    }
+  ],
+  "payload_bytes": 2364816,
+  "manifest_self_hash_excluded": true,
+  "source_bytes_normalized": false,
+  "formal_ready": false,
+  "submitted": false,
+  "publication_performed": false
+}

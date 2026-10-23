@@ -98,7 +98,7 @@ timeout -s TERM -k 60s 1500s bash /root/private_data/guoxin-kimi-tools-005/tasks
 
 本轮仅验证4K、单seq开发输入，没有正式吞吐、TTFT、TPOT、峰值显存或加速比。日志短窗口吞吐与即时显存不填入正式性能表，五条顺序smoke不替代预热、重复、并发和尾延迟测试。
 
-模板2K/16K × 并发1/8/64 × 两轮的12格在Kimi上均未执行。4K不能容纳16K输入+1024输出；[bench.sh](tasks/kimi-vl-bw-vllm/bench.sh)拒绝将当前profile作为完整矩阵。后续需先验证更大上下文，再使用固定官方SGLang client、1024输出、ignoreEOS、固定图像与原生metrics。未完成档位如实披露，不填造数字，也不把缺档直接写成整题性能失败。
+模板4K/16K × 并发1/8/64 × 两轮的12格在Kimi上均未执行。4K不能容纳16K输入+1024输出；[bench.sh](tasks/kimi-vl-bw-vllm/bench.sh)拒绝将当前profile作为完整矩阵。后续需先验证更大上下文，再使用固定官方SGLang client、1024输出、ignoreEOS、固定图像与原生metrics。未完成档位如实披露，不填造数字，也不把缺档直接写成整题性能失败。
 
 ## 8. 注意事项与归档
 

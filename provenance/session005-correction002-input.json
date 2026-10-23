@@ -1,0 +1,14 @@
+{
+  "schema": "session005-kimi-report-correction002-input-v1",
+  "parent_commit": "ba04ddb278c1545c8db013b9b00f9049aaa91a9e",
+  "source_manifest_sha256": "49195a3718357cac11d34eadc665af8e10a2fb565849b47a8253dd2129d9f7b1",
+  "original_report": "docs/report-005-kimi-vl-bw-vllm.md",
+  "original_report_sha256": "e9f2d1d6e4c5a08e5eee93a2005dfa1c98bb6629d238258260356369d2c57a5b",
+  "corrected_report": "docs/report-005-kimi-vl-bw-vllm-corrected002.md",
+  "corrected_report_sha256": "4e362b59bcd3f0e5ccfeda560d4d0a219ba6b64999fc0292c358d227c711a1fb",
+  "literal_before": "2K/16K",
+  "literal_after": "4K/16K",
+  "occurrences": 1,
+  "runtime_model_or_evaluation_results_changed": false,
+  "official_status_changed": false
+}

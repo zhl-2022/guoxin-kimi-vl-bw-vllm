@@ -444,11 +444,11 @@
       "actual_source_seal_matched": false
     }
   ],
-  "report_source": "docs/report-005-kimi-vl-bw-vllm.md",
-  "report_sha256": "e9f2d1d6e4c5a08e5eee93a2005dfa1c98bb6629d238258260356369d2c57a5b",
+  "report_source": "docs/report-005-kimi-vl-bw-vllm-corrected002.md",
+  "report_sha256": "4e362b59bcd3f0e5ccfeda560d4d0a219ba6b64999fc0292c358d227c711a1fb",
   "root_entry_overrides": {},
-  "report_root_sha256": "371410489000629dd768ba9c67f16871f675995984c95cb9a7f0ce82e623e1a9",
-  "input_index_sha256": "5754823cba6dbdb2272b0b8ad7f180716866e73885657fc04a457855b35a5c85",
+  "report_root_sha256": "7ff42c433e87a56a2df955e542f2588bb51689a3e19eda2a63373b00e1ab8c8c",
+  "input_index_sha256": "e04e9438edd2aa52493011cf45df11ea4b7e4c3338600ea7252009208c7b7eb1",
   "formal_ready": false,
   "official_accuracy_verified": false,
   "official_performance_verified": false,
@@ -474,5 +474,21 @@
     }
   },
   "private_remote_acl_confirmed_by_assembler": false,
-  "scope": "Verified source/evidence snapshot and supervised-process attempt only; report conclusions are separately reviewed"
+  "scope": "Verified source/evidence snapshot and supervised-process attempt only; report conclusions are separately reviewed",
+  "session005_original_input_index_sha256": "5754823cba6dbdb2272b0b8ad7f180716866e73885657fc04a457855b35a5c85",
+  "input_index_source": "provenance/session005-correction002-input.json",
+  "report_correction002": {
+    "schema": "session005-kimi-report-correction002-input-v1",
+    "parent_commit": "ba04ddb278c1545c8db013b9b00f9049aaa91a9e",
+    "source_manifest_sha256": "49195a3718357cac11d34eadc665af8e10a2fb565849b47a8253dd2129d9f7b1",
+    "original_report": "docs/report-005-kimi-vl-bw-vllm.md",
+    "original_report_sha256": "e9f2d1d6e4c5a08e5eee93a2005dfa1c98bb6629d238258260356369d2c57a5b",
+    "corrected_report": "docs/report-005-kimi-vl-bw-vllm-corrected002.md",
+    "corrected_report_sha256": "4e362b59bcd3f0e5ccfeda560d4d0a219ba6b64999fc0292c358d227c711a1fb",
+    "literal_before": "2K/16K",
+    "literal_after": "4K/16K",
+    "occurrences": 1,
+    "runtime_model_or_evaluation_results_changed": false,
+    "official_status_changed": false
+  }
 }

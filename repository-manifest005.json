@@ -16,7 +16,7 @@
     {
       "path": "README.md",
       "bytes": 13362,
-      "sha256": "371410489000629dd768ba9c67f16871f675995984c95cb9a7f0ce82e623e1a9"
+      "sha256": "7ff42c433e87a56a2df955e542f2588bb51689a3e19eda2a63373b00e1ab8c8c"
     },
     {
       "path": "README_origin.md",
@@ -25,8 +25,8 @@
     },
     {
       "path": "ROOT_TASK.json",
-      "bytes": 19764,
-      "sha256": "1b55bf1bb8c47f6409d1e4627eb6606a156873b2b50ee9c2dc6174bd96628dce"
+      "bytes": 20735,
+      "sha256": "33ab8eb9a2d9877e34863a86a57214187d1e68cf47b00b6de22330252bde3fb4"
     },
     {
       "path": "bench.sh",
@@ -37,6 +37,11 @@
       "path": "dist/session005-kimi-cpu-002.zip",
       "bytes": 181849,
       "sha256": "27dcfad4c472690eeb80b8e1933dcd2d8c45310c6f7c8b243e3d595a04bc35ef"
+    },
+    {
+      "path": "docs/report-005-kimi-vl-bw-vllm-corrected002.md",
+      "bytes": 13440,
+      "sha256": "4e362b59bcd3f0e5ccfeda560d4d0a219ba6b64999fc0292c358d227c711a1fb"
     },
     {
       "path": "docs/report-005-kimi-vl-bw-vllm.md",
@@ -649,6 +654,21 @@
       "sha256": "d1d63542eb0bc5489763bb0c7a34b57532a927bd630bbb8afba42fd43bbf1179"
     },
     {
+      "path": "provenance/session005-before-correction002/ROOT_TASK.json",
+      "bytes": 19764,
+      "sha256": "1b55bf1bb8c47f6409d1e4627eb6606a156873b2b50ee9c2dc6174bd96628dce"
+    },
+    {
+      "path": "provenance/session005-before-correction002/repository-manifest005.json",
+      "bytes": 35564,
+      "sha256": "49195a3718357cac11d34eadc665af8e10a2fb565849b47a8253dd2129d9f7b1"
+    },
+    {
+      "path": "provenance/session005-correction002-input.json",
+      "bytes": 719,
+      "sha256": "e04e9438edd2aa52493011cf45df11ea4b7e4c3338600ea7252009208c7b7eb1"
+    },
+    {
       "path": "provenance/session005-delivery-inputs.json",
       "bytes": 52213,
       "sha256": "5754823cba6dbdb2272b0b8ad7f180716866e73885657fc04a457855b35a5c85"
@@ -839,7 +859,7 @@
       "sha256": "3cc9f12f173014d5b54a83cbce8b0d5962660128f7564d55cdc6a382cfe84945"
     }
   ],
-  "payload_bytes": 2364816,
+  "payload_bytes": 2435274,
   "manifest_self_hash_excluded": true,
   "source_bytes_normalized": false,
   "formal_ready": false,
