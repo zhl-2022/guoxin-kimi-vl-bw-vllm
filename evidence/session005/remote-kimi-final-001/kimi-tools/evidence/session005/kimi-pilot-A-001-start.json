@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-10-23T14:20:40.792096+00:00",
+  "notebook_id": "2112186448839770114",
+  "pid": 493,
+  "argv": [
+    "timeout",
+    "-s",
+    "TERM",
+    "-k",
+    "60s",
+    "1500s",
+    "bash",
+    "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot.sh"
+  ],
+  "env_overrides": {
+    "KIMI_PYTHON_BIN": "/usr/bin/python",
+    "KIMI_LOAD_TIMEOUT": "600",
+    "KIMI_MAX_RUNTIME_SECONDS": "1200"
+  },
+  "pilot_sha256": "250de21b161adebcad18663d8306bcf4f1c9343da8095448510ef09b0022dee1",
+  "full_checkpoint_verified": true
+}

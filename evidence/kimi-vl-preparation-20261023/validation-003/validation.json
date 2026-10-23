@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-10-23T13:11:41.749410+00:00",
+  "scope": "Final pilot cleanup regression plus full new Kimi CPU contract module on WSL",
+  "exit_code": 0,
+  "counts": {
+    "run": 15,
+    "passed": 15,
+    "skipped": 0
+  },
+  "source_sha256": {
+    "tasks/kimi-vl-bw-vllm/pilot.sh": "250de21b161adebcad18663d8306bcf4f1c9343da8095448510ef09b0022dee1",
+    "tests/test_kimi_vl_preparation_005.py": "8e0786bd6ee7fe56e70c9c2b51750f8f21b14cad3936b8fb57b74a09e3aee878"
+  },
+  "GPU_run": false,
+  "weights_downloaded": false,
+  "note": "Controller test substitutes fake shell commands and hash fixtures; no framework executes. Windows earlier 14-case result remains validation002."
+}

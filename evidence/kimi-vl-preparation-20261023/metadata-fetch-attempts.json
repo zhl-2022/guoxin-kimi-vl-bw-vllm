@@ -1,0 +1,5 @@
+{
+  "initial_attempt": "HF metadata read succeeded; parallel small-file fetch aborted on TLS handshake timeout before any weight read. Tool traceback retained in conversation. Retry excludes LFS tokenizer payload and retains verified small files individually.",
+  "retry_utc": "2026-10-23T13:02:14.541463+00:00",
+  "weight_payload_bytes_downloaded": 0
+}

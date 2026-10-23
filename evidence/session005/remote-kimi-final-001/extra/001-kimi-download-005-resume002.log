@@ -1,0 +1,20 @@
+{"event": "file_verified", "path": "README.md", "status": "reused_verified", "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794", "size": 14619}
+{"event": "file_verified", "path": "chat_template.jinja", "status": "reused_verified", "sha256": "172c7450a66b9b3644538888ffa24d02047e535e9d1f911564460203fbf7e8e8", "size": 1032}
+{"event": "file_verified", "path": "config.json", "status": "reused_verified", "sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb", "size": 2005}
+{"event": "file_verified", "path": "configuration_kimi_vl.py", "status": "reused_verified", "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b", "size": 13151}
+{"event": "file_verified", "path": "generation_config.json", "status": "reused_verified", "sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5", "size": 149}
+{"event": "file_verified", "path": "image_processing_kimi_vl.py", "status": "reused_verified", "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870", "size": 4680}
+{"event": "file_verified", "path": "model-00001-of-00007.safetensors", "status": "reused_verified", "sha256": "a5ef3ebd9727f82e34417a778317d2cc9c08762fe0bc4a2ee333b8a52cf7c1a5", "size": 4994390288}
+{"event": "file_verified", "path": "model-00002-of-00007.safetensors", "status": "reused_verified", "sha256": "45ecd00decdad65e7d3f494028ed0c79d0cd56f145adae077ffa78b5b8ff95c0", "size": 4995061424}
+{"event": "file_verified", "path": "model-00003-of-00007.safetensors", "status": "reused_verified", "sha256": "b9ba98f01e22eea43da8cfbf6f09ff0857616cd9e1df4603a735c111755109ef", "size": 4996100112}
+{"event": "file_verified", "path": "model-00004-of-00007.safetensors", "status": "reused_verified", "sha256": "8f7eb3fc5c12481fd1a81d2708fa4a299ff4c207a5dbafb5b8bef25ab9fd8b23", "size": 4996100320}
+{"event": "file_verified", "path": "model-00005-of-00007.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 1044381696, "size": 4998185720, "sha256": "db83e896b3d75f4bc51f621ae90ad61e8f6f7901f49a06b5c40348b839057206"}
+{"event": "file_verified", "path": "model-00006-of-00007.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 4996099448, "sha256": "abed41982a3f9c7d05f69bb560dad7bcb93cfa764c77a2b59127f35dc787983c"}
+{"event": "file_verified", "path": "model-00007-of-00007.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 2840161216, "sha256": "2e2ddd33f2b4f472898482860585bd6d73d4397c8c833ed9d00a2024443f7a77"}
+{"event": "file_verified", "path": "model.safetensors.index.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 588207, "sha256": "178ba3a15cb12f6ceac42aecfe665a8f041d47e948220d75b073088957efedd8"}
+{"event": "file_verified", "path": "modeling_kimi_vl.py", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 105649, "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b"}
+{"event": "file_verified", "path": "preprocessor_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 401, "sha256": "d968a7d7f83f82c3b0e1061079dcdbefd6f2c75b7ee4240cce995afaeae1f622"}
+{"event": "file_verified", "path": "processing_kimi_vl.py", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 7537, "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561"}
+{"event": "file_verified", "path": "tiktoken.model", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 2795286, "sha256": "b6c497a7469b33ced9c38afb1ad6e47f03f5e5dc05f15930799210ec050c5103"}
+{"event": "file_verified", "path": "tokenization_moonshot.py", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 10958, "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029"}
+{"event": "file_verified", "path": "tokenizer_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 3857, "sha256": "d7861718cab22c7962e14b4693b4009dd526115cd392dc779069a8173be95703"}

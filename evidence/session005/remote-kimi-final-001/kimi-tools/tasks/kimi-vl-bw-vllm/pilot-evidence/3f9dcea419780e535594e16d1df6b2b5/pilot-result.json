@@ -1,0 +1,57 @@
+{
+  "run_id": "3f9dcea419780e535594e16d1df6b2b5",
+  "ended_utc": "2026-10-23T14:24:43.821242+00:00",
+  "controller_exit_code": 0,
+  "stop_exit_code": 0,
+  "source_sha256": {
+    "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/run.sh": "ef4c7659b7283c826f0c72366c019c46c5f9f095f780d38c846167e99db0b27b",
+    "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/env.sh": "cee4173ecc53bbed55ed93aa9d3e8fdb02e039b5cec14992ab38ff418b97ab62",
+    "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot.sh": "250de21b161adebcad18663d8306bcf4f1c9343da8095448510ef09b0022dee1",
+    "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/smoke.sh": "726fa28ba495944cc5b103db22b39a166e79a1d50695c726adcca2632ee8f2cb",
+    "/root/private_data/guoxin-kimi-tools-005/scripts/kimi_vl_runtime_005.py": "9794c1e1ef918a5a07bebc20746768291df81f15103428a987f4398ff378ffc1",
+    "/root/private_data/guoxin-kimi-tools-005/scripts/recon2reason_runtime.py": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+    "/root/private_data/guoxin-kimi-tools-005/scripts/recon2reason_smoke.py": "21d2f90e7a1df414cb260f029a5e42a677cc06867e1222f537487b53b8a1fe2d"
+  },
+  "files": {
+    "run-id.txt": {
+      "bytes": 33,
+      "sha256": "60f242cff2e9804525c6dc5df4acea092c01d61848c95f35c7c75d57d9620c2b"
+    },
+    "start.log": {
+      "bytes": 1330,
+      "sha256": "edb862b50097b8c86c496868ad992909359c9d3707523b20ca7c0dd90c38c7f9"
+    },
+    "smoke.log": {
+      "bytes": 8899,
+      "sha256": "f50b811ab893a2cd8f017a7a537b28e20f952fddcfab83a9c7a83af5b7d78a2e"
+    },
+    "stop.log": {
+      "bytes": 67,
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+    },
+    "state.json": {
+      "bytes": 1374,
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe"
+    },
+    "server.log": {
+      "bytes": 16338,
+      "sha256": "33ede16e7124b71bcd41a88d3c75fd8f388e21dc78d7d17f1e377c4ce33a0a54"
+    },
+    "env.log": {
+      "bytes": 3355,
+      "sha256": "3a8524ac7da6d1946fd247e7fed5782321846033354e5d82dbf6b3a63bc38178"
+    },
+    "config.json": {
+      "bytes": 1683,
+      "sha256": "db2fffa4b085ebd65790b1db2c8989e253841501254a2c939edb7acea766cbcc"
+    },
+    "supervisor.log": {
+      "bytes": 2342,
+      "sha256": "fae44d4d0eeabe0dff0f91fbc413537c3ad0d28ec8ccaa222ca9b02355249a65"
+    }
+  },
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submission_ready": false,
+  "scope": "Actual subprocess/log records require review; controller never synthesizes GPU or accuracy PASS"
+}

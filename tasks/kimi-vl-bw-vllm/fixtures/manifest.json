@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "path": "red.png",
+      "bytes": 2915,
+      "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165",
+      "source": "project synthetic development fixture; not accuracy reference"
+    },
+    {
+      "path": "blue.png",
+      "bytes": 3463,
+      "sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f",
+      "source": "project synthetic development fixture; not accuracy reference"
+    }
+  ],
+  "official_accuracy_data": false
+}

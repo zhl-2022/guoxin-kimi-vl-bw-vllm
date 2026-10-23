@@ -1,0 +1,415 @@
+{
+  "schema": "kimi-session005-independent-final-audit-v1",
+  "created_utc": "2026-10-23T14:44:41.047618+00:00",
+  "scope": "Read actual shared A artifacts exported from B; no GPU/no production process operation by auditor",
+  "input_archive": "E:\\hg20261019\\dist\\hg-session005-kimi-final-001.zip",
+  "archive_sha256": "b48da2ab024b90bb9aeba2727252807a6ae73a399c10d62a926dafcaa8c87c96",
+  "export_manifest_sha256": "1ff1dcea7e7480d7a2d2a60885d4f4d5e34b201c8283fb689e1812d9251bda75",
+  "archive_entries_verified": 82,
+  "payload_files_verified": 81,
+  "source_seals_before_after_verified": 35,
+  "all_member_paths_sizes_sha_crc_and_extracted_readback_verified": true,
+  "notebook_identity": {
+    "A_notebook_id": "2112186448839770114",
+    "hostname": "crdnotebook-2112186448839770114-ac3p4mowhz-95277",
+    "source": "Archived A pilot start plus independently archived A cleanup host/state/PID-token/port proof; capture/export of shared files occurred in B"
+  },
+  "run_id": "3f9dcea419780e535594e16d1df6b2b5",
+  "controller_exit_code": 0,
+  "stop_exit_code": 0,
+  "supervisor": {
+    "pid": 509,
+    "start_token": "279267674"
+  },
+  "server": {
+    "pid": 510,
+    "start_token": "279267706"
+  },
+  "service_created_utc": "2026-10-23T14:21:34.324392+00:00",
+  "ready_utc": "2026-10-23T14:23:59.678111+00:00",
+  "stopped_utc": "2026-10-23T14:24:41.957173+00:00",
+  "controller_started_utc": "2026-10-23T14:20:40.792096+00:00",
+  "controller_ended_utc": "2026-10-23T14:24:43.821242+00:00",
+  "configuration": {
+    "task": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm",
+    "framework": "vllm",
+    "precision": "bf16",
+    "model_id": "moonshotai/Kimi-VL-A3B-Instruct",
+    "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+    "model_path": "/root/private_data/guoxin-candidates/models/kimi-vl",
+    "served_name": "/root/private_data/guoxin-candidates/models/kimi-vl",
+    "host": "127.0.0.1",
+    "port": 30129,
+    "tp": 1,
+    "max_len": 4096,
+    "mem_frac": 0.8,
+    "load_timeout": 600,
+    "max_runtime": 1200,
+    "stop_grace": 30,
+    "max_num_seqs": 1,
+    "command": [
+      "/usr/bin/python",
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--model",
+      "/root/private_data/guoxin-candidates/models/kimi-vl",
+      "--tokenizer",
+      "/root/private_data/guoxin-candidates/models/kimi-vl",
+      "--served-model-name",
+      "/root/private_data/guoxin-candidates/models/kimi-vl",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "30129",
+      "--dtype",
+      "bfloat16",
+      "--tensor-parallel-size",
+      "1",
+      "--max-model-len",
+      "4096",
+      "--gpu-memory-utilization",
+      "0.8",
+      "--max-num-seqs",
+      "1",
+      "--max-num-batched-tokens",
+      "4096",
+      "--enforce-eager",
+      "--trust-remote-code",
+      "--limit-mm-per-prompt",
+      "{\"image\":2,\"video\":0}"
+    ],
+    "url": "http://127.0.0.1:30129",
+    "trust_remote_code_scope": "Exact reviewed publisher files only; verified before actual launch",
+    "attention_backend_override": null,
+    "MLA_or_MoE_kernel_forced": false,
+    "GPU_verified": false,
+    "official_accuracy_verified": false,
+    "official_performance_verified": false,
+    "standard_submission_ready": false,
+    "run_id": "3f9dcea419780e535594e16d1df6b2b5"
+  },
+  "environment": {
+    "captured_utc": "2026-10-23T14:24:00.295343+00:00",
+    "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+    "image_requested": "",
+    "image_candidate_name": "",
+    "image_effective": null,
+    "image_note": "Configured candidate only; this script cannot attest to the running container digest.",
+    "card": "BW",
+    "framework": "vllm",
+    "precision": "bf16",
+    "packages": {
+      "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "triton": "3.6.0+gitc73250c4.staging",
+      "transformers": "5.5.0",
+      "tokenizers": "0.22.2",
+      "sglang": null,
+      "sglang-das": null,
+      "vllm": "0.18.1+das.fa71803.dtk2604",
+      "vllm-plugin-das": null,
+      "vllm-hcu": "0.18.1+das.dtk2604"
+    },
+    "configuration": {
+      "task": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm",
+      "framework": "vllm",
+      "precision": "bf16",
+      "model_id": "moonshotai/Kimi-VL-A3B-Instruct",
+      "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+      "model_path": "/root/private_data/guoxin-candidates/models/kimi-vl",
+      "served_name": "/root/private_data/guoxin-candidates/models/kimi-vl",
+      "host": "127.0.0.1",
+      "port": 30129,
+      "tp": 1,
+      "max_len": 4096,
+      "mem_frac": 0.8,
+      "load_timeout": 600,
+      "max_runtime": 1200,
+      "stop_grace": 30,
+      "max_num_seqs": 1,
+      "command": [
+        "/usr/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/private_data/guoxin-candidates/models/kimi-vl",
+        "--tokenizer",
+        "/root/private_data/guoxin-candidates/models/kimi-vl",
+        "--served-model-name",
+        "/root/private_data/guoxin-candidates/models/kimi-vl",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "30129",
+        "--dtype",
+        "bfloat16",
+        "--tensor-parallel-size",
+        "1",
+        "--max-model-len",
+        "4096",
+        "--gpu-memory-utilization",
+        "0.8",
+        "--max-num-seqs",
+        "1",
+        "--max-num-batched-tokens",
+        "4096",
+        "--enforce-eager",
+        "--trust-remote-code",
+        "--limit-mm-per-prompt",
+        "{\"image\":2,\"video\":0}"
+      ],
+      "url": "http://127.0.0.1:30129",
+      "trust_remote_code_scope": "Exact reviewed publisher files only; verified before actual launch",
+      "attention_backend_override": null,
+      "MLA_or_MoE_kernel_forced": false,
+      "GPU_verified": false,
+      "official_accuracy_verified": false,
+      "official_performance_verified": false,
+      "standard_submission_ready": false
+    },
+    "gpu_available": true,
+    "hy-smi": {
+      "code": 0,
+      "stdout": "\n================================= System Management Interface ==================================\n================================================================================================\nHCU     Temp     AvgPwr     Perf     PwrCap     VRAM%      HCU%      Dec%      Enc%      Mode     \n0       49.0C    505.0W     manual   1000.0W    79%        0.0%      0.0%      0.0%      Normal   \n================================================================================================\n======================================== End of SMI Log ========================================\n\n",
+      "stderr": ""
+    },
+    "cat /opt/dtk/.info/version": {
+      "code": 1,
+      "stdout": "",
+      "stderr": "cat: /opt/dtk/.info/version: No such file or directory\n"
+    },
+    "hip": "6.3.26093",
+    "devices": [
+      "BW"
+    ]
+  },
+  "source_proofs": [
+    {
+      "path": "tasks/kimi-vl-bw-vllm/run.sh",
+      "sha256": "ef4c7659b7283c826f0c72366c019c46c5f9f095f780d38c846167e99db0b27b",
+      "actual_before_after_export_seal_matches": true,
+      "frozen002_payload_matches": true,
+      "note": "Actual source hash seal plus archived runtime evidence; source payload not exported again"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/env.sh",
+      "sha256": "cee4173ecc53bbed55ed93aa9d3e8fdb02e039b5cec14992ab38ff418b97ab62",
+      "actual_before_after_export_seal_matches": true,
+      "frozen002_payload_matches": true,
+      "note": "Actual source hash seal plus archived runtime evidence; source payload not exported again"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/pilot.sh",
+      "sha256": "250de21b161adebcad18663d8306bcf4f1c9343da8095448510ef09b0022dee1",
+      "actual_before_after_export_seal_matches": true,
+      "frozen002_payload_matches": true,
+      "note": "Actual source hash seal plus archived runtime evidence; source payload not exported again"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/smoke.sh",
+      "sha256": "726fa28ba495944cc5b103db22b39a166e79a1d50695c726adcca2632ee8f2cb",
+      "actual_before_after_export_seal_matches": true,
+      "frozen002_payload_matches": true,
+      "note": "Actual source hash seal plus archived runtime evidence; source payload not exported again"
+    },
+    {
+      "path": "scripts/kimi_vl_runtime_005.py",
+      "sha256": "9794c1e1ef918a5a07bebc20746768291df81f15103428a987f4398ff378ffc1",
+      "actual_before_after_export_seal_matches": true,
+      "frozen002_payload_matches": true,
+      "note": "Actual source hash seal plus archived runtime evidence; source payload not exported again"
+    },
+    {
+      "path": "scripts/recon2reason_runtime.py",
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+      "actual_before_after_export_seal_matches": true,
+      "frozen002_payload_matches": true,
+      "note": "Actual source hash seal plus archived runtime evidence; source payload not exported again"
+    },
+    {
+      "path": "scripts/recon2reason_smoke.py",
+      "sha256": "21d2f90e7a1df414cb260f029a5e42a677cc06867e1222f537487b53b8a1fe2d",
+      "actual_before_after_export_seal_matches": true,
+      "frozen002_payload_matches": true,
+      "note": "Actual source hash seal plus archived runtime evidence; source payload not exported again"
+    }
+  ],
+  "checkpoint_verification": {
+    "complete": true,
+    "files": 20,
+    "weight_files": 7,
+    "weight_bytes": 32816098528,
+    "all_actual_SHA_match_frozen_lock": true,
+    "verification_path": "kimi-tools/evidence/session005/kimi-checkpoint-verification-A-001.json",
+    "sha256": "0b0a487100e3b5a77c85056d11e4a38041e9955d95a6b1ede21679cbf7a84994"
+  },
+  "functional_checks": [
+    "health",
+    "models",
+    "single_image",
+    "multiple_images",
+    "multiturn_first",
+    "multiturn_followup",
+    "streaming_image"
+  ],
+  "all_seven_functional_checks_independently_audited": true,
+  "nonstream_responses": [
+    {
+      "case": "single_image",
+      "answer": "图像中有一个红色的正方形。",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 397,
+        "total_tokens": 405,
+        "completion_tokens": 8,
+        "prompt_tokens_details": null
+      },
+      "duration_seconds": 4.335776039864868,
+      "semantic_accuracy_scored": false
+    },
+    {
+      "case": "multiple_images",
+      "answer": "相同点：两个图像都是简单的几何图形，没有复杂的细节或背景。\n\n不同点：第一个图像是一个红色正方形，位于图像的右侧；第二个图像是一个蓝色圆形，位于图像的左侧。",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 765,
+        "total_tokens": 808,
+        "completion_tokens": 43,
+        "prompt_tokens_details": null
+      },
+      "duration_seconds": 3.6676581469364464,
+      "semantic_accuracy_scored": false
+    },
+    {
+      "case": "multiturn_first",
+      "answer": "图像中有一个红色的正方形。",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 397,
+        "total_tokens": 405,
+        "completion_tokens": 8,
+        "prompt_tokens_details": null
+      },
+      "duration_seconds": 2.0199027759954333,
+      "semantic_accuracy_scored": false
+    },
+    {
+      "case": "multiturn_followup",
+      "answer": "主要物体是一个红色的正方形，位于图像的右侧。",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 425,
+        "total_tokens": 438,
+        "completion_tokens": 13,
+        "prompt_tokens_details": null
+      },
+      "duration_seconds": 0.9815452229231596,
+      "semantic_accuracy_scored": false
+    }
+  ],
+  "SSE": {
+    "parsed_events": 9,
+    "aggregated_content_independently_recomputed": "图像中有一个红色的正方形。",
+    "terminal_finish_reason": [
+      "stop"
+    ],
+    "client_recorded_DONE": true,
+    "raw_wire_SSE_bytes_separately_archived": false,
+    "semantic_accuracy_scored": false
+  },
+  "server_POST_chat_200_count": 5,
+  "terminal_state_before_after_exports_identical": true,
+  "original_env_configuration_false_flags_scope": "Static generated configuration flags remain false and are not runtime verdicts; actual source/log/HTTP evidence is assessed independently",
+  "A_independent_process_tokens_and_port_cleanup_proof_locally_audited": true,
+  "GPU_model_loaded_and_HTTP_functional_checks_verified": true,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submission_ready": false,
+  "contest_submission_performed": false,
+  "limitations": [
+    "CPU001 payload is hash-only; original failed stderr and repair record remain, no fabricated source payload",
+    "CPU004 processor/config/tokenizer were not instantiated: import chain requires visible HIP device in this native stack",
+    "Raw wire SSE bytes were not separately archived; parsed event objects and fixed-client DONE flag are retained",
+    "Synthetic visual answers are development functional checks, not official accuracy",
+    "All 12 formal Kimi performance cells remain unexecuted; full image registry/repo:tag unavailable"
+  ],
+  "final_package_actual_pilot_payloads_identical_to_prior_independently_audited_shared_export": true,
+  "prior_independent_audit_sha256": "d76313a6a7e2875bbc3db86ffd170e9c0b62cebb27900391f306a19d1d2f26b3",
+  "cleanup": {
+    "path": "kimi-tools/evidence/session005/kimi-final-cleanup-A-001.json",
+    "sha256": "e64e6ed76465da62cd9f4780fb24bbd4f028c7147330b3a855029cccf87c808e",
+    "utc": "2026-10-23T14:28:29.592782+00:00",
+    "notebook_id": "2112186448839770114",
+    "hostname": "crdnotebook-2112186448839770114-ac3p4mowhz-95277",
+    "recorded_PID_and_starttoken_state_matches": true,
+    "observed_process_tokens": {
+      "supervisor": null,
+      "server": null
+    },
+    "port_30129_open": false,
+    "cleanup_verified": true
+  },
+  "CPU_preflights": [
+    {
+      "version": "002",
+      "path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/result.json",
+      "sha256": "1a103cd9527e9a10c1baacf6ce42e02335467f96ce04d535780a8656e0375bcb",
+      "source_sha256": "7843e652be4d2d8bb22921db846f9e232cf28a735e65ec235da8031d0f2a676d",
+      "status": "failed",
+      "zero_visible_devices": true,
+      "CUDA_initialized_before_and_after": false,
+      "forbidden_import_attempts": [
+        "amdsmi",
+        "transformers.models.auto.modeling_auto"
+      ],
+      "error": "ModuleNotFoundError: Could not import module 'AutoTokenizer'. Are this object's requirements defined correctly?"
+    },
+    {
+      "version": "003",
+      "path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/result.json",
+      "sha256": "c7c86bee9ff518731cd2a3f091af115beb81fa61b4da0aa03e2db9211561f61d",
+      "source_sha256": "24f804a58f164b2ae2d83c89d7b221a768d1ca00012c4824be000292c79f6fe3",
+      "status": "failed",
+      "zero_visible_devices": true,
+      "CUDA_initialized_before_and_after": false,
+      "forbidden_import_attempts": [
+        "amdsmi"
+      ],
+      "error": "ModuleNotFoundError: Could not import module 'AutoTokenizer'. Are this object's requirements defined correctly?"
+    },
+    {
+      "version": "004",
+      "path": "kimi-tools/evidence/session005/kimi-cpu-preflight-004/result.json",
+      "sha256": "eeaa30742c29ceecaa2a53345ff64206ec6e93d604a1afeec44b84fd5422288a",
+      "source_sha256": "8bcd3320f68008a66cba2bc6cbb8a6cd1b8c79c22a9b1bda58d7ab572a154f1b",
+      "status": "failed",
+      "zero_visible_devices": true,
+      "CUDA_initialized_before_and_after": false,
+      "forbidden_import_attempts": [],
+      "error": "ModuleNotFoundError: Could not import module 'AutoTokenizer'. Are this object's requirements defined correctly?"
+    }
+  ],
+  "CPU004_classification": {
+    "CPU_processor_compatibility_preflight_completed": false,
+    "first_failure": "Native DAS Triton ConfigLoader reads the GPU device label while importing Transformers/TorchDynamo in the zero-visible-device child",
+    "root_exception": "RuntimeError: No HIP GPUs are available",
+    "top_level_wrapper_exception": "ModuleNotFoundError: Could not import module 'AutoTokenizer'. Are this object's requirements defined correctly?",
+    "native_model_or_processor_compatibility_failure_demonstrated": false,
+    "guard_import_or_weight_open_rejection_in004": false,
+    "actual_model_load_attempt_by_probe": false,
+    "GPU_initialization_attempt_in_native_import_chain_failed_without_available_device": true,
+    "CUDA_initialized_after": false,
+    "not_a_reason_to_reject_separately_verified_GPU_HTTP_run": true
+  },
+  "CPU001_repair": {
+    "path": "kimi-tools/evidence/session005/kimi-cpu-upload-repair-002.json",
+    "sha256": "e303b6836ce1cd29b278c4110c518913eb6087227604019e2b9df1d8513e123c",
+    "unexpected_prefix_hex_as_recorded": "e68993e5bc80",
+    "unexpected_prefix_utf8_as_recorded": "打开",
+    "original_source_sha256": "035ce1c6db966813a7a35c28c1005653e5fd77d2f75f53c822eae99a7ca2f387",
+    "corrected_source_sha256": "7843e652be4d2d8bb22921db846f9e232cf28a735e65ec235da8031d0f2a676d",
+    "original_source_payload_not_exported_only_hash": true,
+    "prefix_plus_frozen_source_reconstruction_matches_original_hash": true,
+    "source_reconstruction_not_substituted_for_original_payload": true
+  },
+  "native_CPU_processor_preflight_verified": false
+}

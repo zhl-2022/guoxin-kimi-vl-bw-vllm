@@ -1,0 +1,128 @@
+{
+  "schema": "kimi-hidden-device-cpu-preflight-005-v1",
+  "started_utc": "2026-10-23T14:25:55.238416+00:00",
+  "revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "script_sha256": "24f804a58f164b2ae2d83c89d7b221a768d1ca00012c4824be000292c79f6fe3",
+  "weight_files_opened": false,
+  "GPU_allocation_requested": false,
+  "device_discovery_requested_in_hidden_child": true,
+  "AutoProcessor": {
+    "executed": false
+  },
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "GPU_verified": false,
+  "forbidden_import_attempts": [
+    "amdsmi"
+  ],
+  "forbidden_weight_open_attempts": [],
+  "modules": {},
+  "status": "failed",
+  "source_files": [
+    {
+      "path": "README.md",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/README.md",
+      "bytes": 14619,
+      "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794"
+    },
+    {
+      "path": "chat_template.jinja",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/chat_template.jinja",
+      "bytes": 1032,
+      "sha256": "172c7450a66b9b3644538888ffa24d02047e535e9d1f911564460203fbf7e8e8"
+    },
+    {
+      "path": "config.json",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/config.json",
+      "bytes": 2005,
+      "sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb"
+    },
+    {
+      "path": "configuration_kimi_vl.py",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/configuration_kimi_vl.py",
+      "bytes": 13151,
+      "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b"
+    },
+    {
+      "path": "generation_config.json",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/generation_config.json",
+      "bytes": 149,
+      "sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5"
+    },
+    {
+      "path": "image_processing_kimi_vl.py",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/image_processing_kimi_vl.py",
+      "bytes": 4680,
+      "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/model.safetensors.index.json",
+      "bytes": 588207,
+      "sha256": "178ba3a15cb12f6ceac42aecfe665a8f041d47e948220d75b073088957efedd8"
+    },
+    {
+      "path": "modeling_kimi_vl.py",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/modeling_kimi_vl.py",
+      "bytes": 105649,
+      "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/preprocessor_config.json",
+      "bytes": 401,
+      "sha256": "d968a7d7f83f82c3b0e1061079dcdbefd6f2c75b7ee4240cce995afaeae1f622"
+    },
+    {
+      "path": "processing_kimi_vl.py",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/processing_kimi_vl.py",
+      "bytes": 7537,
+      "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561"
+    },
+    {
+      "path": "tiktoken.model",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/tiktoken.model",
+      "bytes": 2795286,
+      "sha256": "b6c497a7469b33ced9c38afb1ad6e47f03f5e5dc05f15930799210ec050c5103"
+    },
+    {
+      "path": "tokenization_moonshot.py",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/tokenization_moonshot.py",
+      "bytes": 10958,
+      "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "available": true,
+      "origin": "/root/private_data/guoxin-candidates/models/kimi-vl/tokenizer_config.json",
+      "bytes": 3857,
+      "sha256": "d7861718cab22c7962e14b4693b4009dd526115cd392dc779069a8173be95703"
+    }
+  ],
+  "child_visibility": {
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "HIP_VISIBLE_DEVICES": "-1",
+    "ROCR_VISIBLE_DEVICES": "-1"
+  },
+  "torch_version": "2.10.0",
+  "device_count": 0,
+  "cuda_initialized_before": false,
+  "transformers_version": "5.5.0",
+  "error": "ModuleNotFoundError: Could not import module 'AutoTokenizer'. Are this object's requirements defined correctly?",
+  "traceback": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/utils/import_utils.py\", line 2207, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/utils/import_utils.py\", line 2441, in _get_module\n    raise e\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/utils/import_utils.py\", line 2439, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n  File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/generation/utils.py\", line 44, in <module>\n    from ..masking_utils import create_masks_for_generate\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/masking_utils.py\", line 40, in <module>\n    from torch._dynamo._trace_wrapped_higher_order_op import TransformGetItemToIndex\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/_dynamo/__init__.py\", line 13, in <module>\n    from . import (\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/_dynamo/aot_compile.py\", line 14, in <module>\n    from torch._dynamo.convert_frame import GraphRuntimeEnv\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/_dynamo/convert_frame.py\", line 60, in <module>\n    from torch._dynamo.symbolic_convert import TensorifyState\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/_dynamo/symbolic_convert.py\", line 53, in <module>\n    from torch._dynamo.exc import ObservedException, TensorifyScalarRestartAnalysis\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/_dynamo/exc.py\", line 44, in <module>\n    from .utils import counters\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/_dynamo/utils.py\", line 2500, in <module>\n    if has_triton_package():\n  File \"/usr/local/lib/python3.10/dist-packages/torch/utils/_triton.py\", line 9, in has_triton_package\n    import triton  # noqa: F401\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/triton/__init__.py\", line 29, in <module>\n    from . import utils\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/triton/utils/__init__.py\", line 41, in <module>\n    global_config_loader = ConfigLoader()\n  File \"/usr/local/lib/python3.10/dist-packages/triton/utils/hcutuner.py\", line 494, in __init__\n    self.device = get_gpu_label() if device is None else device\n  File \"/usr/local/lib/python3.10/dist-packages/triton/utils/hcutuner.py\", line 435, in get_gpu_label\n    gpu_name = torch.cuda.get_device_name().split(' ')[-1].replace(\"/\", \"_\")\n  File \"/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py\", line 599, in get_device_name\n    return get_device_properties(device).name\n  File \"/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py\", line 632, in get_device_properties\n    _lazy_init()  # will define _get_device_properties\n  File \"/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py\", line 424, in _lazy_init\n    torch._C._cuda_init()\nRuntimeError: No HIP GPUs are available\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/utils/import_utils.py\", line 2207, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/utils/import_utils.py\", line 2441, in _get_module\n    raise e\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/utils/import_utils.py\", line 2439, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n  File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py\", line 38, in <module>\n    from .auto_factory import _LazyAutoMapping\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py\", line 43, in <module>\n    from ...generation import GenerationMixin\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/utils/import_utils.py\", line 2295, in __getattr__\n    raise ModuleNotFoundError(\nModuleNotFoundError: Could not import module 'GenerationMixin'. Are this object's requirements defined correctly?\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 156, in main\n    from transformers import AutoConfig, AutoTokenizer, AutoProcessor\n  File \"/root/kimi_cpu_preflight_005_003.py\", line 91, in guarded\n    return original(name, *args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/transformers/utils/import_utils.py\", line 2295, in __getattr__\n    raise ModuleNotFoundError(\nModuleNotFoundError: Could not import module 'AutoTokenizer'. Are this object's requirements defined correctly?\n",
+  "cuda_initialized_after": false,
+  "ended_utc": "2026-10-23T14:25:59.628527+00:00",
+  "forbidden_modules_loaded": []
+}

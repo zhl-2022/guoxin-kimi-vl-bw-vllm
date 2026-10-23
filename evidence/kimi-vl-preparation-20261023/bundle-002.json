@@ -1,0 +1,17 @@
+{
+  "bundle": "dist/session005-kimi-cpu-002.zip",
+  "bundle_sha256": "27dcfad4c472690eeb80b8e1933dcd2d8c45310c6f7c8b243e3d595a04bc35ef",
+  "bundle_bytes": 181849,
+  "file_count": 59,
+  "manifest_sha256": "f7e77ae4a475b3d1aad9bab3aedb60136902f21db9f88e5302ad0d3e7d8891f3",
+  "changes_from_001": [
+    "pilot.sh propagates and records stop exit failure",
+    "CPU Bash regression proves failed stop returns2 with raw log"
+  ],
+  "runtime_and_downloader_unchanged": true,
+  "CPU_WSL_latest": "15/15 passed",
+  "CPU_Windows_prior": "13 passed / 1 Linux Bash skipped of 14; new extra Bash test Linux-only",
+  "ZIP_CRC_each_payload_readback_verified": true,
+  "GPU_run": false,
+  "weights_downloaded": false
+}

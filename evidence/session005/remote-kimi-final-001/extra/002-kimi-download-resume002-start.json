@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-23T13:50:53.425280+00:00",
+  "pid": 3692,
+  "argv": [
+    "/usr/bin/python",
+    "-B",
+    "/root/private_data/guoxin-kimi-tools-005/scripts/download_kimi_vl_005.py",
+    "download",
+    "--provider",
+    "modelscope",
+    "--max-seconds",
+    "1800"
+  ],
+  "source_sha256": "9042548641ef5fe4a47e5d8abaa15c5084583cf57ed8517d60048141cb30b149",
+  "previous_lock_absent": true,
+  "old_downloader_process_absent": true,
+  "GPU_imported": false
+}

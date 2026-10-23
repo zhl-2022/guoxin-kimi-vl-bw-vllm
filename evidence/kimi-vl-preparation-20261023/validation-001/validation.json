@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-23T13:07:29.546220+00:00",
+  "finished_utc": "2026-10-23T13:07:33.886313+00:00",
+  "tests": [
+    {
+      "name": "windows",
+      "argv": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_kimi_vl_preparation_005.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "a75eccc4471f8699902f01f75498f103aef51cc055543d1407a29e4de4c04f66",
+      "stderr_tail": "test_actual_launch_does_not_skip_failed_identity (test_kimi_vl_preparation_005.KimiCPUContractTests.test_actual_launch_does_not_skip_failed_identity) ... ok\r\ntest_bounds_and_task_isolation (test_kimi_vl_preparation_005.KimiCPUContractTests.test_bounds_and_task_isolation) ... ok\r\ntest_checkpoint_hashes_remote_code_architecture_and_extra_code (test_kimi_vl_preparation_005.KimiCPUContractTests.test_checkpoint_hashes_remote_code_architecture_and_extra_code) ... ok\r\ntest_copy_existing_hashes_and_preserves_mismatched_final (test_kimi_vl_preparation_005.KimiCPUContractTests.test_copy_existing_hashes_and_preserves_mismatched_final) ... ok\r\ntest_destination_stays_in_new_private_namespace (test_kimi_vl_preparation_005.KimiCPUContractTests.test_destination_stays_in_new_private_namespace) ... ok\r\ntest_dry_stop_never_calls_shared_stop (test_kimi_vl_preparation_005.KimiCPUContractTests.test_dry_stop_never_calls_shared_stop) ... ok\r\ntest_exact_dual_source_locks_and_weight_set (test_kimi_vl_preparation_005.KimiCPUContractTests.test_exact_dual_source_locks_and_weight_set) ... ok\r\ntest_exact_frozen_config_passed_to_existing_supervisor (test_kimi_vl_preparation_005.KimiCPUContractTests.test_exact_frozen_config_passed_to_existing_supervisor) ... ok\r\ntest_failed_clone_seed_only_copies_matching_complete_files (test_kimi_vl_preparation_005.KimiCPUContractTests.test_failed_clone_seed_only_copies_matching_complete_files) ... ok\r\ntest_pilot_bench_blocks_full_matrix_without_claim (test_kimi_vl_preparation_005.KimiCPUContractTests.test_pilot_bench_blocks_full_matrix_without_claim) ... ok\r\ntest_pilot_real_architecture_no_backend_guess (test_kimi_vl_preparation_005.KimiCPUContractTests.test_pilot_real_architecture_no_backend_guess) ... ok\r\ntest_relative_model_resolved_once_and_no_venv_interpreter_resolution (test_kimi_vl_preparation_005.KimiCPUContractTests.test_relative_model_resolved_once_and_no_venv_interpreter_resolution) ... ok\r\ntest_shells_syntax_dryrun_isolated_env_and_selfcheck (test_kimi_vl_preparation_005.KimiCPUContractTests.test_shells_syntax_dryrun_isolated_env_and_selfcheck) ... skipped 'Linux Bash wrapper test'\r\ntest_unapproved_source_never_passes_preflight (test_kimi_vl_preparation_005.KimiCPUContractTests.test_unapproved_source_never_passes_preflight) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 14 tests in 1.226s\r\n\r\nOK (skipped=1)\r\n"
+    },
+    {
+      "name": "wsl",
+      "argv": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_kimi_vl_preparation_005.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "9b78a2a38649efc9eab52511305a44d181604ec87ac23b5fe6ddb4e99e3c0b6c",
+      "stderr_tail": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\rN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\u0000\n\u0000test_actual_launch_does_not_skip_failed_identity (test_kimi_vl_preparation_005.KimiCPUContractTests.test_actual_launch_does_not_skip_failed_identity) ... ok\ntest_bounds_and_task_isolation (test_kimi_vl_preparation_005.KimiCPUContractTests.test_bounds_and_task_isolation) ... ok\ntest_checkpoint_hashes_remote_code_architecture_and_extra_code (test_kimi_vl_preparation_005.KimiCPUContractTests.test_checkpoint_hashes_remote_code_architecture_and_extra_code) ... ok\ntest_copy_existing_hashes_and_preserves_mismatched_final (test_kimi_vl_preparation_005.KimiCPUContractTests.test_copy_existing_hashes_and_preserves_mismatched_final) ... ok\ntest_destination_stays_in_new_private_namespace (test_kimi_vl_preparation_005.KimiCPUContractTests.test_destination_stays_in_new_private_namespace) ... ok\ntest_dry_stop_never_calls_shared_stop (test_kimi_vl_preparation_005.KimiCPUContractTests.test_dry_stop_never_calls_shared_stop) ... ok\ntest_exact_dual_source_locks_and_weight_set (test_kimi_vl_preparation_005.KimiCPUContractTests.test_exact_dual_source_locks_and_weight_set) ... ok\ntest_exact_frozen_config_passed_to_existing_supervisor (test_kimi_vl_preparation_005.KimiCPUContractTests.test_exact_frozen_config_passed_to_existing_supervisor) ... ok\ntest_failed_clone_seed_only_copies_matching_complete_files (test_kimi_vl_preparation_005.KimiCPUContractTests.test_failed_clone_seed_only_copies_matching_complete_files) ... ok\ntest_pilot_bench_blocks_full_matrix_without_claim (test_kimi_vl_preparation_005.KimiCPUContractTests.test_pilot_bench_blocks_full_matrix_without_claim) ... ok\ntest_pilot_real_architecture_no_backend_guess (test_kimi_vl_preparation_005.KimiCPUContractTests.test_pilot_real_architecture_no_backend_guess) ... ok\ntest_relative_model_resolved_once_and_no_venv_interpreter_resolution (test_kimi_vl_preparation_005.KimiCPUContractTests.test_relative_model_resolved_once_and_no_venv_interpreter_resolution) ... ok\ntest_shells_syntax_dryrun_isolated_env_and_selfcheck (test_kimi_vl_preparation_005.KimiCPUContractTests.test_shells_syntax_dryrun_isolated_env_and_selfcheck) ... ok\ntest_unapproved_source_never_passes_preflight (test_kimi_vl_preparation_005.KimiCPUContractTests.test_unapproved_source_never_passes_preflight) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 1.586s\n\nOK\n"
+    }
+  ],
+  "source_before": {
+    "scripts/kimi_vl_runtime_005.py": "9794c1e1ef918a5a07bebc20746768291df81f15103428a987f4398ff378ffc1",
+    "scripts/download_kimi_vl_005.py": "9042548641ef5fe4a47e5d8abaa15c5084583cf57ed8517d60048141cb30b149",
+    "tests/test_kimi_vl_preparation_005.py": "f84f84117e787a09d76425ce319204effb35c16d6180fc37abf10270fa40b905"
+  },
+  "source_after": {
+    "scripts/kimi_vl_runtime_005.py": "9794c1e1ef918a5a07bebc20746768291df81f15103428a987f4398ff378ffc1",
+    "scripts/download_kimi_vl_005.py": "9042548641ef5fe4a47e5d8abaa15c5084583cf57ed8517d60048141cb30b149",
+    "tests/test_kimi_vl_preparation_005.py": "f84f84117e787a09d76425ce319204effb35c16d6180fc37abf10270fa40b905"
+  },
+  "source_stable": true,
+  "CPU_only": true,
+  "GPU_run": false,
+  "weights_downloaded": false,
+  "official_accuracy_verified": false,
+  "formal_ready": false
+}

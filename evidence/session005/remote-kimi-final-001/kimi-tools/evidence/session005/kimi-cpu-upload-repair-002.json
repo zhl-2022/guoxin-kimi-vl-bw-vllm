@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-23T14:20:04.664971+00:00",
+  "original_source_sha256": "035ce1c6db966813a7a35c28c1005653e5fd77d2f75f53c822eae99a7ca2f387",
+  "unexpected_prefix_hex": "e68993e5bc80",
+  "original_preserved": true,
+  "new_source": "/root/private_data/kimi_cpu_preflight_005_002.py",
+  "new_source_sha256": "7843e652be4d2d8bb22921db846f9e232cf28a735e65ec235da8031d0f2a676d",
+  "matches_frozen_local_source": true
+}

@@ -1,0 +1,102 @@
+{
+  "captured_utc": "2026-10-23T13:02:14.541463+00:00",
+  "scope": "Static AST/import/sensitive-call inventory for exact publisher remote code; manual inspection still required before enabling trust_remote_code",
+  "code": [
+    {
+      "path": "configuration_kimi_vl.py",
+      "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b",
+      "imports": [
+        "transformers.configuration_utils",
+        "transformers.utils",
+        "typing"
+      ],
+      "sensitive_call_review_hits": [],
+      "executed": false
+    },
+    {
+      "path": "image_processing_kimi_vl.py",
+      "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870",
+      "imports": [
+        "PIL",
+        "math",
+        "numpy",
+        "torch",
+        "torchvision.transforms",
+        "transformers.image_processing_utils",
+        "transformers.image_utils",
+        "transformers.utils",
+        "typing"
+      ],
+      "sensitive_call_review_hits": [],
+      "executed": false
+    },
+    {
+      "path": "modeling_kimi_vl.py",
+      "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b",
+      "imports": [
+        "configuration_kimi_vl",
+        "copy",
+        "flash_attn",
+        "flash_attn.bert_padding",
+        "math",
+        "numpy",
+        "torch",
+        "torch.distributed",
+        "torch.fx",
+        "torch.nn",
+        "torch.nn.functional",
+        "torch.nn.init",
+        "torch.utils.checkpoint",
+        "transformers.activations",
+        "transformers.cache_utils",
+        "transformers.generation.utils",
+        "transformers.modeling_attn_mask_utils",
+        "transformers.modeling_outputs",
+        "transformers.modeling_utils",
+        "transformers.models.llava.modeling_llava",
+        "transformers.pytorch_utils",
+        "transformers.utils",
+        "transformers.utils.import_utils",
+        "typing",
+        "warnings"
+      ],
+      "sensitive_call_review_hits": [],
+      "executed": false
+    },
+    {
+      "path": "processing_kimi_vl.py",
+      "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561",
+      "imports": [
+        "transformers.feature_extraction_utils",
+        "transformers.image_utils",
+        "transformers.processing_utils",
+        "transformers.tokenization_utils_base",
+        "transformers.utils",
+        "typing"
+      ],
+      "sensitive_call_review_hits": [],
+      "executed": false
+    },
+    {
+      "path": "tokenization_moonshot.py",
+      "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029",
+      "imports": [
+        "logging",
+        "os",
+        "pathlib",
+        "shutil",
+        "tiktoken",
+        "tiktoken.load",
+        "tokenizers",
+        "transformers.convert_slow_tokenizer",
+        "transformers.tokenization_utils",
+        "transformers.utils",
+        "typing"
+      ],
+      "sensitive_call_review_hits": [],
+      "executed": false
+    }
+  ],
+  "weight_payload_bytes_downloaded": 0,
+  "GPU_run": false
+}

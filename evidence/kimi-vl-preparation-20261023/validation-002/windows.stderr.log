@@ -1,0 +1,19 @@
+test_actual_launch_does_not_skip_failed_identity (test_kimi_vl_preparation_005.KimiCPUContractTests.test_actual_launch_does_not_skip_failed_identity) ... ok
+test_bounds_and_task_isolation (test_kimi_vl_preparation_005.KimiCPUContractTests.test_bounds_and_task_isolation) ... ok
+test_checkpoint_hashes_remote_code_architecture_and_extra_code (test_kimi_vl_preparation_005.KimiCPUContractTests.test_checkpoint_hashes_remote_code_architecture_and_extra_code) ... ok
+test_copy_existing_hashes_and_preserves_mismatched_final (test_kimi_vl_preparation_005.KimiCPUContractTests.test_copy_existing_hashes_and_preserves_mismatched_final) ... ok
+test_destination_stays_in_new_private_namespace (test_kimi_vl_preparation_005.KimiCPUContractTests.test_destination_stays_in_new_private_namespace) ... ok
+test_dry_stop_never_calls_shared_stop (test_kimi_vl_preparation_005.KimiCPUContractTests.test_dry_stop_never_calls_shared_stop) ... ok
+test_exact_dual_source_locks_and_weight_set (test_kimi_vl_preparation_005.KimiCPUContractTests.test_exact_dual_source_locks_and_weight_set) ... ok
+test_exact_frozen_config_passed_to_existing_supervisor (test_kimi_vl_preparation_005.KimiCPUContractTests.test_exact_frozen_config_passed_to_existing_supervisor) ... ok
+test_failed_clone_seed_only_copies_matching_complete_files (test_kimi_vl_preparation_005.KimiCPUContractTests.test_failed_clone_seed_only_copies_matching_complete_files) ... ok
+test_pilot_bench_blocks_full_matrix_without_claim (test_kimi_vl_preparation_005.KimiCPUContractTests.test_pilot_bench_blocks_full_matrix_without_claim) ... ok
+test_pilot_real_architecture_no_backend_guess (test_kimi_vl_preparation_005.KimiCPUContractTests.test_pilot_real_architecture_no_backend_guess) ... ok
+test_relative_model_resolved_once_and_no_venv_interpreter_resolution (test_kimi_vl_preparation_005.KimiCPUContractTests.test_relative_model_resolved_once_and_no_venv_interpreter_resolution) ... ok
+test_shells_syntax_dryrun_isolated_env_and_selfcheck (test_kimi_vl_preparation_005.KimiCPUContractTests.test_shells_syntax_dryrun_isolated_env_and_selfcheck) ... skipped 'Linux Bash wrapper test'
+test_unapproved_source_never_passes_preflight (test_kimi_vl_preparation_005.KimiCPUContractTests.test_unapproved_source_never_passes_preflight) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.567s
+
+OK (skipped=1)

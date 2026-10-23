@@ -1,0 +1,2 @@
+New task adaptation code: Copyright (c) 2026 the task author. Copyright scope notice only; no new repository-wide open-source license selected.
+Publisher files retain their original copyright and license headers. Model/repository MIT notice is preserved in LICENSE_upstream and README_origin.md; embedded Apache-2.0 headers in publisher Python files remain unchanged. No model weights are included in this bundle.

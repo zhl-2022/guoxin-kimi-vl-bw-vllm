@@ -1,0 +1,134 @@
+nohup: ignoring input
+{
+  "model_id": "moonshotai/Kimi-VL-A3B-Instruct",
+  "revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "directory": "/root/private_data/guoxin-candidates/models/kimi-vl",
+  "weights_hashed": true,
+  "files": [
+    {
+      "path": "README.md",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794"
+    },
+    {
+      "path": "chat_template.jinja",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "172c7450a66b9b3644538888ffa24d02047e535e9d1f911564460203fbf7e8e8"
+    },
+    {
+      "path": "config.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb"
+    },
+    {
+      "path": "configuration_kimi_vl.py",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b"
+    },
+    {
+      "path": "generation_config.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5"
+    },
+    {
+      "path": "image_processing_kimi_vl.py",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870"
+    },
+    {
+      "path": "model-00001-of-00007.safetensors",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "a5ef3ebd9727f82e34417a778317d2cc9c08762fe0bc4a2ee333b8a52cf7c1a5"
+    },
+    {
+      "path": "model-00002-of-00007.safetensors",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "45ecd00decdad65e7d3f494028ed0c79d0cd56f145adae077ffa78b5b8ff95c0"
+    },
+    {
+      "path": "model-00003-of-00007.safetensors",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "b9ba98f01e22eea43da8cfbf6f09ff0857616cd9e1df4603a735c111755109ef"
+    },
+    {
+      "path": "model-00004-of-00007.safetensors",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "8f7eb3fc5c12481fd1a81d2708fa4a299ff4c207a5dbafb5b8bef25ab9fd8b23"
+    },
+    {
+      "path": "model-00005-of-00007.safetensors",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "db83e896b3d75f4bc51f621ae90ad61e8f6f7901f49a06b5c40348b839057206"
+    },
+    {
+      "path": "model-00006-of-00007.safetensors",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "abed41982a3f9c7d05f69bb560dad7bcb93cfa764c77a2b59127f35dc787983c"
+    },
+    {
+      "path": "model-00007-of-00007.safetensors",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "2e2ddd33f2b4f472898482860585bd6d73d4397c8c833ed9d00a2024443f7a77"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "178ba3a15cb12f6ceac42aecfe665a8f041d47e948220d75b073088957efedd8"
+    },
+    {
+      "path": "modeling_kimi_vl.py",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "d968a7d7f83f82c3b0e1061079dcdbefd6f2c75b7ee4240cce995afaeae1f622"
+    },
+    {
+      "path": "processing_kimi_vl.py",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561"
+    },
+    {
+      "path": "tiktoken.model",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "b6c497a7469b33ced9c38afb1ad6e47f03f5e5dc05f15930799210ec050c5103"
+    },
+    {
+      "path": "tokenization_moonshot.py",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "actual_sha256": "d7861718cab22c7962e14b4693b4009dd526115cd392dc779069a8173be95703"
+    }
+  ],
+  "extra_executable_files": [],
+  "architecture_matches_publisher": true,
+  "source_review_static_only": true,
+  "complete": true,
+  "GPU_verified": false
+}

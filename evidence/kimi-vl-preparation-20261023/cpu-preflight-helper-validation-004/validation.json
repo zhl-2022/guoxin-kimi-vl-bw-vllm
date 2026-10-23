@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-23T14:30:41.945920+00:00",
+  "scope": "CPU helper004 guards/regressions only; no native Torch/TF or GPU execution",
+  "change": "Allow generic amdsmi/pynvml imports; they do not instantiate a model. Hidden child zero-device and uninitialized-state checks and weight-open prohibition retained.",
+  "source_sha256": {
+    "scripts/kimi_cpu_preflight_005.py": "8bcd3320f68008a66cba2bc6cbb8a6cd1b8c79c22a9b1bda58d7ab572a154f1b",
+    "tests/test_kimi_cpu_preflight_005.py": "88725e7e95249733157e68a55d97e95c55b09f2a55f319b1c229ea471ce2de6b",
+    "dist/kimi_cpu_preflight_005_004.py": "8bcd3320f68008a66cba2bc6cbb8a6cd1b8c79c22a9b1bda58d7ab572a154f1b"
+  },
+  "windows": {
+    "command": "C:\\Users\\zhl\\anaconda3\\python.exe -B -m unittest discover -s tests -p test_kimi_cpu_preflight_005.py -v",
+    "exit_code": 0,
+    "passed": 6,
+    "skipped": 0,
+    "test_reported_seconds": 0.561
+  },
+  "wsl": {
+    "command": "wsl.exe -d Ubuntu -- bash -lc 'cd /mnt/e/hg20261019 && PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s tests -p test_kimi_cpu_preflight_005.py -v'",
+    "exit_code": 0,
+    "passed": 6,
+    "skipped": 0,
+    "test_reported_seconds": 0.68
+  },
+  "GPU_verified": false,
+  "native_CPU_processor_compatibility_verified": false
+}

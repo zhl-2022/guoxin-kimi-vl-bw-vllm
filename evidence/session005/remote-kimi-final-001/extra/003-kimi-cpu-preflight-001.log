@@ -1,0 +1,5 @@
+nohup: ignoring input
+  File "/root/kimi_cpu_preflight_005.py", line 8
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
