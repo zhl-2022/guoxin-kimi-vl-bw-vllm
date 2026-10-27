@@ -1,0 +1,130 @@
+{
+  "UTC": "2026-10-27T14:08:07.321934+00:00",
+  "OCRBench": {
+    "archive_sha256": "8afc7d5da7720376e827cbfe84cdef6564b45dedd40ab7604f30113227b876bf",
+    "files": 182,
+    "CRC_manifest_and_file_hashes": true,
+    "samples": 1000,
+    "images_requests_and_raw_responses_verified": 1000,
+    "score": {
+      "Text Recognition": 242,
+      "Scene Text-centric VQA": 186,
+      "Doc-oriented VQA": 179,
+      "Key Information Extraction": 167,
+      "Handwritten Mathematical Expression Recognition": 93,
+      "Final Score": 867,
+      "Final Score Norm": 86.7
+    },
+    "full_split": true,
+    "unfiltered": true,
+    "publisher_baseline": 867,
+    "threshold": 847,
+    "numeric_pass": true,
+    "worker_audits": 7,
+    "MMMU_pass": false,
+    "technical_delivery_complete": false,
+    "submitted": false
+  },
+  "OCRBench_safe_replay": {
+    "archive_sha256": "337547f855d98d6f212b53603d0909969a671c637288ca06d68d411ae451bd80",
+    "files": 182,
+    "CRC_manifest_and_file_hashes": true,
+    "samples": 1000,
+    "images_requests_and_raw_responses_verified": 1000,
+    "score": {
+      "Text Recognition": 237,
+      "Scene Text-centric VQA": 185,
+      "Doc-oriented VQA": 179,
+      "Key Information Extraction": 167,
+      "Handwritten Mathematical Expression Recognition": 93,
+      "Final Score": 861,
+      "Final Score Norm": 86.1
+    },
+    "full_split": true,
+    "unfiltered": true,
+    "publisher_baseline": 867,
+    "threshold": 847,
+    "numeric_pass": true,
+    "worker_audits": 7,
+    "MMMU_pass": false,
+    "technical_delivery_complete": false,
+    "submitted": false
+  },
+  "MMMU": {
+    "archive_sha256": "b8fa8042027cac000bb7d38638c4453097df3c10695ce6bd0d72c371046b3a63",
+    "files": 181,
+    "CRC_manifest_and_file_hashes": true,
+    "samples": 900,
+    "full_split": true,
+    "score_recomputed": {
+      "accuracy_percent": 52.333333333333336,
+      "publisher_baseline": 57.0,
+      "threshold_percent": 55.0,
+      "upstream_random_fallback_count": 49,
+      "metric": "full-validation micro accuracy",
+      "complete": true,
+      "sample_count": 900,
+      "failed_ids": [],
+      "numeric_comparison_pass": false,
+      "official_acceptance": false,
+      "submitted": false
+    },
+    "numeric_pass": false,
+    "submitted": false
+  },
+  "RoboSpatial": {
+    "archive_sha256": "67a2195246f7c9101332146e6654e716f56d20827cc30ff0b7c92dc0c9bd4f33",
+    "files": 985,
+    "CRC_manifest_and_file_hashes": true,
+    "samples": 350,
+    "full_split": true,
+    "images_requests_verified": 350,
+    "score_recomputed": {
+      "accuracy_ori": 44.2857,
+      "accuracy": 62.1312,
+      "results_ori": {
+        "compatibility": {
+          "num_correct": 56,
+          "total": 105,
+          "illformed_responses": 0,
+          "accuracy": 53.3333
+        },
+        "configuration": {
+          "num_correct": 99,
+          "total": 123,
+          "illformed_responses": 0,
+          "accuracy": 80.4878
+        },
+        "context": {
+          "num_correct": 0,
+          "total": 122,
+          "illformed_responses": 0,
+          "accuracy": 0.0
+        }
+      },
+      "results_v2": {
+        "compatibility": {
+          "num_correct": 56,
+          "total": 105,
+          "accuracy": 53.3333
+        },
+        "configuration": {
+          "num_correct": 99,
+          "total": 123,
+          "accuracy": 80.4878
+        },
+        "context": {
+          "num_correct": 62.45925925925926,
+          "total": 122,
+          "accuracy": 51.1961
+        }
+      }
+    },
+    "extra_performance_requests_verified": 96,
+    "template_six_load_matrix": false,
+    "numeric_pass": false,
+    "submitted": false
+  },
+  "additional_GPU_requests": 0,
+  "submitted": false
+}

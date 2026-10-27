@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
-REPOSITORY_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-exec bash "$REPOSITORY_ROOT/tasks/kimi-vl-bw-vllm/verify.sh" "$@"
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+source "$ROOT/env.sh"
+exec "$PYTHON_BIN" "$ROOT/verify.py" "$@"

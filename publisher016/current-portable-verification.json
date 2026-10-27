@@ -1,0 +1,7 @@
+{
+  "current_script_sha256": "99e0d89d2f0d7f18e8a9ef8348cb9583f57f1e1723763dad009d229de77313b6",
+  "current_full1000_request_hashes_match_actual_OCR004": true,
+  "full_selfcheck": true,
+  "GPU_requests": 0,
+  "scope": "payload and source/data parity; not a new model run"
+}

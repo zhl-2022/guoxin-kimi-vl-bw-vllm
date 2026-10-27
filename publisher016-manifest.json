@@ -1,0 +1,180 @@
+{
+  "scope": "Session016 changed and added files only; older tree retained as history",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 83,
+      "sha256": "611b5cf2e16e14c6f5cef4ca2e7ce77aba62059e325611b79292d1d06b6eb957"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11066,
+      "sha256": "9efd287e7d899c8aab4898115bcb7ab840d2dc914159d632f1b685c732e002e1"
+    },
+    {
+      "path": "baselines/ocrbench-publisher.json",
+      "bytes": 569,
+      "sha256": "9dbb9f497dde832dd6a5e794a8ceec5ba015bcab6607af578ca2d20e197b5223"
+    },
+    {
+      "path": "bench.sh",
+      "bytes": 1062,
+      "sha256": "36be0424481b87cf03e73433bd7fc4c3653815bc45eb0e4a82ee3780ef1c80c0"
+    },
+    {
+      "path": "patches/0001-kimi-verified-profile016.patch",
+      "bytes": 4741,
+      "sha256": "4d8e63d4223d952e118dc50d12d2785a2a12dc063eeca8684a3ed28917ef9f4f"
+    },
+    {
+      "path": "publisher016/analyze_sglang_results_004.py",
+      "bytes": 33302,
+      "sha256": "d73ecca728b47b8f58fed407f13c9a496e73ba8e165ee08b740afd9065efdaa8"
+    },
+    {
+      "path": "publisher016/current-portable-verification.json",
+      "bytes": 274,
+      "sha256": "696b763199aac08be450ceb1bde01512ddda1cb8c89be01e939a20d09b7d9736"
+    },
+    {
+      "path": "publisher016/independent-audit.json",
+      "bytes": 3831,
+      "sha256": "5e35c9c5783279ff99a4852a136a424fbb9794af04d38d36038e799e787ba5c2"
+    },
+    {
+      "path": "publisher016/kimi-portable-request-parity017.json",
+      "bytes": 238,
+      "sha256": "63ae90c86658049c37fec4f2a3c8560a70351186d24fe51ce79ed3b5896b25e1"
+    },
+    {
+      "path": "publisher016/portable-hook-parity.json",
+      "bytes": 385,
+      "sha256": "9e009384a6510c99fb2348445ea7545264d6e311455b27db4542ae0f0c803f6f"
+    },
+    {
+      "path": "publisher016/run-final.json",
+      "bytes": 1057,
+      "sha256": "a70e674bc26e0ceec99374ca495916403c76a38efb19e49e267efa5e65177d5c"
+    },
+    {
+      "path": "publisher016/score_kimi_full015.py",
+      "bytes": 4545,
+      "sha256": "bc3d57747588957b9a13d56f8add32fd45783c933a80c6d1bed72575ee566a91"
+    },
+    {
+      "path": "publisher016/session013-kimi-whole-attempt2.zip",
+      "bytes": 1193603,
+      "sha256": "b8fa8042027cac000bb7d38638c4453097df3c10695ce6bd0d72c371046b3a63"
+    },
+    {
+      "path": "publisher016/session014-kimi-scoring-full015.zip",
+      "bytes": 17823,
+      "sha256": "2a34071a3221c7ca83153739ca5523d34470d2779d2d786d8c0f8cf441335067"
+    },
+    {
+      "path": "publisher016/session016-kimi-ocrbench003.zip",
+      "bytes": 795199,
+      "sha256": "8afc7d5da7720376e827cbfe84cdef6564b45dedd40ab7604f30113227b876bf"
+    },
+    {
+      "path": "publisher016/session016-kimi-ocrbench004.zip",
+      "bytes": 795249,
+      "sha256": "337547f855d98d6f212b53603d0909969a671c637288ca06d68d411ae451bd80"
+    },
+    {
+      "path": "publisher016/session017-kimi-failed-performance-selected002.zip",
+      "bytes": 428055,
+      "sha256": "db1ce0a0052005f314827a156bff79456a8ce3723e36a38515d0e50a76695ec5"
+    },
+    {
+      "path": "publisher016/t02_sglang_bench.py",
+      "bytes": 22546,
+      "sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000"
+    },
+    {
+      "path": "publisher016/vlmeval-image-vqa.py",
+      "bytes": 182342,
+      "sha256": "27e6bc94e8a0b51d2ee401694fc7b80bcd8a36c51d324fbf4a37cce4b7c9764d"
+    },
+    {
+      "path": "publisher016/vlmeval-kimi-vl.py",
+      "bytes": 5299,
+      "sha256": "e510866c154a282d2f840b8460af82fa81ff69f4289abedca6fa39d89797bf97"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 223,
+      "sha256": "dc5c2799ffdcfa0ce1bd82d4d7ee8bc868ac76278a9278c2a4baac0a8b7c009e"
+    },
+    {
+      "path": "scripts/analyze_kimi_performance017.py",
+      "bytes": 4047,
+      "sha256": "e0923f4d71233dd7d43e1070024f4b18aa6ff234ef872bf73dc5363484b8e819"
+    },
+    {
+      "path": "scripts/apply_profile016.sh",
+      "bytes": 482,
+      "sha256": "f25169eab47d0100c059b1678dd972ba43add9ba38eb9ca1f6d50fe6ca7becf1"
+    },
+    {
+      "path": "scripts/kimi-client-hook/sitecustomize.py",
+      "bytes": 2213,
+      "sha256": "1bbbd6b98588775a5d9ba3317b21e36a1b8d79d6f2e97af384e56602c5cbce68"
+    },
+    {
+      "path": "scripts/kimi-math-hook/sitecustomize.py",
+      "bytes": 654,
+      "sha256": "c22963a86380fc77093323cb610eeb7355fda9033d8b34ff036a53566b7f1256"
+    },
+    {
+      "path": "scripts/kimi_vl_runtime_005.py",
+      "bytes": 9153,
+      "sha256": "11985f3c844f03b320f674309ea19060e1bc2f1ac93619c031092d574af22dcc"
+    },
+    {
+      "path": "scripts/prepare_ocrbench016.py",
+      "bytes": 2769,
+      "sha256": "769b4c71bf6ad7569b5739c66c064ac568420b01493d8b81a6f60dbcdd1e7cc9"
+    },
+    {
+      "path": "scripts/t02_sglang_bench_016.py",
+      "bytes": 22628,
+      "sha256": "eab500bbc9bd30208a6020d3dae8cef2df5a247e1391066c5303025fd6cef83a"
+    },
+    {
+      "path": "scripts/verify_kimi_ocr016.py",
+      "bytes": 7921,
+      "sha256": "99e0d89d2f0d7f18e8a9ef8348cb9583f57f1e1723763dad009d229de77313b6"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/env.sh",
+      "bytes": 2785,
+      "sha256": "922dbc875a89cb1c0252ec75cc3d6fe8b44547c2d60e44b9ae8417e90ff4e853"
+    },
+    {
+      "path": "tasks/kimi-vl-bw-vllm/task.json",
+      "bytes": 3224,
+      "sha256": "c6488b39006cc65be96aa6ba273400a3cafaba6f8f7d00f58e7f09a71a181b99"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 227,
+      "sha256": "2d272eec7a9c808139d53515f46013848658aaa31f6febb8670324378ff94d30"
+    },
+    {
+      "path": "verify.sh",
+      "bytes": 161,
+      "sha256": "04bb379df433232a4e3fd962dfe5d697bc8f63c2b3d7b898b33a52e509e2e5ff"
+    },
+    {
+      "path": "verify_result.json",
+      "bytes": 1006,
+      "sha256": "4fce6a0e4641e15b7de3ccd06605d26f0a8db3c34101df0e3a353e7eef250d55"
+    }
+  ],
+  "self_hash_excluded": true,
+  "accuracy_pass": true,
+  "performance_complete": false,
+  "standard_submission_ready": false,
+  "submitted": false
+}

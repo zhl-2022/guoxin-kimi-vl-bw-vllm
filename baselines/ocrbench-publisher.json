@@ -1,0 +1,16 @@
+{
+  "model": "moonshotai/Kimi-VL-A3B-Instruct",
+  "revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "dataset": "OCRBench original full1000",
+  "publisher_score": 867,
+  "tolerance_absolute_points": 20,
+  "minimum": 847,
+  "score_source": "https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct/blob/398eede0903cd983a2bfa0cc634e9ac1d843f375/README.md",
+  "selected_full_result": 861,
+  "other_full_result": 867,
+  "MMMU_full900": 52.33333333333333,
+  "MMMU_threshold": 55,
+  "MMMU_pass": false,
+  "selection_before_OCR_predictions": true,
+  "submitted": false
+}

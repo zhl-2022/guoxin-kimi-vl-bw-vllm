@@ -1,0 +1,63 @@
+diff --git a/scripts/kimi_vl_runtime_005.py b/scripts/kimi_vl_runtime_005.py
+index 2588547..6df6ad6 100644
+--- a/scripts/kimi_vl_runtime_005.py
++++ b/scripts/kimi_vl_runtime_005.py
+@@ -45,20 +45,20 @@ def configuration(task):
+     grace = int(os.environ.get("KIMI_STOP_GRACE_SECONDS", "30"))
+     served = os.environ.get("KIMI_SERVED_NAME", model)
+     if (not 1024 <= port <= 65535 or not 0 < memory < 1 or not 1024 <= length <= 32768
+-            or not 60 <= load <= runtime <= 6900 or not 1 <= grace <= 60):
+-        raise ValueError("Invalid pilot port/memory/context/time bounds; service lifetime max 6900 seconds")
++            or not 60 <= load <= runtime <= 21600 or not 1 <= grace <= 60):
++        raise ValueError("Invalid pilot port/memory/context/time bounds; service lifetime max 21600 seconds")
+     if not served or any(x in served for x in "\r\n"):
+         raise ValueError("Invalid served model name")
+     command = [sys.executable, "-m", "vllm.entrypoints.openai.api_server", "--model", model,
+         "--tokenizer", model, "--served-model-name", served, "--host", "127.0.0.1", "--port", str(port),
+         "--dtype", "bfloat16", "--tensor-parallel-size", "1", "--max-model-len", str(length),
+-        "--gpu-memory-utilization", str(memory), "--max-num-seqs", "1",
+-        "--max-num-batched-tokens", str(length), "--enforce-eager", "--trust-remote-code",
+-        "--limit-mm-per-prompt", '{"image":2,"video":0}']
++        "--gpu-memory-utilization", str(memory), "--max-num-seqs", "4",
++        "--max-num-batched-tokens", "32768", "--enforce-eager", "--no-enable-chunked-prefill", "--no-enable-prefix-caching", "--trust-remote-code",
++        "--limit-mm-per-prompt", '{"image":{"count":5,"width":1024,"height":1024},"video":0}']
+     return {"task":str(Path(task).resolve()), "framework":"vllm", "precision":"bf16", "model_id":MODEL,
+         "model_revision":REVISION, "model_path":model, "served_name":served, "host":"127.0.0.1",
+         "port":port, "tp":1, "max_len":length, "mem_frac":memory, "load_timeout":load,
+-        "max_runtime":runtime, "stop_grace":grace, "max_num_seqs":1, "command":command,
++        "max_runtime":runtime, "stop_grace":grace, "max_num_seqs":4, "command":command,
+         "url":f"http://127.0.0.1:{port}", "trust_remote_code_scope":"Exact reviewed publisher files only; verified before actual launch",
+         "attention_backend_override":None, "MLA_or_MoE_kernel_forced":False,
+         "GPU_verified":False, "official_accuracy_verified":False, "official_performance_verified":False,
+diff --git a/tasks/kimi-vl-bw-vllm/env.sh b/tasks/kimi-vl-bw-vllm/env.sh
+index 86e962f..f7e1170 100644
+--- a/tasks/kimi-vl-bw-vllm/env.sh
++++ b/tasks/kimi-vl-bw-vllm/env.sh
+@@ -3,15 +3,24 @@
+ export MODEL_ID="moonshotai/Kimi-VL-A3B-Instruct" FRAMEWORK="vllm" CARD="BW" PRECISION="bf16"
+ export KIMI_MODEL_PATH="${KIMI_MODEL_PATH:-/root/private_data/guoxin-candidates/models/kimi-vl}"
+ export KIMI_PORT="${KIMI_PORT:-30129}"
+-export KIMI_MAX_LEN="${KIMI_MAX_LEN:-4096}"
++export KIMI_MAX_LEN="${KIMI_MAX_LEN:-32768}"
+ export KIMI_MEM_FRAC="${KIMI_MEM_FRAC:-0.80}"
+-export KIMI_LOAD_TIMEOUT="${KIMI_LOAD_TIMEOUT:-900}"
+-export KIMI_MAX_RUNTIME_SECONDS="${KIMI_MAX_RUNTIME_SECONDS:-1800}"
++export KIMI_LOAD_TIMEOUT="${KIMI_LOAD_TIMEOUT:-1200}"
++export KIMI_MAX_RUNTIME_SECONDS="${KIMI_MAX_RUNTIME_SECONDS:-21600}"
+ export KIMI_STOP_GRACE_SECONDS="${KIMI_STOP_GRACE_SECONDS:-30}"
+ export MODEL_PATH="$KIMI_MODEL_PATH" PORT="$KIMI_PORT" MAX_LEN="$KIMI_MAX_LEN" TP="1"
+ export SERVED_NAME="${KIMI_SERVED_NAME:-$KIMI_MODEL_PATH}"
+ export KIMI_SERVED_NAME="$SERVED_NAME"
+ export PYTHON_BIN="${KIMI_PYTHON_BIN:-/usr/bin/python3}"
++KIMI_REPOSITORY_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../.." && pwd)"
++export KIMI_DATA_DIR="${KIMI_DATA_DIR:-$KIMI_REPOSITORY_ROOT/data/ocrbench}"
++export KIMI_SDP_AUDIT_DIR="${KIMI_SDP_AUDIT_DIR:-$KIMI_REPOSITORY_ROOT/evidence/math-sdpa-live}"
++mkdir -p -- "$KIMI_SDP_AUDIT_DIR"
++export VLLM_MLA_DISABLE=1 ROCM_PATH=/opt/dtk HIP_PATH=/opt/dtk/hip
++export PATH="/opt/ucx/bin:/opt/dtk/bin:/opt/dtk/llvm/bin:/opt/dtk/hip/bin:/opt/hyhal/bin:$PATH"
++export LD_LIBRARY_PATH="/opt/ucx/lib:/opt/dtk/dcc/gcvm/lib:/opt/dtk/hip/lib:/opt/dtk/llvm/lib:/opt/dtk/lib:/opt/dtk/lib64:/opt/hyhal/lib:/opt/hyhal/lib64:/opt/dtk/dushmem/lib:/opt/dtk/opencl/lib:/opt/mpi/lib:/opt/hwloc/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
++export PYTHONPATH="$KIMI_REPOSITORY_ROOT/scripts/kimi-math-hook:$KIMI_REPOSITORY_ROOT/scripts${PYTHONPATH:+:$PYTHONPATH}"
++unset KIMI_REPOSITORY_ROOT
+ export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_DATASETS_OFFLINE=1
+ export OFFICIAL_VERIFY_SCRIPT="${KIMI_OFFICIAL_VERIFY_SCRIPT:-}"
+ export OFFICIAL_BENCH_SCRIPT="${KIMI_OFFICIAL_BENCH_SCRIPT:-}"

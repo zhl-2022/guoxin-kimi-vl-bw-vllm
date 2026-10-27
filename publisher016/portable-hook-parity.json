@@ -1,0 +1,6 @@
+{
+  "actual_profile005_hook_sha256": "8dc94af68fe8e5d2690c14beedb3ccba394bd62b88f2744e0520cf13635a3c59",
+  "portable_hook_sha256": "1bbbd6b98588775a5d9ba3317b21e36a1b8d79d6f2e97af384e56602c5cbce68",
+  "only_change": "Model-path assertion accepts configured absolute KIMI_MODEL_PATH; random vocabulary and output policy unchanged",
+  "sampling_policy_bytes_otherwise_identical": true
+}

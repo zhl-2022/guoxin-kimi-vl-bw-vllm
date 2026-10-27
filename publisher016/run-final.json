@@ -1,0 +1,28 @@
+{
+  "started_utc": "2026-10-27T15:04:38.533076+00:00",
+  "rows": 1000,
+  "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "scorer_sha256": "27e6bc94e8a0b51d2ee401694fc7b80bcd8a36c51d324fbf4a37cce4b7c9764d",
+  "samples_sha256": "303fae6ff39f3716846cfafd34c6b62f9cb3bd66630f86034e71c6c7ebb42e6f",
+  "annotations_sha256": "b2dc45f48eb5f3b7807d7063d15aad57f8d589f79ecb8f1f22dafd66fa1c2412",
+  "script_sha256": "29dc05ee159a8ba16f9710e3bef79085d3401401ecc510f8e1e2b461182f4819",
+  "publisher_baseline": 867,
+  "threshold": 847,
+  "complete": true,
+  "rescore_only": true,
+  "numeric_pass": true,
+  "submitted": false,
+  "labels_sent_to_model": false,
+  "generation_complete": true,
+  "score": {
+    "Text Recognition": 237,
+    "Scene Text-centric VQA": 185,
+    "Doc-oriented VQA": 179,
+    "Key Information Extraction": 167,
+    "Handwritten Mathematical Expression Recognition": 93,
+    "Final Score": 861,
+    "Final Score Norm": 86.1
+  },
+  "budget_exhausted": 0,
+  "ended_utc": "2026-10-27T15:04:38.665008+00:00"
+}

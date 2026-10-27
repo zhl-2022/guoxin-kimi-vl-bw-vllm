@@ -45,20 +45,20 @@ def configuration(task):
     grace = int(os.environ.get("KIMI_STOP_GRACE_SECONDS", "30"))
     served = os.environ.get("KIMI_SERVED_NAME", model)
     if (not 1024 <= port <= 65535 or not 0 < memory < 1 or not 1024 <= length <= 32768
-            or not 60 <= load <= runtime <= 6900 or not 1 <= grace <= 60):
-        raise ValueError("Invalid pilot port/memory/context/time bounds; service lifetime max 6900 seconds")
+            or not 60 <= load <= runtime <= 21600 or not 1 <= grace <= 60):
+        raise ValueError("Invalid pilot port/memory/context/time bounds; service lifetime max 21600 seconds")
     if not served or any(x in served for x in "\r\n"):
         raise ValueError("Invalid served model name")
     command = [sys.executable, "-m", "vllm.entrypoints.openai.api_server", "--model", model,
         "--tokenizer", model, "--served-model-name", served, "--host", "127.0.0.1", "--port", str(port),
         "--dtype", "bfloat16", "--tensor-parallel-size", "1", "--max-model-len", str(length),
-        "--gpu-memory-utilization", str(memory), "--max-num-seqs", "1",
-        "--max-num-batched-tokens", str(length), "--enforce-eager", "--trust-remote-code",
-        "--limit-mm-per-prompt", '{"image":2,"video":0}']
+        "--gpu-memory-utilization", str(memory), "--max-num-seqs", "4",
+        "--max-num-batched-tokens", "32768", "--enforce-eager", "--no-enable-chunked-prefill", "--no-enable-prefix-caching", "--trust-remote-code",
+        "--limit-mm-per-prompt", '{"image":{"count":5,"width":1024,"height":1024},"video":0}']
     return {"task":str(Path(task).resolve()), "framework":"vllm", "precision":"bf16", "model_id":MODEL,
         "model_revision":REVISION, "model_path":model, "served_name":served, "host":"127.0.0.1",
         "port":port, "tp":1, "max_len":length, "mem_frac":memory, "load_timeout":load,
-        "max_runtime":runtime, "stop_grace":grace, "max_num_seqs":1, "command":command,
+        "max_runtime":runtime, "stop_grace":grace, "max_num_seqs":4, "command":command,
         "url":f"http://127.0.0.1:{port}", "trust_remote_code_scope":"Exact reviewed publisher files only; verified before actual launch",
         "attention_backend_override":None, "MLA_or_MoE_kernel_forced":False,
         "GPU_verified":False, "official_accuracy_verified":False, "official_performance_verified":False,
