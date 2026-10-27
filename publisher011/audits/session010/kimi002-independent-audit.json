@@ -1,0 +1,20 @@
+{
+  "raw_evidence_audit_pass": true,
+  "samples": 900,
+  "original_score": {
+    "accuracy_percent": 49.77777777777778,
+    "publisher_baseline": 57.0,
+    "threshold_percent": 55.0,
+    "upstream_random_fallback_count": 38,
+    "metric": "full-validation micro accuracy",
+    "complete": true,
+    "sample_count": 900,
+    "failed_ids": [],
+    "numeric_comparison_pass": false,
+    "official_acceptance": false,
+    "submitted": false
+  },
+  "budget_exhausted": 51,
+  "all_raw_images_sha256_verified": true,
+  "original_outputs_unchanged": true
+}

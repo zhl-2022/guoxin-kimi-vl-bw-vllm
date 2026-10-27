@@ -1,0 +1,2 @@
+MMMU evaluation utilities: https://github.com/MMMU-Benchmark/MMMU, Apache-2.0, license retained.
+FlagEvalMM evaluation utilities: https://github.com/flageval-baai/FlagEvalMM. Original source retained verbatim for this private evaluation; no new license asserted.

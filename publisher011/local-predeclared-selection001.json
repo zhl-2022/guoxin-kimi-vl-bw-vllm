@@ -1,0 +1,20 @@
+{
+  "selected_ids": [
+    "validation_Diagnostics_and_Laboratory_Medicine_1",
+    "validation_Physics_27",
+    "validation_Biology_23",
+    "validation_Energy_and_Power_3",
+    "validation_Finance_14",
+    "validation_Economics_19",
+    "validation_Manage_7",
+    "validation_Music_27",
+    "validation_Music_23",
+    "validation_Literature_5",
+    "validation_Finance_23",
+    "validation_Electronics_12"
+  ],
+  "sample_count": 12,
+  "no_labels_used_for_selection": true,
+  "sample_file_sha256": "90f833664dc9d0b4ce6b8ce1d9035aac89d6a1c153aa462995c5977af66017ea",
+  "code_AST_pass": true
+}

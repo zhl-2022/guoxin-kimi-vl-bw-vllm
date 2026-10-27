@@ -1,0 +1,17 @@
+{
+  "UTC": "2026-10-27T04:27:17.865750+00:00",
+  "files": [
+    {
+      "archive": "session011-kimi-single-sequence001.zip",
+      "bytes": 13594,
+      "sha256": "9f89a9525f1d0865ba10941719535aacf1de17b19d5bcc030dd7c448b8b82872",
+      "full_CRC_pass": true
+    },
+    {
+      "archive": "session011-kimi-runtime-context001.zip",
+      "bytes": 330945,
+      "sha256": "5553b417ef862c388b58f485f3eb5523995e9dc3538e6f47eaa0cf80b622e90b",
+      "full_CRC_pass": true
+    }
+  ]
+}

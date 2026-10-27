@@ -1,0 +1,36 @@
+{
+  "raw_evidence_audit_pass": true,
+  "samples": 900,
+  "original_score": {
+    "accuracy_percent": 38.0,
+    "publisher_baseline": 57.0,
+    "threshold_percent": 55.0,
+    "upstream_random_fallback_count": 208,
+    "metric": "full-validation micro accuracy",
+    "complete": true,
+    "sample_count": 900,
+    "failed_ids": [],
+    "numeric_comparison_pass": false,
+    "official_acceptance": false,
+    "submitted": false
+  },
+  "budget_exhausted": 44,
+  "all_raw_images_sha256_verified": true,
+  "original_outputs_unchanged": true,
+  "boxed_final_score": {
+    "accuracy_percent": 49.22222222222222,
+    "publisher_baseline": 57.0,
+    "threshold_percent": 55.0,
+    "upstream_random_fallback_count": 62,
+    "metric": "full-validation micro accuracy",
+    "complete": true,
+    "sample_count": 900,
+    "failed_ids": [],
+    "numeric_comparison_pass": false,
+    "official_acceptance": false,
+    "submitted": false
+  },
+  "boxed_extracted_count": 766,
+  "extraction_note": "Apply the pinned upstream final-box parser to every raw response; labels are used only by the scorer.",
+  "parser_source_sha256": "e510866c154a282d2f840b8460af82fa81ff69f4289abedca6fa39d89797bf97"
+}

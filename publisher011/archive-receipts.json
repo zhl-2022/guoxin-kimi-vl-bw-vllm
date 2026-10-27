@@ -1,0 +1,26 @@
+[
+  {
+    "file": "session010-kimi001-results.zip",
+    "bytes": 83264,
+    "sha256": "31afdec4a753f01079bf94af9252e4adef28d1857dceb59e5cfd3d41987f67ba",
+    "CRC_pass": true
+  },
+  {
+    "file": "session010-kimi002-results.zip",
+    "bytes": 209315,
+    "sha256": "643dd6cf036f6c9bcca17b1b2f3e73217e505014b1c37ea488b6c80b0a27e291",
+    "CRC_pass": true
+  },
+  {
+    "file": "session010-kimi004-interrupted.zip",
+    "bytes": 501716,
+    "sha256": "9272ef027e8bf6f575bfcb72c34a08f8074becb7ed402e45f8d4583279a1bdd2",
+    "CRC_pass": true
+  },
+  {
+    "file": "session011-kimi-reference001.zip",
+    "bytes": 20525,
+    "sha256": "d8ba2ee37e06c5debab11569566fe4eae3e0741cadd2d35ef38f25b924612de6",
+    "CRC_pass": true
+  }
+]

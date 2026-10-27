@@ -1,0 +1,14 @@
+{
+  "UTC": "2026-10-27T03:31:39.473606+00:00",
+  "script": "scripts/submission011/kimi_native_reference003.py",
+  "source_sha256": "38295bd7d96da6d8ac2a7ba689853e09ef9207438b50476a74a6f34e8e228f42",
+  "samples": 12,
+  "max_new_tokens": 128,
+  "do_sample": false,
+  "not_full_accuracy_evaluation": true,
+  "expected_environment": "Transformers4.51.3 plus HCU Torch2.10.0 on BW",
+  "GPU_process_limit_seconds": 2700,
+  "platform_auto_stop_utc": "2026-10-27T04:30:00Z",
+  "platform_auto_stop_verified": true,
+  "result_pending": true
+}

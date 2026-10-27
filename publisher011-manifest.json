@@ -1,0 +1,224 @@
+{
+  "schema": "scoped-vlm-verification011",
+  "UTC": "2026-10-27T04:36:30.784791+00:00",
+  "scope": "New report and publisher011 files only; original committed files unchanged",
+  "publisher_numeric_comparison_pass": false,
+  "submitted": false,
+  "files": [
+    {
+      "path": "PUBLISHER_VERIFICATION_011.md",
+      "bytes": 3049,
+      "sha256": "ed77c6b8d66d5d10117ca705b8f6a8b5a50ebe878c22596cdce12e13787644ba"
+    },
+    {
+      "path": "publisher011/archive-receipts.json",
+      "bytes": 749,
+      "sha256": "1cc5cd8537a673f1af84471055028d95aad58268cdd44b64dc7b30400babbab1"
+    },
+    {
+      "path": "publisher011/archives/session010-kimi001-results.zip",
+      "bytes": 83264,
+      "sha256": "31afdec4a753f01079bf94af9252e4adef28d1857dceb59e5cfd3d41987f67ba"
+    },
+    {
+      "path": "publisher011/archives/session010-kimi002-results.zip",
+      "bytes": 209315,
+      "sha256": "643dd6cf036f6c9bcca17b1b2f3e73217e505014b1c37ea488b6c80b0a27e291"
+    },
+    {
+      "path": "publisher011/archives/session010-kimi004-interrupted.zip",
+      "bytes": 501716,
+      "sha256": "9272ef027e8bf6f575bfcb72c34a08f8074becb7ed402e45f8d4583279a1bdd2"
+    },
+    {
+      "path": "publisher011/archives/session011-kimi-reference001.zip",
+      "bytes": 20525,
+      "sha256": "d8ba2ee37e06c5debab11569566fe4eae3e0741cadd2d35ef38f25b924612de6"
+    },
+    {
+      "path": "publisher011/archives/session011-kimi-runtime-context001.zip",
+      "bytes": 330945,
+      "sha256": "5553b417ef862c388b58f485f3eb5523995e9dc3538e6f47eaa0cf80b622e90b"
+    },
+    {
+      "path": "publisher011/archives/session011-kimi-single-sequence001.zip",
+      "bytes": 13594,
+      "sha256": "9f89a9525f1d0865ba10941719535aacf1de17b19d5bcc030dd7c448b8b82872"
+    },
+    {
+      "path": "publisher011/audits/session010/kimi002-independent-audit.json",
+      "bytes": 569,
+      "sha256": "ceb7339c138ff142e9e53320c4074af1e912779d1c819be38e16808b959493b7"
+    },
+    {
+      "path": "publisher011/audits/session010/kimi004-recovered/kimi004-independent-audit.json",
+      "bytes": 1215,
+      "sha256": "58353184c28c07361f741dceba57e5ad01da90fdb767f0e48d956bcf15ecb3e0"
+    },
+    {
+      "path": "publisher011/audits/session011/kimi-reference001-independent-audit.json",
+      "bytes": 673,
+      "sha256": "3a53ac77faa4cd843c7b4d67f8e01fb9911b8964f95073301b548f8aea37544f"
+    },
+    {
+      "path": "publisher011/downloads-single-and-context001.json",
+      "bytes": 495,
+      "sha256": "f7da20d4edf4f26803e0a0517aee6f4a4e0bf6cce3e2585643604fdd8c53bab8"
+    },
+    {
+      "path": "publisher011/kimi-run-plan001.json",
+      "bytes": 547,
+      "sha256": "43160f9ed9b27710b04becdef677b44b327648b0efc173d8a2ee78609f2e04c0"
+    },
+    {
+      "path": "publisher011/local-predeclared-selection001.json",
+      "bytes": 611,
+      "sha256": "ca68f9edc686fd10552c91f97a0a91ccfb4905ba3a656b59894ce7ee689f6f05"
+    },
+    {
+      "path": "publisher011/tools/evaluate_vlm.py",
+      "bytes": 10272,
+      "sha256": "a31e6aa9a0eb47874e05c3f6419010513976a523379dcf497f4a4fb2e17b12c9"
+    },
+    {
+      "path": "publisher011/tools/evaluate_vlm002.py",
+      "bytes": 10939,
+      "sha256": "116ad2aca667e70afc4d1f321c5f43fd415043d04b86fbbc39df5d9a0065ce70"
+    },
+    {
+      "path": "publisher011/tools/evaluate_vlm003.py",
+      "bytes": 11575,
+      "sha256": "853dcd0f4873e654d5bb718e5101939a931fb0e34acb698e978dbf77c63c817d"
+    },
+    {
+      "path": "publisher011/tools/evaluate_vlm_resume004.py",
+      "bytes": 13265,
+      "sha256": "e7396b799dc05e4821e035d1330f4a77dcacb49a112d641f581b18778260435e"
+    },
+    {
+      "path": "publisher011/tools/prepare_followup003.py",
+      "bytes": 2105,
+      "sha256": "144514f87593ad92a317bb7c3a70862ff5cd02f932dadc015b2f362d63707f2d"
+    },
+    {
+      "path": "publisher011/tools/reference011/export_kimi_context.py",
+      "bytes": 1853,
+      "sha256": "1c1bd3923884e10ceb70efe2aa78cc9e52a42277b6b24c247c2bf5e820013f87"
+    },
+    {
+      "path": "publisher011/tools/reference011/finish_kimi_preparation003.py",
+      "bytes": 1866,
+      "sha256": "d738e7968608dd9f5d7b4db5f8482288e2bfefc572c5bb169a7fb1238108148e"
+    },
+    {
+      "path": "publisher011/tools/reference011/kimi_native_reference.py",
+      "bytes": 6716,
+      "sha256": "58ae3edd4d689b8cd668e5ea57f5cd687dd31250e16682f7ec05b8b747f46fa2"
+    },
+    {
+      "path": "publisher011/tools/reference011/kimi_native_reference002.py",
+      "bytes": 6716,
+      "sha256": "13ab713d325ea777c5692f45e377efacf12d6669159b302026049c04982fd9d4"
+    },
+    {
+      "path": "publisher011/tools/reference011/kimi_native_reference003.py",
+      "bytes": 6738,
+      "sha256": "38295bd7d96da6d8ac2a7ba689853e09ef9207438b50476a74a6f34e8e228f42"
+    },
+    {
+      "path": "publisher011/tools/reference011/kimi_single_sequence_probe.py",
+      "bytes": 5642,
+      "sha256": "7c0ce39625bc6dc66b6195a600c54775f45abce0beaa6395a3f05ed71d047f49"
+    },
+    {
+      "path": "publisher011/tools/reference011/prepare_kimi_reference.py",
+      "bytes": 4454,
+      "sha256": "ea3d2fa6f777bf7b1c10c589fc3ade29a3597228e075a0e671be329f22037ea2"
+    },
+    {
+      "path": "publisher011/tools/reference011/prepare_kimi_reference002.py",
+      "bytes": 4503,
+      "sha256": "b24c42452573e2500c08186dbebfc22a5eb6d9cea75a8a02cf2c259953406504"
+    },
+    {
+      "path": "publisher011/tools/reference011/unpack_kimi_reference.py",
+      "bytes": 1457,
+      "sha256": "d5684acdf7753de2e282e01a4404ebe9b0b5eef7222782ba8ab85e76e3eb2774"
+    },
+    {
+      "path": "publisher011/tools/robo_reference.py",
+      "bytes": 4395,
+      "sha256": "16543082d7fec635eb056c70f28771277d78533fcccabcde81c01720458d7b19"
+    },
+    {
+      "path": "publisher011/tools/run_vlm_experiment.py",
+      "bytes": 4440,
+      "sha256": "7e2db95dd5568456d6e7019fbd8f121840c32625d3ce9a99d6f1a27dd2640cbb"
+    },
+    {
+      "path": "publisher011/tools/run_vlm_experiment002.py",
+      "bytes": 4520,
+      "sha256": "d3f9647a5df504cc9f1d9f476da2e7a2627174d53cd366be9d577ced73a52963"
+    },
+    {
+      "path": "publisher011/tools/run_vlm_experiment003.py",
+      "bytes": 4524,
+      "sha256": "369085ac0ec1692c1319e73066d3cec994753c5731a61a75cccebd3de57c8963"
+    },
+    {
+      "path": "publisher011/tools/run_vlm_resume004.py",
+      "bytes": 4531,
+      "sha256": "090a6706ebe4d5a93a504be4787d2ba78f45aaaa2549175884f156f84f9cc02b"
+    },
+    {
+      "path": "publisher011/tools/stage_vlm.py",
+      "bytes": 3756,
+      "sha256": "1eed79bf465af127d6f00a01e5f64796c848917a00a601ef0d72442673de7bf2"
+    },
+    {
+      "path": "publisher011/tools/vendor/cvbench_eval.py",
+      "bytes": 1266,
+      "sha256": "607b13ae049ff8bc49c10ea112853afb2d73d26e9b133d1daba089420fb4ca69"
+    },
+    {
+      "path": "publisher011/tools/vendor/flagevalmm/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "publisher011/tools/vendor/flagevalmm/evaluator/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "publisher011/tools/vendor/flagevalmm/evaluator/common_types.py",
+      "bytes": 983,
+      "sha256": "1b4639d1f5aa7173d86ccb803dde82a5c0ea53feca5e1ea628ffff4d486f4d98"
+    },
+    {
+      "path": "publisher011/tools/vendor/flagevalmm/evaluator/pre_process.py",
+      "bytes": 4400,
+      "sha256": "2e276883a281ba8777e2c57684fe60f2fda0b0b06a0ddb2dfbb01b9486413205"
+    },
+    {
+      "path": "publisher011/tools/vendor/MMMU-LICENSE",
+      "bytes": 11358,
+      "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c"
+    },
+    {
+      "path": "publisher011/tools/vendor/mmmu_eval.py",
+      "bytes": 8993,
+      "sha256": "6e8bb4d9510c4757f248240f3a757634edfcdb72bf5bbee4bc76ed6c16845679"
+    },
+    {
+      "path": "publisher011/tools/vendor/SOURCE-NOTICES.txt",
+      "bytes": 265,
+      "sha256": "f7654e632ca1959617e49b5ae86b66d7a61a9063dc6469ad35f785ae41c27b4e"
+    },
+    {
+      "path": "publisher011/tools/vendor/speaker_similarity.py",
+      "bytes": 11570,
+      "sha256": "18528106c718384e6e096b79031c78fbc90890344d80ba6ae3d4cbadc0d2545e"
+    }
+  ]
+}
