@@ -1,0 +1,20 @@
+{
+  "UTC": "2026-10-27T22:42:12.577339+00:00",
+  "complete": true,
+  "samples": 1000,
+  "unique_input_ids": 1000,
+  "unique_response_ids": 1000,
+  "rebuilt_payload_hash_matches": 1000,
+  "all_image_hashes_match": true,
+  "raw_response_text_matches": 1000,
+  "all_finish_reason_stop": true,
+  "labels_in_request": false,
+  "synthetic_bad_words_in_request": false,
+  "full_accuracy_score": 861,
+  "predictions_sha256": "37a7fa891a54af7e6952bfcda9a096f2f72bf2ac3b2dd3d3a2411cbc57fc3e3f",
+  "scorer_sha256": "27e6bc94e8a0b51d2ee401694fc7b80bcd8a36c51d324fbf4a37cce4b7c9764d",
+  "evaluator_sha256": "99e0d89d2f0d7f18e8a9ef8348cb9583f57f1e1723763dad009d229de77313b6",
+  "GPU_requests": 0,
+  "submitted": false,
+  "scope": "Complete archived real HTTP responses, CPU request reconstruction and independent rescore; no new GPU run"
+}

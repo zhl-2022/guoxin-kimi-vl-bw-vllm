@@ -1,0 +1,30 @@
+{
+  "UTC": "2026-10-27T22:46:57.268450+00:00",
+  "actual_CPU_command_argv_matches_all12_measured_native_invocations": true,
+  "measured_requests_covered": 608,
+  "owner_guard_rejected_cases": 5,
+  "venv_interpreter_symlink_spelling_preserved": true,
+  "plan_only_created_output": false,
+  "GPU_model_requests_in_control_test": 0,
+  "test_runtime": "WSL Python3, actual exit0",
+  "files": [
+    {
+      "path": "scripts/bench_matrix021.py",
+      "sha256": "6c29d7d585e2aeb4cb0bd8d52b69a747894746d6734eb25e183f58b5f937c167"
+    },
+    {
+      "path": "scripts/audit_kimi_epoch021.py",
+      "sha256": "22ef03d9471aee0099b5f93ac83693e6307ecce0d330b355bf500004947bd1e9"
+    },
+    {
+      "path": "scripts/prepare_bench_client021.py",
+      "sha256": "e58f502554b694510e5cb47b69d43d93b238a97b39e8aa6646bfcdcf53b5ca39"
+    },
+    {
+      "path": "scripts/prepare_image_model021.py",
+      "sha256": "2da3d9f6a0164451f2c2bf392c2c8cb447a77cb08023946fd9212ba4a4d92f36"
+    }
+  ],
+  "model_accuracy_claim_from_control_test": false,
+  "rechecked_after_image_helpers": true
+}

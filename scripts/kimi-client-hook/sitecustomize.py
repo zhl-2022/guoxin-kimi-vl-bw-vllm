@@ -6,7 +6,7 @@ _load_processor = AutoProcessor.from_pretrained
 def _kimi_image_id(*args,**kwargs):
     processor = _load_processor(*args,**kwargs)
     if type(processor).__name__ == 'KimiVLProcessor':
-        assert Path(args[0]).resolve() == Path(os.environ.get('KIMI_MODEL_PATH','/root/private_data/guoxin-candidates/models/kimi-vl')).resolve()
+        assert str(args[0]) == '/root/private_data/guoxin-candidates/models/kimi-vl'
         assert processor.image_token == '<|media_pad|>'
         token_id = processor.tokenizer.convert_tokens_to_ids(processor.image_token)
         assert processor.tokenizer.convert_ids_to_tokens(token_id) == processor.image_token

@@ -1,0 +1,12 @@
+{
+  "archive": "E:\\hg20261019\\dist\\session021-kimi-portable-replay002.zip",
+  "sha256": "f0ebf0d3cbd9e63cd60f8eb621f16cf15cc6a1163b4adcfe4f1c113c2ca096d9",
+  "bytes": 5100412,
+  "manifest_files": 271,
+  "CRC_passed": true,
+  "all_manifest_hashes_verified": true,
+  "verified_result_matches_authenticated_remote_receipt": true,
+  "root_git_commit": "031051314c2a79ee76a9fbd57d363ba11244719b",
+  "all_root_phases_zero": true,
+  "source_files_modified": false
+}

@@ -3,3 +3,5 @@ __pycache__/
 /verify-ocrbench-*/
 /tasks/*/runtime/
 /evidence/math-sdpa-live/
+/.venv-client/
+/bench/
