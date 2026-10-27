@@ -12,8 +12,8 @@
 
 - [固定发布方模型卡](https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct/blob/398eede0903cd983a2bfa0cc634e9ac1d843f375/README.md)
 - [超算模型页面](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Kimi-VL-A3B-Instruct)
-- [光合固定项目](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-session021)，完整commit见外部提交清单。
-- [GitHub 私有备份](https://github.com/zhl-2022/guoxin-kimi-vl-bw-vllm)，本版分支 `codex/submission-ready021`；以外部清单的完整 commit 为固定版本。
+- [光合固定项目](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session021)，完整commit见外部提交清单。
+- [GitHub 私有备份](https://github.com/zhl-2022/guoxin-kimi-vl-bw-vllm)，本版分支 `codex/submission-ready021-envimage`；以外部清单的完整 commit 为固定版本。
 
 | 根入口 | 用途 |
 | --- | --- |
@@ -43,9 +43,9 @@
 
 镜像：[guoxin-kimi-vl-bw021](https://www.scnet.cn/ui/console/index.html#/image-management/detail/2115214831904727041)，固定tag `dtk2604-vllm018-kimi-final-20261028`；在华中一区A区Notebook选择该镜像版本。平台详情链接是可选用的镜像入口，不虚构公开Docker registry地址。
 
-实际平台插件为 `vllm_hcu`。Torch SDPA 只启用 math 后端，未使用 flash SDPA。模型启动前按 `tasks/kimi-vl-bw-vllm/model-lock.json` 校验全量权重、配置与已审阅的发布方 Python 源码。原生框架安装目录没有改动。镜像内最终代码位于 `/opt/guoxin-kimi021/final-project`，进入该目录后执行第四章命令；早期 `/opt/guoxin-kimi021/project` 是封装前快照，只用于追溯。
+实际平台插件为 `vllm_hcu`。Torch SDPA 只启用 math 后端，未使用 flash SDPA。模型启动前按 `tasks/kimi-vl-bw-vllm/model-lock.json` 校验全量权重、配置与已审阅的发布方 Python 源码。原生框架安装目录没有改动。镜像内最终代码位于 `/opt/guoxin-kimi021/final-project-v3`，进入该目录后执行第四章命令；早期 `/opt/guoxin-kimi021/project` 是封装前快照，只用于追溯。
 
-镜像预置资产位于 `/opt/guoxin-kimi021/`，独立客户端为 `/opt/guoxin/kimi-client021/bin/python`。`/root/private_data` 属于挂载数据盘，不作为系统盘镜像包含资产的证明。根 `run.sh` 在标准检查点目录不存在时，把镜像内原字节检查点复制到已验证的标准路径；原有目录保留，并由原生启动器执行完整哈希校验，不使用模型软链接。
+最终镜像仅封装本题的环境、完整OCR数据、独立客户端和代码，不将约32.82GB的Kimi检查点打入新镜像层。平台明确检查单层15GB，早期模型内置方案触发33.7GB拦截，已按规则改为数据盘方案；初版tag只作历史记录。数据位于 `/opt/guoxin-kimi021/data`，客户端为 `/opt/guoxin/kimi-client021/bin/python`。`/root/private_data` 是持久化挂载盘。根 `run.sh` 复用标准目录 `/root/private_data/guoxin-candidates/models/kimi-vl` 的文件，再由原生启动器执行完整SHA256校验；目录缺失或文件不完整时，先调用固定ModelScope下载器取得同一revision的20个精确文件，逐个核对不可变URL、大小和SHA256，之后才启动GPU服务。已有不同终态文件会被拒绝覆盖，不使用软链接、不换检查点。
 
 ## 3. 适配优化方案
 
@@ -59,7 +59,7 @@
 
 ## 4. 服务启动脚本
 
-镜像内执行以下顺序。脚本均从仓库根目录运行；镜像外须先准备固定检查点和完整数据。
+镜像内进入 `/opt/guoxin-kimi021/final-project-v3` 后执行以下顺序。脚本均从仓库根目录运行；同账号数据盘已有检查点时直接复用，新账号缺失时先下载固定文件。离线环境须预先提供同一完整检查点，不会回退到其他模型。
 
 ```bash
 source env.sh
@@ -93,7 +93,7 @@ python3 scripts/prepare_bench_client021.py --output .venv-client
 
 本轮 smoke 覆盖健康与模型身份、单图、多图、多轮及图像 SSE。完整 OCR1000 另有 1000 个唯一输入 ID、1000 个唯一原始响应 ID、1000 个重建请求哈希与图片哈希全部相符；全部 `finish_reason=stop`，零失败、零 length 截断。原始回复文本与评分文本逐条一致，重新评分仍为 861。
 
-封装版相对实测固定入口只新增镜像模型恢复、数据目录回退、实际性能客户端 hook 和两阶段性能编排。模型 driver、math hook、准确率 evaluator、数据和评分器保持实测原字节。封装前端的验证范围见第三章；尚未把另一台全新 Notebook 的整套新镜像复跑写成已完成。
+封装版相对实测固定入口只新增数据盘检查点复用及固定文件下载、数据目录回退、实际性能客户端 hook 和两阶段性能编排。检查点准备的缺失文件计划及固定20文件来源已做CPU验证，没有把另一次完整权重下载或新GPU复跑写成已完成。模型 driver、math hook、准确率 evaluator、数据和评分器保持实测原字节。封装前端的验证范围见第三章；尚未把另一台全新 Notebook 的整套新镜像复跑写成已完成。
 
 ## 6. 精度测评
 
@@ -136,7 +136,7 @@ Prefix cache 关闭，多模态 processor cache 保留框架默认启用，第�
 
 - 数值达标、根入口实测、材料封装、镜像新实例复现、主办方验收与表单提交分别记录。`submitted=false` 只有真实成功页面或提交记录才能改变。
 - 本仓库使用已验证 32K、四序列配置，不扩称支持全部发布方长上下文或任意图像输入；合成性能专用保留 token 策略必须随数据披露。
-- 系统盘镜像中的模型、完整数据和客户端必须在保存镜像前核对；外部提交清单保存真实镜像 ID、固定代码版本、最终八章报告与哈希，不把创建中写成已成功。
+- 保存镜像前核对代码、完整数据、客户端与实际层大小；本题检查点存数据盘或按固定来源下载。平台15GB门禁通过后才执行保存，外部提交清单保存真实镜像ID、固定代码版本、最终八章报告与哈希，不把创建中写成已成功。
 - 旧清单如 `publisher016-manifest.json` 只对应其历史生成时点。当前交付以 `publisher-delivery-manifest021.json` 的范围、固定提交、原件 ZIP 和真实运行记录为准。
 - 失败诊断包明确省略多 GB core；原实例及本地仍保留完整原始失败归档，不向仓库上传进程内存镜像。
 - 仓库、镜像默认私有，跨账号评审访问尚未独立验证；按赛事实际要求提供相应可访问链接，不擅自公开账号资产。

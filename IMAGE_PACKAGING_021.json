@@ -1,0 +1,16 @@
+{
+  "UTC": "2026-10-27T23:32:30.718597+00:00",
+  "status": "environment_image_finalization_pending",
+  "platform_actual_guard": "33.7GB layer exceeds15GB; final save was blocked and cancelled",
+  "initial_tag": "dtk2604-vllm018-kimi-20261028",
+  "initial_tag_final_submission_qualified": false,
+  "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "model_canonical_path": "/root/private_data/guoxin-candidates/models/kimi-vl",
+  "own_duplicate_move_target": "/root/private_data/guoxin-session021/image-model-copy001",
+  "canonical_model_moved_or_replaced": false,
+  "final_kimi_weights_baked": false,
+  "runtime_driver_and_evaluator_unchanged": true,
+  "supersedes_baked_model_packaging_state_in_historical_receipts": true,
+  "public_platform_rule": "https://www.scnet.cn/help/docs/mainsite/ai/notebook/function-introduction/",
+  "submitted": false
+}

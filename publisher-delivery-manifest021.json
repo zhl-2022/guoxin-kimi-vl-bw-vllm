@@ -1,6 +1,6 @@
 {
-  "UTC": "2026-10-27T22:56:05.252188+00:00",
-  "scope": "Every frozen021 Git payload except this manifest; root measured artifacts included; historical manifests keep earlier scope",
+  "UTC": "2026-10-27T23:35:39.790279+00:00",
+  "scope": "Every final environment-image source payload except this manifest; historical model-baked receipts explicitly superseded by IMAGE_PACKAGING_021.json",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,13 @@
     },
     {
       "path": "DELIVERY_STATUS_021.json",
-      "bytes": 1368,
-      "sha256": "f246826affcb8ee29fa9f260c4ce94daee58d11dc6efc37bf345d9885b3a9043"
+      "bytes": 1659,
+      "sha256": "3feff985c02dd1a588ed029d324c1dcbf0f0b3b3fe157ea6ec96a144c547a8de"
+    },
+    {
+      "path": "IMAGE_PACKAGING_021.json",
+      "bytes": 864,
+      "sha256": "4c0007696e66069be61c0d9ff09b806f7ca2fdcd21869d40aa0606ed01d05c33"
     },
     {
       "path": "PUBLISHER_VERIFICATION_011.md",
@@ -29,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14287,
-      "sha256": "db692538f484713ed354a981014f28d699541ef48b9ce5d7d6509a5e9523cd23"
+      "bytes": 15149,
+      "sha256": "65e17b2dfeec04191635e4d4325e2994f5d2066cd669cbb6509d36d34b99ffd7"
     },
     {
       "path": "README_origin.md",
@@ -1203,6 +1208,11 @@
       "sha256": "64ffbb2a64d05d41699fc8d7ede02776a8f2f983c5937fe09f56eaede54bbbf3"
     },
     {
+      "path": "publisher021/model-preparation-control-checks.json",
+      "bytes": 478,
+      "sha256": "2ece8ba123765171627786e0b1b3f9f8d1db9f586ff8165b37bef0f953315ce7"
+    },
+    {
       "path": "publisher021/performance-summary.md",
       "bytes": 6085,
       "sha256": "2d1031409bfee4cd59a30068ff42f79429261a5285607d7b20eb006fee3b4fcc"
@@ -1329,8 +1339,8 @@
     },
     {
       "path": "scripts/prepare_image_model021.py",
-      "bytes": 1785,
-      "sha256": "2da3d9f6a0164451f2c2bf392c2c8cb447a77cb08023946fd9212ba4a4d92f36"
+      "bytes": 2526,
+      "sha256": "a6fc949260d7c3580d75a8b352d408e231bfd799ac04ac4432c02785aa205b2d"
     },
     {
       "path": "scripts/prepare_ocrbench016.py",
@@ -1513,7 +1523,7 @@
       "sha256": "008b23d7fdbf9dd7c47a98ac7b0a828fe7d67d246ed76519b9da10d83a51d655"
     }
   ],
-  "payload_count": 302,
-  "root_originals": "fixed031 root full1000score861; native12/608 raw files and compact round1/round2 views",
+  "payload_count": 304,
+  "weight_distribution": "Persistent canonical model or20 exact official pinned files; no Kimi weights in new image layer",
   "submitted": false
 }

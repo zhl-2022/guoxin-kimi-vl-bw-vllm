@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-10-27T23:33:10.059026+00:00",
+  "missing_checkpoint_plan_verified": true,
+  "exact_official_source_files": 20,
+  "source_set_matches_frozen_model_lock": true,
+  "out_of_scope_paths_rejected": 3,
+  "network_downloads": 0,
+  "GPU_requests": 0,
+  "model_service_launched": false,
+  "helper_sha256": "a6fc949260d7c3580d75a8b352d408e231bfd799ac04ac4432c02785aa205b2d",
+  "scope": "CPU plans and path guards; does not claim a second full model download or GPU run"
+}

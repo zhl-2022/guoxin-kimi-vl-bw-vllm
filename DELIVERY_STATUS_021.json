@@ -22,8 +22,13 @@
   "submitted": false,
   "root_template_artifacts_present": true,
   "root_originals_preserved": true,
-  "sourcefind_project": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-session021",
+  "sourcefind_project": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session021",
   "image_id": "2115214831904727041",
   "image_final_tag": "dtk2604-vllm018-kimi-final-20261028",
-  "materialization_status": "Final external receipt verifies successful save/import; this file fixes the source and intended artifact identifiers"
+  "materialization_status": "Final external receipt verifies successful save/import; this file fixes the source and intended artifact identifiers",
+  "kimi_model_weights_baked": false,
+  "weight_distribution": "Persistent canonical path or exact pinned official ModelScope files before GPU launch",
+  "image_code_path": "/opt/guoxin-kimi021/final-project-v3",
+  "image_layer_limit_GB": 15,
+  "initial_baked_model_snapshot_qualified_for_final_submission": false
 }
