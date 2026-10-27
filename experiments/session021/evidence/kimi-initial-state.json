@@ -1,0 +1,269 @@
+{
+  "UTC": "2026-10-27T18:30:05.406564+00:00",
+  "coordinator": {
+    "started_utc": "2026-10-27T18:29:16.736940+00:00",
+    "controller_pid": 46904,
+    "source_sha256": "c2465d268b42d7edc08bceb2803bfa3c95588d84aa75e13aaa69d5340a289eca",
+    "state": "remaining_two_native_cases",
+    "owned_identities": {
+      "38105": {
+        "pid": 38105,
+        "state": "S",
+        "ppid": 1,
+        "token": "313953152",
+        "argv": [
+          "python3",
+          "-u",
+          "/root/run_kimi_performance016e.py"
+        ]
+      },
+      "43060": {
+        "pid": 43060,
+        "state": "S",
+        "ppid": 1,
+        "token": "314311310",
+        "argv": [
+          "python3",
+          "-u",
+          "/root/finalize_kimi_replay017.py"
+        ]
+      },
+      "43964": {
+        "pid": 43964,
+        "state": "S",
+        "ppid": 1,
+        "token": "314578899",
+        "argv": [
+          "/usr/bin/python3",
+          "-u",
+          "/root/private_data/guoxin-session017/refspatial-stage001/tools/run_refspatial_queue017.py"
+        ]
+      },
+      "45258": {
+        "pid": 45258,
+        "state": "S",
+        "ppid": 1,
+        "token": "314793785",
+        "argv": [
+          "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+          "-u",
+          "/root/private_data/guoxin-session019/auk-zhhard-stage001/tools/run_auk_zhhard_queue019.py"
+        ]
+      }
+    },
+    "wrapper_identity": {
+      "pid": 40083,
+      "state": "S",
+      "ppid": 38105,
+      "token": "313970720",
+      "argv": [
+        "/usr/bin/python3",
+        "/root/private_data/guoxin-session016/kimi-performance005/t02_sglang_bench-executed.py",
+        "--run",
+        "--client-python",
+        "/root/private_data/sglang-client-004c/bin/python",
+        "--allow-client-device-discovery",
+        "--model-path",
+        "/root/private_data/guoxin-candidates/models/kimi-vl",
+        "--served-model-name",
+        "/root/private_data/guoxin-candidates/models/kimi-vl",
+        "--port",
+        "30129",
+        "--runtime-dir",
+        "/root/private_data/guoxin-session016/kimi-performance005/project/tasks/kimi-vl-bw-vllm/runtime",
+        "--expected-run-id",
+        "ffe83348d17a4b16b69a450d39a34bea",
+        "--output-dir",
+        "/root/private_data/guoxin-session016/kimi-performance005/performance",
+        "--timeout-seconds",
+        "5400",
+        "--total-timeout-seconds",
+        "20000"
+      ]
+    },
+    "phases": {
+      "old-ten-analysis": 1
+    },
+    "robo_held": true,
+    "robo_released": false,
+    "old_raw_retained": true,
+    "instance_shutdown_requested": false,
+    "submitted": false,
+    "reason": "Observed ~98min/case exceeds90min allocation; replace only two unfinished cases with finite150min budget",
+    "Auk_waiter_unchanged": true,
+    "B_instance_untouched": true,
+    "interruption_utc": "2026-10-27T18:29:17.764211+00:00",
+    "current_child": {
+      "pid": 46978,
+      "state": "R",
+      "ppid": 46904,
+      "token": "315316144",
+      "argv": [
+        "python3",
+        "-u",
+        "/root/run_kimi_performance021.py"
+      ]
+    }
+  },
+  "processes": {
+    "38105": null,
+    "40083": null,
+    "43060": null,
+    "43964": {
+      "state": "T",
+      "argv": "/usr/bin/python3 -u /root/private_data/guoxin-session017/refspatial-stage001/tools/run_refspatial_queue017.py "
+    },
+    "45258": {
+      "state": "S",
+      "argv": "/root/private_data/guoxin-auk-port006/venv002/bin/python -u /root/private_data/guoxin-session019/auk-zhhard-stage001/tools/run_auk_zhhard_queue019.py "
+    },
+    "46904": {
+      "state": "S",
+      "argv": "python3 -u /root/reschedule_kimi021.py "
+    }
+  },
+  "old_final": {
+    "started_utc": "2026-10-27T14:42:41.489234+00:00",
+    "run_id": "ffe83348d17a4b16b69a450d39a34bea",
+    "source_sha256": "52118c539a0a1428bb20c2d9ca8ef9b6bcafd2ada77d7233f49d89f8eb9445c7",
+    "driver_sha256": "11985f3c844f03b320f674309ea19060e1bc2f1ac93619c031092d574af22dcc",
+    "wrapper_sha256": "eab500bbc9bd30208a6020d3dae8cef2df5a247e1391066c5303025fd6cef83a",
+    "accuracy_run_final_sha256": "859177cc52e7836ade51b467f8af5817412268a336b6ca83eac10c699c87bb28",
+    "accuracy_score": 861,
+    "same_model_processor_math_SDPA_context_and_sequences": true,
+    "served_alias_only_changed_for_client": true,
+    "client_only_processor_image_token_id_compatibility": true,
+    "synthetic_random_text_domain": "ordinary vocabulary; session and multimodal sentinels excluded",
+    "synthetic_output_bad_words": [
+      "<|media_pad|>",
+      "<|placeholder|>",
+      "<|media_start|>",
+      "<|media_end|>"
+    ],
+    "owned_process_core_dumps_disabled": true,
+    "compat_source_sha256": "8dc94af68fe8e5d2690c14beedb3ccba394bd62b88f2744e0520cf13635a3c59",
+    "complete": false,
+    "phases": {
+      "launch": 0,
+      "benchmark": 1,
+      "stop": 0
+    },
+    "submitted": false,
+    "instance_shutdown_requested": false,
+    "performance_status": "incomplete_or_failed",
+    "rows": [
+      {
+        "name": "round1_4096_1024_c1",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 594.186152,
+        "result": null
+      },
+      {
+        "name": "round2_4096_1024_c1",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 590.638239,
+        "result": null
+      },
+      {
+        "name": "round1_4096_1024_c8",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 347.858115,
+        "result": null
+      },
+      {
+        "name": "round2_4096_1024_c8",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 338.989474,
+        "result": null
+      },
+      {
+        "name": "round1_4096_1024_c64",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 2541.494164,
+        "result": null
+      },
+      {
+        "name": "round2_4096_1024_c64",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 2539.035043,
+        "result": null
+      },
+      {
+        "name": "round1_16384_1024_c1",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 689.080753,
+        "result": null
+      },
+      {
+        "name": "round2_16384_1024_c1",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 683.859863,
+        "result": null
+      },
+      {
+        "name": "round1_16384_1024_c8",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 788.727658,
+        "result": null
+      },
+      {
+        "name": "round2_16384_1024_c8",
+        "status": "invalid_native_result",
+        "exit_code": 0,
+        "client_wall_seconds": 784.919829,
+        "result": null
+      },
+      {
+        "name": "round1_16384_1024_c64",
+        "status": "interrupted",
+        "exit_code": 130,
+        "client_wall_seconds": 3485.93223,
+        "result": null
+      },
+      {
+        "name": "round2_16384_1024_c64",
+        "status": "not_attempted_interrupted",
+        "exit_code": null,
+        "client_wall_seconds": null,
+        "result": null
+      }
+    ],
+    "owned_service_stopped": true,
+    "ended_utc": "2026-10-27T18:29:38.318565+00:00"
+  },
+  "new_start": {
+    "started_utc": "2026-10-27T18:29:50.540470+00:00",
+    "run_id": "96fe8634f55c497b838e77b1be01f917",
+    "source_sha256": "984c3cf889afae24639930c20db4f71309a0c01dd223c9f5aee5577b842f6593",
+    "driver_sha256": "11985f3c844f03b320f674309ea19060e1bc2f1ac93619c031092d574af22dcc",
+    "wrapper_sha256": "eab500bbc9bd30208a6020d3dae8cef2df5a247e1391066c5303025fd6cef83a",
+    "accuracy_run_final_sha256": "859177cc52e7836ade51b467f8af5817412268a336b6ca83eac10c699c87bb28",
+    "accuracy_score": 861,
+    "same_model_processor_math_SDPA_context_and_sequences": true,
+    "served_alias_only_changed_for_client": true,
+    "client_only_processor_image_token_id_compatibility": true,
+    "synthetic_random_text_domain": "ordinary vocabulary; session and multimodal sentinels excluded",
+    "synthetic_output_bad_words": [
+      "<|media_pad|>",
+      "<|placeholder|>",
+      "<|media_start|>",
+      "<|media_end|>"
+    ],
+    "owned_process_core_dumps_disabled": true,
+    "compat_source_sha256": "8dc94af68fe8e5d2690c14beedb3ccba394bd62b88f2744e0520cf13635a3c59",
+    "complete": false,
+    "phases": {},
+    "submitted": false,
+    "instance_shutdown_requested": false
+  },
+  "log_tail": ""
+}

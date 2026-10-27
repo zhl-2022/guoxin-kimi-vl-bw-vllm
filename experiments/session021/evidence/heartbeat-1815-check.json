@@ -1,0 +1,17 @@
+{
+  "UTC": "2026-10-27T18:34:01.320834+00:00",
+  "automation_id": "automation",
+  "form_state": "暂不支持填写",
+  "quota_state": "待开通",
+  "actual_cards": 2,
+  "new_project_complete": false,
+  "submitted_count": 0,
+  "technical_ready_count": 2,
+  "meaningful_change": "Proactive bounded continuation for two under-budgeted Kimi native cases; old10 preserved and locally audited",
+  "controller_pid": 46904,
+  "PF006_child_pid": 46978,
+  "Robo43964_state": "intentional_scheduler_hold_T",
+  "AuK45258_state": "original_waiter_unchanged",
+  "B_unchanged": true,
+  "decision": "NOTIFY"
+}

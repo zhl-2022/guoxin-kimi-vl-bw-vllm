@@ -1,0 +1,154 @@
+{
+  "scope": "Private candidate continuation, not full performance completion or submission",
+  "frozen_root_commit": "031051314c2a79ee76a9fbd57d363ba11244719b",
+  "private_only": true,
+  "source_files": [
+    {
+      "path": "README.md",
+      "bytes": 5516,
+      "sha256": "3341f1bc91e44aeb567bcbce9379dcfde164894f48f82195255a4cc39c79dd1b"
+    },
+    {
+      "path": "audit/analysis-manifest.json",
+      "bytes": 5181,
+      "sha256": "846298c1cd7407f3fb4496b511ac6ca22b98b0be2674bc5aca0a6983a33e91d2"
+    },
+    {
+      "path": "audit/analysis.json",
+      "bytes": 46615,
+      "sha256": "c7a8b54da74594a18c2c3a69c84375f3096e9fb1db5835c7f4b8ef6843a2b162"
+    },
+    {
+      "path": "audit/normalized/round1_16384_1024_c1.json",
+      "bytes": 234298,
+      "sha256": "3ad78cfb5e210ccf77f21d3bc0e4a4c4f718559ac8419037b8cf6c6f0a317910"
+    },
+    {
+      "path": "audit/normalized/round1_16384_1024_c8.json",
+      "bytes": 472387,
+      "sha256": "9d25556394fc8a27784a32f9d24cb420e5c4c1fb632ee70578c4387ea27e7e43"
+    },
+    {
+      "path": "audit/normalized/round1_4096_1024_c1.json",
+      "bytes": 235945,
+      "sha256": "25462cbfb8764a80f0641293dd90e5a8c8db0998fb9c54aca664b20c5f11d6a3"
+    },
+    {
+      "path": "audit/normalized/round1_4096_1024_c64.json",
+      "bytes": 3725836,
+      "sha256": "ffc8bdd13bf867d35cf0305126d48fba9662f5eba08458038b6a779c6eeb8189"
+    },
+    {
+      "path": "audit/normalized/round1_4096_1024_c8.json",
+      "bytes": 470355,
+      "sha256": "2b379fb4fa4dcc015e065bca94a12176ac77cfaa1fe678c9aba3b9e5c28cf51c"
+    },
+    {
+      "path": "audit/normalized/round2_16384_1024_c1.json",
+      "bytes": 234186,
+      "sha256": "b9b7caae4937ac5021f82f0c585a9e24d3480fab06e4aa37682c80ef2f7d1388"
+    },
+    {
+      "path": "audit/normalized/round2_16384_1024_c8.json",
+      "bytes": 472388,
+      "sha256": "9a378739a99b97286c4b6d941be33167fccb7dc8af84e3109462c9381ee0a7d8"
+    },
+    {
+      "path": "audit/normalized/round2_4096_1024_c1.json",
+      "bytes": 235978,
+      "sha256": "b5d9e68faf5f3f3aaf3e7e2dafa074f8ffea0679aa782cd1501458aad41e1900"
+    },
+    {
+      "path": "audit/normalized/round2_4096_1024_c64.json",
+      "bytes": 3725727,
+      "sha256": "416937cf7d2482ec631d590e44045df42af7e88f303ddfe4f0b99dc9ee74eae9"
+    },
+    {
+      "path": "audit/normalized/round2_4096_1024_c8.json",
+      "bytes": 470447,
+      "sha256": "502498003268f9c84a67cbe02f7a9db99f938d48955e36df64a4ebb11278070c"
+    },
+    {
+      "path": "audit/profile005-proof.json",
+      "bytes": 1478,
+      "sha256": "4e923a63830b73d573e6117fe13feb5248dbe9517c7616d6475241e67ea6468b"
+    },
+    {
+      "path": "audit/source-run.json",
+      "bytes": 41542,
+      "sha256": "854a4b56aa37890cf4f7362ce0743a29d3c20f4ae5fcd8093c7c0fe50db970ca"
+    },
+    {
+      "path": "audit/summary.md",
+      "bytes": 2230,
+      "sha256": "bd4c01f3448eeaa14527b413e0e5959ad40b281e611a33f1da0ddcd3b4738cad"
+    },
+    {
+      "path": "evidence/continuation-preflight.json",
+      "bytes": 1122,
+      "sha256": "dacee63eff59e1ee1382ebf28c8c8e132b7d20e4ef3a1caaef8e839b015ac850"
+    },
+    {
+      "path": "evidence/heartbeat-1815-check.json",
+      "bytes": 613,
+      "sha256": "c7c93df8dc8a48bd0f39c7c22941263c9626d885258bd61b236e15b69d71918c"
+    },
+    {
+      "path": "evidence/kimi-config-comparison.json",
+      "bytes": 2805,
+      "sha256": "c301b349755eb49cd530540cb5a807bc7e0175e87178a48e3ac4c52820f32454"
+    },
+    {
+      "path": "evidence/kimi-continuation-launch.json",
+      "bytes": 870,
+      "sha256": "7eba095f22a548329918554551e16045f0958556ca59d0c85a728219608cab8b"
+    },
+    {
+      "path": "evidence/kimi-initial-state.json",
+      "bytes": 8562,
+      "sha256": "54c901cea69037eb7b4c1969bad8f47f2153de82cbb307eb2193117df92d642f"
+    },
+    {
+      "path": "evidence/kimi-ready-observation.json",
+      "bytes": 4797,
+      "sha256": "686a80fc541ec3e0870b9829a6f11b8eb8fde06eecaba02442a36b03f9933a2a"
+    },
+    {
+      "path": "evidence/pf005-archive-audit.json",
+      "bytes": 383,
+      "sha256": "a5aabaf1de72aa84f31e181f7d113fa262a6f9582c454e168eb58b88a716aeda"
+    },
+    {
+      "path": "originals/session016-kimi-performance005.zip",
+      "bytes": 3827173,
+      "sha256": "5fa295e81c3d6f4af0af3e42f8d005575c634a5ba65065c5bc0259862ae83d38"
+    },
+    {
+      "path": "tools/combine_kimi_native021.py",
+      "bytes": 5000,
+      "sha256": "ece6c506223d11a134ce1b920180d686135b4d027b386c76c7e8f7d3bb9a806b"
+    },
+    {
+      "path": "tools/finalize_kimi_replay021.py",
+      "bytes": 6195,
+      "sha256": "b2d171f0f8c3ef791c667695b0ce5a1ff610da091b55cd2a026fc81673e6ff40"
+    },
+    {
+      "path": "tools/prepare_kimi_resume021.py",
+      "bytes": 4257,
+      "sha256": "768aad5bf461298b4353760e9138d58e82d15c4c6ccf13fbcb0ae93d6b283d13"
+    },
+    {
+      "path": "tools/reschedule_kimi021.py",
+      "bytes": 10192,
+      "sha256": "c2465d268b42d7edc08bceb2803bfa3c95588d84aa75e13aaa69d5340a289eca"
+    },
+    {
+      "path": "tools/run_kimi_performance021.py",
+      "bytes": 10242,
+      "sha256": "984c3cf889afae24639930c20db4f71309a0c01dd223c9f5aee5577b842f6593"
+    }
+  ],
+  "full_matrix_complete": false,
+  "submitted": false
+}

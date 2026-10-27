@@ -1,0 +1,31 @@
+{
+  "profile": "Kimi performance005",
+  "entry_sha256": "e0923f4d71233dd7d43e1070024f4b18aa6ff234ef872bf73dc5363484b8e819",
+  "base_analyzer_sha256": "d73ecca728b47b8f58fed407f13c9a496e73ba8e165ee08b740afd9065efdaa8",
+  "original_wrapper_sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000",
+  "executed_wrapper_sha256": "eab500bbc9bd30208a6020d3dae8cef2df5a247e1391066c5303025fd6cef83a",
+  "client_compat_source_sha256": "8dc94af68fe8e5d2690c14beedb3ccba394bd62b88f2744e0520cf13635a3c59",
+  "wrapper_delta": "Exactly one extra-request-body literal adds the four declared bad_words; no other byte change",
+  "row_contract_view": "Check the four bad_words exactly, then apply the original unchanged-field contract on an in-memory view",
+  "originals_modified": false,
+  "model_or_gpu_requests": 0,
+  "random_text_domain": "ordinary vocabulary; session and multimodal sentinels excluded",
+  "output_domain": [
+    "<|media_pad|>",
+    "<|placeholder|>",
+    "<|media_start|>",
+    "<|media_end|>"
+  ],
+  "summary": {
+    "eligible_client_reports": 10,
+    "selected_reports_complete": false,
+    "full_two_round_matrix_planned": true,
+    "full_two_round_matrix_complete": false,
+    "eligible_client_reported_requests": 352,
+    "eligible_client_reported_output_tokens": 360448,
+    "round2_eligible_reports": 5,
+    "official_accuracy_verified": false,
+    "official_performance_accepted": false
+  },
+  "submitted": false
+}

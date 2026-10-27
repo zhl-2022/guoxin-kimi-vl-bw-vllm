@@ -1,0 +1,161 @@
+{
+  "UTC": "2026-10-27T18:31:47.132490+00:00",
+  "coordinator": {
+    "started_utc": "2026-10-27T18:29:16.736940+00:00",
+    "controller_pid": 46904,
+    "source_sha256": "c2465d268b42d7edc08bceb2803bfa3c95588d84aa75e13aaa69d5340a289eca",
+    "state": "remaining_two_native_cases",
+    "owned_identities": {
+      "38105": {
+        "pid": 38105,
+        "state": "S",
+        "ppid": 1,
+        "token": "313953152",
+        "argv": [
+          "python3",
+          "-u",
+          "/root/run_kimi_performance016e.py"
+        ]
+      },
+      "43060": {
+        "pid": 43060,
+        "state": "S",
+        "ppid": 1,
+        "token": "314311310",
+        "argv": [
+          "python3",
+          "-u",
+          "/root/finalize_kimi_replay017.py"
+        ]
+      },
+      "43964": {
+        "pid": 43964,
+        "state": "S",
+        "ppid": 1,
+        "token": "314578899",
+        "argv": [
+          "/usr/bin/python3",
+          "-u",
+          "/root/private_data/guoxin-session017/refspatial-stage001/tools/run_refspatial_queue017.py"
+        ]
+      },
+      "45258": {
+        "pid": 45258,
+        "state": "S",
+        "ppid": 1,
+        "token": "314793785",
+        "argv": [
+          "/root/private_data/guoxin-auk-port006/venv002/bin/python",
+          "-u",
+          "/root/private_data/guoxin-session019/auk-zhhard-stage001/tools/run_auk_zhhard_queue019.py"
+        ]
+      }
+    },
+    "wrapper_identity": {
+      "pid": 40083,
+      "state": "S",
+      "ppid": 38105,
+      "token": "313970720",
+      "argv": [
+        "/usr/bin/python3",
+        "/root/private_data/guoxin-session016/kimi-performance005/t02_sglang_bench-executed.py",
+        "--run",
+        "--client-python",
+        "/root/private_data/sglang-client-004c/bin/python",
+        "--allow-client-device-discovery",
+        "--model-path",
+        "/root/private_data/guoxin-candidates/models/kimi-vl",
+        "--served-model-name",
+        "/root/private_data/guoxin-candidates/models/kimi-vl",
+        "--port",
+        "30129",
+        "--runtime-dir",
+        "/root/private_data/guoxin-session016/kimi-performance005/project/tasks/kimi-vl-bw-vllm/runtime",
+        "--expected-run-id",
+        "ffe83348d17a4b16b69a450d39a34bea",
+        "--output-dir",
+        "/root/private_data/guoxin-session016/kimi-performance005/performance",
+        "--timeout-seconds",
+        "5400",
+        "--total-timeout-seconds",
+        "20000"
+      ]
+    },
+    "phases": {
+      "old-ten-analysis": 1
+    },
+    "robo_held": true,
+    "robo_released": false,
+    "old_raw_retained": true,
+    "instance_shutdown_requested": false,
+    "submitted": false,
+    "reason": "Observed ~98min/case exceeds90min allocation; replace only two unfinished cases with finite150min budget",
+    "Auk_waiter_unchanged": true,
+    "B_instance_untouched": true,
+    "interruption_utc": "2026-10-27T18:29:17.764211+00:00",
+    "current_child": {
+      "pid": 46978,
+      "state": "R",
+      "ppid": 46904,
+      "token": "315316144",
+      "argv": [
+        "python3",
+        "-u",
+        "/root/run_kimi_performance021.py"
+      ]
+    }
+  },
+  "new_runtime": {
+    "run_id": "96fe8634f55c497b838e77b1be01f917",
+    "status": "starting",
+    "created_utc": "2026-10-27T18:30:53.736350+00:00",
+    "supervisor_pid": 47049,
+    "supervisor_token": "315322893",
+    "config_path": "/root/private_data/guoxin-session021/kimi-performance006/project/tasks/kimi-vl-bw-vllm/runtime/config-96fe8634f55c497b838e77b1be01f917.json",
+    "url": "http://127.0.0.1:30129",
+    "max_runtime_seconds": 21600,
+    "framework": "vllm",
+    "precision": "bf16",
+    "command": [
+      "/usr/bin/python3",
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--model",
+      "/root/private_data/guoxin-candidates/models/kimi-vl",
+      "--tokenizer",
+      "/root/private_data/guoxin-candidates/models/kimi-vl",
+      "--served-model-name",
+      "/root/private_data/guoxin-candidates/models/kimi-vl",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "30129",
+      "--dtype",
+      "bfloat16",
+      "--tensor-parallel-size",
+      "1",
+      "--max-model-len",
+      "32768",
+      "--gpu-memory-utilization",
+      "0.8",
+      "--max-num-seqs",
+      "4",
+      "--max-num-batched-tokens",
+      "32768",
+      "--enforce-eager",
+      "--no-enable-chunked-prefill",
+      "--no-enable-prefix-caching",
+      "--trust-remote-code",
+      "--limit-mm-per-prompt",
+      "{\"image\":{\"count\":5,\"width\":1024,\"height\":1024},\"video\":0}"
+    ],
+    "server_pid": 47113,
+    "server_token": "315323145"
+  },
+  "new_benchmark_started": false,
+  "old_archive": {
+    "path": "/root/session016-kimi-performance005.zip",
+    "bytes": 3827173,
+    "sha256": "5fa295e81c3d6f4af0af3e42f8d005575c634a5ba65065c5bc0259862ae83d38"
+  }
+}

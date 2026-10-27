@@ -1,0 +1,31 @@
+{
+  "UTC": "2026-10-27T18:28:32.916680+00:00",
+  "ast_parsed": 4,
+  "checks": {
+    "complete_disjoint_matrix": true,
+    "missing_remaining_rejected": true,
+    "duplicate_remaining_rejected": true,
+    "failed_process_rejected": true,
+    "old_resampled_row_rejected": true,
+    "missing_provenance_rejected": true
+  },
+  "files": [
+    {
+      "path": "E:\\hg20261019\\scripts\\submission013\\combine_kimi_native021.py",
+      "sha256": "ece6c506223d11a134ce1b920180d686135b4d027b386c76c7e8f7d3bb9a806b"
+    },
+    {
+      "path": "E:\\hg20261019\\scripts\\submission013\\reschedule_kimi021.py",
+      "sha256": "a493a3c1e78cdbbebb29bd1733b9ffecaa0cc1e030d0938f15702f2f8fd6a87d"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session021\\prepared\\finalize_kimi_replay021.py",
+      "sha256": "b2d171f0f8c3ef791c667695b0ce5a1ff610da091b55cd2a026fc81673e6ff40"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session021\\prepared\\run_kimi_performance021.py",
+      "sha256": "984c3cf889afae24639930c20db4f71309a0c01dd223c9f5aee5577b842f6593"
+    }
+  ],
+  "GPU_requests": 0
+}
