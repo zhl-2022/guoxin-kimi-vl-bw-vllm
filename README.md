@@ -1,6 +1,6 @@
 # Kimi-VL-A3B-Instruct on BW + vLLM：完整 OCRBench 与原生性能交付
 
-本版保留完整 OCRBench、12 组原生性能报告、固定 Git 根入口复跑和独立审计。当前配置 OCRBench 为 861/1000，超过 847 门槛；原生性能共 608 条测量请求。正式登记表提交和主办方验收没有发生。最终镜像地址、光合固定提交和本报告附件哈希由外部提交清单记录，避免镜像内容与镜像自身地址循环引用。
+本版保留完整 OCRBench、12 组原生性能报告、固定 Git 根入口复跑和独立审计。当前配置 OCRBench 为 861/1000，超过 847 门槛；原生性能共 608 条测量请求。正式登记表提交和主办方验收没有发生。镜像为下列平台私有镜像及固定tag；光合固定commit和报告附件哈希由最终提交清单记录。
 
 本文件替代 session016 草稿的当前状态；旧失败原件、旧阶段报告和历史清单继续保留。
 
@@ -12,6 +12,7 @@
 
 - [固定发布方模型卡](https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct/blob/398eede0903cd983a2bfa0cc634e9ac1d843f375/README.md)
 - [超算模型页面](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Kimi-VL-A3B-Instruct)
+- [光合固定项目](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-session021)，完整commit见外部提交清单。
 - [GitHub 私有备份](https://github.com/zhl-2022/guoxin-kimi-vl-bw-vllm)，本版分支 `codex/submission-ready021`；以外部清单的完整 commit 为固定版本。
 
 | 根入口 | 用途 |
@@ -20,6 +21,8 @@
 | `env_check.sh` / `smoke.sh` | 环境和单图、多图、多轮、流式功能 |
 | `verify.py` / `verify.sh` | 全 1000 条准确率、自检和原件重新评分 |
 | `bench.sh` | 六档、两轮、608 条原生性能；两个有界服务阶段 |
+| `env.log` / `verify_result.json` / `smoke.log` | 固定031根复跑的真实原件，与完整ZIP逐字节一致 |
+| `bench/round1.jsonl` / `bench/round2.jsonl` | 六组原生报告的两轮汇总，保留原始native文件和各档日志 |
 | `publisher021/` | 完整性能、固定根入口、独立复算及代码核验原件 |
 | `publisher016/` | 前两轮完整准确率与早期失败诊断 |
 
@@ -38,7 +41,9 @@
 | Pillow / tiktoken | `12.1.1` / `0.12.0` |
 | 独立压测客户端 | SGLang `0.5.12`、orjson `3.11.3`，继承原生环境其余包 |
 
-实际平台插件为 `vllm_hcu`。Torch SDPA 只启用 math 后端，未使用 flash SDPA。模型启动前按 `tasks/kimi-vl-bw-vllm/model-lock.json` 校验全量权重、配置与已审阅的发布方 Python 源码。原生框架安装目录没有改动。
+镜像：[guoxin-kimi-vl-bw021](https://www.scnet.cn/ui/console/index.html#/image-management/detail/2115214831904727041)，固定tag `dtk2604-vllm018-kimi-final-20261028`；在华中一区A区Notebook选择该镜像版本。平台详情链接是可选用的镜像入口，不虚构公开Docker registry地址。
+
+实际平台插件为 `vllm_hcu`。Torch SDPA 只启用 math 后端，未使用 flash SDPA。模型启动前按 `tasks/kimi-vl-bw-vllm/model-lock.json` 校验全量权重、配置与已审阅的发布方 Python 源码。原生框架安装目录没有改动。镜像内最终代码位于 `/opt/guoxin-kimi021/final-project`，进入该目录后执行第四章命令；早期 `/opt/guoxin-kimi021/project` 是封装前快照，只用于追溯。
 
 镜像预置资产位于 `/opt/guoxin-kimi021/`，独立客户端为 `/opt/guoxin/kimi-client021/bin/python`。`/root/private_data` 属于挂载数据盘，不作为系统盘镜像包含资产的证明。根 `run.sh` 在标准检查点目录不存在时，把镜像内原字节检查点复制到已验证的标准路径；原有目录保留，并由原生启动器执行完整哈希校验，不使用模型软链接。
 
@@ -108,7 +113,7 @@ MMMU900 的 52.3333333% 低于发布基线 57% 对应下限 55%，不改称通�
 
 ## 7. 性能参考
 
-原生 SGLang 0.5.12 OpenAI chat 图像客户端：目标随机文本 4096/16384 token，每请求一张 1024×1024 随机 JPEG，输出预算 1024，客户端并发 1/8/64；每档两轮分别 8/16/128 请求，共 12 组、608 条测量请求。每组另有预热，不混入 608 计数。第一轮原件完整保存，下面报告第二轮。
+原生 SGLang 0.5.12 OpenAI chat 图像客户端：目标随机文本 4096/16384 token，每请求一张 1024×1024 随机 JPEG，输出预算 1024，客户端并发 1/8/64；每档两轮分别 8/16/128 请求，共 12 组、608 条测量请求。每组另有预热，不混入 608 计数。第一轮原件完整保存，下面报告第二轮，与根 `bench/round2.jsonl` 完全一致；根 `bench/native/` 和各档日志为原字节。新压测默认在 `bench/时间戳-UUID/` 写新结果，不覆盖提交原件。
 
 | 文本目标 | 并发 | 测量请求 | 测量秒数 | 输出 token/秒 | 平均 TTFT 毫秒 | P99 TTFT 毫秒 | 平均 TPOT 毫秒 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

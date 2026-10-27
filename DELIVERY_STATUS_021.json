@@ -14,13 +14,16 @@
   "frozen_root_all_phases_zero": true,
   "root_payload_audit_complete": true,
   "final_frontend_validation": "CPU safety and all12 actual measured argv; no extra608 GPU resampling",
-  "image_code_staging_complete": false,
-  "final_image_created": false,
-  "SourceFind_import_completed": false,
   "new_image_fresh_Notebook_replay": false,
   "external_delivery_receipt": "Created after fixed code/image identifiers exist",
   "MMMU900_accuracy_percent": 52.333333333333336,
   "MMMU_pass": false,
   "official_acceptance": false,
-  "submitted": false
+  "submitted": false,
+  "root_template_artifacts_present": true,
+  "root_originals_preserved": true,
+  "sourcefind_project": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-session021",
+  "image_id": "2115214831904727041",
+  "image_final_tag": "dtk2604-vllm018-kimi-final-20261028",
+  "materialization_status": "Final external receipt verifies successful save/import; this file fixes the source and intended artifact identifiers"
 }

@@ -1,0 +1,29 @@
+{
+  "schema": "publisher-full-accuracy016",
+  "dataset": "OCRBench full1000",
+  "samples": 1000,
+  "score": {
+    "Text Recognition": 237,
+    "Scene Text-centric VQA": 185,
+    "Doc-oriented VQA": 179,
+    "Key Information Extraction": 167,
+    "Handwritten Mathematical Expression Recognition": 93,
+    "Final Score": 861,
+    "Final Score Norm": 86.1
+  },
+  "reference": 867,
+  "tolerance_absolute": 20,
+  "minimum": 847,
+  "pass": true,
+  "http_failures": 0,
+  "budget_exhausted": 0,
+  "source_run_id": "74ae8f5ec519422bab8592b9359e2a04",
+  "source_run_final_sha256": "859177cc52e7836ade51b467f8af5817412268a336b6ca83eac10c699c87bb28",
+  "raw_archive_sha256": "337547f855d98d6f212b53603d0909969a671c637288ca06d68d411ae451bd80",
+  "formal_acceptance": false,
+  "submitted": false,
+  "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "model_id": "moonshotai/Kimi-VL-A3B-Instruct",
+  "complete": true,
+  "scope": "complete selected public accuracy; performance and delivery still pending"
+}

@@ -1,0 +1,52 @@
+`KimiVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+benchmark_args=Namespace(backend='sglang-oai-chat', base_url=None, host='127.0.0.1', port=30129, ready_check_timeout_sec=0, dataset_name='image', dataset_path='', model='/root/private_data/guoxin-candidates/models/kimi-vl', served_model_name='/root/private_data/guoxin-candidates/models/kimi-vl', tokenizer='/root/private_data/guoxin-candidates/models/kimi-vl', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1024x1024', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='/root/private_data/guoxin-session016/kimi-performance005/performance/native/round2_4096_1024_c64.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, seed=1, disable_ignore_eos=False, extra_request_body='{"temperature":0,"ignore_eos":true,"stream_options":{"include_usage":true},"bad_words":["<|media_pad|>","<|placeholder|>","<|media_start|>","<|media_end|>"]}', apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Namespace(backend='sglang-oai-chat', base_url=None, host='127.0.0.1', port=30129, ready_check_timeout_sec=0, dataset_name='image', dataset_path='', model='/root/private_data/guoxin-candidates/models/kimi-vl', served_model_name='/root/private_data/guoxin-candidates/models/kimi-vl', tokenizer='/root/private_data/guoxin-candidates/models/kimi-vl', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1024x1024', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='/root/private_data/guoxin-session016/kimi-performance005/performance/native/round2_4096_1024_c64.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, seed=1, disable_ignore_eos=False, extra_request_body='{"temperature":0,"ignore_eos":true,"stream_options":{"include_usage":true},"bad_words":["<|media_pad|>","<|placeholder|>","<|media_start|>","<|media_end|>"]}', apply_chat_template=True, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+#Input tokens: 678044
+#Output tokens: 131072
+#Total images: 128
+#Images per request: 1 (fixed)
+
+Created 128 random jpeg images with average 1055648 bytes per request
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [01:15<2:39:49, 75.51s/it]  2%|▏         | 2/128 [01:17<1:07:11, 32.00s/it]  4%|▍         | 5/128 [02:30<54:26, 26.55s/it]    5%|▍         | 6/128 [02:31<41:03, 20.19s/it]  7%|▋         | 9/128 [03:44<44:19, 22.35s/it]  8%|▊         | 10/128 [03:46<35:48, 18.21s/it] 10%|█         | 13/128 [04:58<40:12, 20.98s/it] 11%|█         | 14/128 [05:00<33:13, 17.48s/it] 13%|█▎        | 17/128 [06:14<37:59, 20.54s/it] 14%|█▍        | 18/128 [06:15<31:40, 17.28s/it] 16%|█▋        | 21/128 [07:28<36:06, 20.25s/it] 17%|█▋        | 22/128 [07:29<30:13, 17.11s/it] 20%|█▉        | 25/128 [08:42<34:32, 20.12s/it] 20%|██        | 26/128 [08:44<28:57, 17.03s/it] 23%|██▎       | 29/128 [09:57<33:06, 20.07s/it] 23%|██▎       | 30/128 [09:58<27:46, 17.01s/it] 26%|██▌       | 33/128 [11:12<31:45, 20.05s/it] 27%|██▋       | 34/128 [11:13<26:38, 17.00s/it] 29%|██▉       | 37/128 [12:26<30:22, 20.03s/it] 30%|██▉       | 38/128 [12:28<25:28, 16.98s/it] 32%|███▏      | 41/128 [13:41<29:06, 20.07s/it] 33%|███▎      | 42/128 [13:42<24:23, 17.02s/it] 35%|███▌      | 45/128 [14:56<27:46, 20.08s/it] 36%|███▌      | 46/128 [14:57<23:16, 17.03s/it] 38%|███▊      | 49/128 [16:11<26:29, 20.11s/it] 39%|███▉      | 50/128 [16:12<22:10, 17.06s/it] 41%|████▏     | 53/128 [17:26<25:12, 20.16s/it] 42%|████▏     | 54/128 [17:27<21:05, 17.10s/it] 45%|████▍     | 57/128 [18:40<23:41, 20.02s/it] 45%|████▌     | 58/128 [18:42<19:48, 16.98s/it] 48%|████▊     | 61/128 [19:55<22:23, 20.06s/it] 48%|████▊     | 62/128 [19:56<18:42, 17.01s/it] 51%|█████     | 65/128 [21:09<20:57, 19.96s/it] 52%|█████▏    | 66/128 [21:10<17:29, 16.93s/it] 54%|█████▍    | 69/128 [22:23<19:39, 20.00s/it] 55%|█████▍    | 70/128 [22:25<16:23, 16.96s/it] 57%|█████▋    | 73/128 [23:37<18:17, 19.95s/it] 58%|█████▊    | 74/128 [23:39<15:13, 16.92s/it] 60%|██████    | 77/128 [24:52<17:00, 20.01s/it] 61%|██████    | 78/128 [24:54<14:08, 16.97s/it] 63%|██████▎   | 81/128 [26:07<15:39, 20.00s/it] 64%|██████▍   | 82/128 [26:08<13:00, 16.96s/it] 66%|██████▋   | 85/128 [27:21<14:17, 19.93s/it] 67%|██████▋   | 86/128 [27:22<11:49, 16.90s/it] 70%|██████▉   | 89/128 [28:35<13:00, 20.02s/it] 70%|███████   | 90/128 [28:37<10:45, 16.98s/it] 73%|███████▎  | 93/128 [29:50<11:39, 19.99s/it] 73%|███████▎  | 94/128 [29:51<09:36, 16.96s/it] 76%|███████▌  | 97/128 [31:04<10:20, 20.02s/it] 77%|███████▋  | 98/128 [31:06<08:29, 16.98s/it] 79%|███████▉  | 101/128 [32:19<09:01, 20.04s/it] 80%|███████▉  | 102/128 [32:21<07:21, 16.99s/it] 82%|████████▏ | 105/128 [33:33<07:40, 20.00s/it] 83%|████████▎ | 106/128 [33:35<06:13, 16.96s/it] 85%|████████▌ | 109/128 [34:48<06:20, 20.00s/it] 86%|████████▌ | 110/128 [34:49<05:05, 16.97s/it] 88%|████████▊ | 113/128 [36:02<04:59, 19.98s/it] 89%|████████▉ | 114/128 [36:04<03:57, 16.95s/it] 91%|█████████▏| 117/128 [37:17<03:39, 19.99s/it] 92%|█████████▏| 118/128 [37:18<02:49, 16.96s/it] 95%|█████████▍| 121/128 [38:31<02:19, 19.99s/it] 95%|█████████▌| 122/128 [38:33<01:41, 16.95s/it] 98%|█████████▊| 125/128 [39:45<00:59, 19.94s/it]100%|██████████| 128/128 [39:45<00:00, 18.64s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang-oai-chat
+Traffic request rate:                    inf       
+Max request concurrency:                 64        
+Successful requests:                     128       
+Benchmark duration (s):                  2385.53   
+Total input tokens:                      678044    
+Total input text tokens:                 538140    
+Total input vision tokens:               139904    
+Total generated tokens:                  131072    
+Total generated tokens (retokenized):    127725    
+Request throughput (req/s):              0.05      
+Input token throughput (tok/s):          284.23    
+Output token throughput (tok/s):         54.94     
+Peak output token throughput (tok/s):    64.00     
+Peak concurrent requests:                67        
+Total token throughput (tok/s):          339.18    
+Concurrency:                             49.04     
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   914031.47 
+Median E2E Latency (ms):                 1190431.45
+P90 E2E Latency (ms):                    1193597.04
+P99 E2E Latency (ms):                    1196045.82
+---------------Time to First Token----------------
+Mean TTFT (ms):                          844751.67 
+Median TTFT (ms):                        1120977.22
+P99 TTFT (ms):                           1126057.69
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          67.72     
+Median TPOT (ms):                        67.99     
+P99 TPOT (ms):                           68.80     
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           69.41     
+Median ITL (ms):                         66.60     
+P95 ITL (ms):                            68.49     
+P99 ITL (ms):                            135.54    
+Max ITL (ms):                            2964.28   
+==================================================

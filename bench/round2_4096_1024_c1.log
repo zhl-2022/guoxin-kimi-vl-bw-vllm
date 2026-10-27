@@ -1,0 +1,52 @@
+`KimiVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+benchmark_args=Namespace(backend='sglang-oai-chat', base_url=None, host='127.0.0.1', port=30129, ready_check_timeout_sec=0, dataset_name='image', dataset_path='', model='/root/private_data/guoxin-candidates/models/kimi-vl', served_model_name='/root/private_data/guoxin-candidates/models/kimi-vl', tokenizer='/root/private_data/guoxin-candidates/models/kimi-vl', num_prompts=8, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1024x1024', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=1, output_file='/root/private_data/guoxin-session016/kimi-performance005/performance/native/round2_4096_1024_c1.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, seed=1, disable_ignore_eos=False, extra_request_body='{"temperature":0,"ignore_eos":true,"stream_options":{"include_usage":true},"bad_words":["<|media_pad|>","<|placeholder|>","<|media_start|>","<|media_end|>"]}', apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Namespace(backend='sglang-oai-chat', base_url=None, host='127.0.0.1', port=30129, ready_check_timeout_sec=0, dataset_name='image', dataset_path='', model='/root/private_data/guoxin-candidates/models/kimi-vl', served_model_name='/root/private_data/guoxin-candidates/models/kimi-vl', tokenizer='/root/private_data/guoxin-candidates/models/kimi-vl', num_prompts=8, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1024x1024', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=1, output_file='/root/private_data/guoxin-session016/kimi-performance005/performance/native/round2_4096_1024_c1.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, seed=1, disable_ignore_eos=False, extra_request_body='{"temperature":0,"ignore_eos":true,"stream_options":{"include_usage":true},"bad_words":["<|media_pad|>","<|placeholder|>","<|media_start|>","<|media_end|>"]}', apply_chat_template=True, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+#Input tokens: 42400
+#Output tokens: 8192
+#Total images: 8
+#Images per request: 1 (fixed)
+
+Created 8 random jpeg images with average 1055594 bytes per request
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [01:08<07:56, 68.14s/it] 25%|██▌       | 2/8 [02:16<06:48, 68.09s/it] 38%|███▊      | 3/8 [03:24<05:41, 68.23s/it] 50%|█████     | 4/8 [04:32<04:33, 68.29s/it] 62%|██████▎   | 5/8 [05:41<03:24, 68.26s/it] 75%|███████▌  | 6/8 [06:49<02:16, 68.33s/it] 88%|████████▊ | 7/8 [07:58<01:08, 68.53s/it]100%|██████████| 8/8 [09:07<00:00, 68.57s/it]100%|██████████| 8/8 [09:07<00:00, 68.41s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang-oai-chat
+Traffic request rate:                    inf       
+Max request concurrency:                 1         
+Successful requests:                     8         
+Benchmark duration (s):                  547.26    
+Total input tokens:                      42400     
+Total input text tokens:                 33656     
+Total input vision tokens:               8744      
+Total generated tokens:                  8192      
+Total generated tokens (retokenized):    8143      
+Request throughput (req/s):              0.01      
+Input token throughput (tok/s):          77.48     
+Output token throughput (tok/s):         14.97     
+Peak output token throughput (tok/s):    16.00     
+Peak concurrent requests:                2         
+Total token throughput (tok/s):          92.45     
+Concurrency:                             1.00      
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   68406.00  
+Median E2E Latency (ms):                 68386.89  
+P90 E2E Latency (ms):                    68755.02  
+P99 E2E Latency (ms):                    68917.72  
+---------------Time to First Token----------------
+Mean TTFT (ms):                          1365.25   
+Median TTFT (ms):                        1353.53   
+P99 TTFT (ms):                           1485.65   
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          65.53     
+Median TPOT (ms):                        65.55     
+P99 TPOT (ms):                           65.92     
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           65.84     
+Median ITL (ms):                         65.55     
+P95 ITL (ms):                            66.99     
+P99 ITL (ms):                            68.79     
+Max ITL (ms):                            203.99    
+==================================================
