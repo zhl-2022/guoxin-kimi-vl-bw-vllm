@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-28T15:24:42.137099+00:00",
+  "updated_utc": "2026-10-28T17:10:26.614088+00:00",
   "model": "kimi",
   "source_parent_commit": "89033aa9c0a2a6d3912912490fea9a13d501cc86",
   "branch": "codex/submission-ready037-final",
@@ -13,7 +13,7 @@
   "all_prior_tracked_paths_retained": true,
   "all_prior_changed_files_preserved_byte_for_byte": true,
   "all_existing_Python_and_shell_bytes_unchanged": true,
-  "SourceFind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session021",
+  "SourceFind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session037",
   "image_id": "2115214831904727041",
   "image_url": "https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2115214831904727041",
   "image_tag": "dtk2604-vllm018-kimi-final-20261028",
@@ -21,5 +21,14 @@
   "reviewer_access_method_closed": false,
   "submission_ready": false,
   "submitted": false,
-  "new_GPU_model_requests_in_material_assembly": 0
+  "new_GPU_model_requests_in_material_assembly": 0,
+  "final_preparation_functional_acceptance_complete": true,
+  "complete1000_input_images_SHA_checked": true,
+  "documented_image_data_fallback_actually_used": true,
+  "production_Python_shell_bytes_unchanged": true,
+  "same_formal_config_except_project_UUID": true,
+  "MMMU900_percent": 52.33333333333333,
+  "MMMU_lower": 55,
+  "MMMU_gate_pass": false,
+  "accuracy_requirement_closed": false
 }

@@ -12,8 +12,8 @@
 
 - [固定发布方模型卡](https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct/blob/398eede0903cd983a2bfa0cc634e9ac1d843f375/README.md)
 - [超算模型页面](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Kimi-VL-A3B-Instruct)
-- [光合固定项目](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session021)，完整commit见外部提交清单。
-- [GitHub 私有备份](https://github.com/zhl-2022/guoxin-kimi-vl-bw-vllm)，本版分支 `codex/submission-ready021-envimage`；以外部清单的完整 commit 为固定版本。
+- [光合固定项目](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session037)，完整commit见外部提交清单。
+- [GitHub 私有备份](https://github.com/zhl-2022/guoxin-kimi-vl-bw-vllm)，本版分支 `codex/submission-ready037-final`；以外部清单的完整 commit 为固定版本。
 
 | 根入口 | 用途 |
 | --- | --- |
@@ -32,7 +32,7 @@
 
 | 项目 | 固定引用 |
 | --- | --- |
-| 光合代码项目 | [项目入口](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session021) |
+| 光合代码项目 | [项目入口](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session037) |
 | SCNet镜像 | [实际镜像详情](https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2115214831904727041) |
 | 固定镜像tag | `dtk2604-vllm018-kimi-final-20261028` |
 | 已实测前版代码 | `89033aa9c0a2a6d3912912490fea9a13d501cc86` |
@@ -74,7 +74,7 @@
 
 ## 4. 服务启动脚本
 
-镜像内进入 `/opt/guoxin-kimi021/final-project-v3` 后执行以下顺序。脚本均从仓库根目录运行；同账号数据盘已有检查点时直接复用，新账号缺失时先下载固定文件。离线环境须预先提供同一完整检查点，不会回退到其他模型。
+使用固定镜像环境，从本次光合完整commit取回源码并在独立新目录执行以下顺序。镜像内`/opt/guoxin-kimi021/final-project-v3`保留历史时点，不将旧README冒充当前报告。脚本均从仓库根目录运行；同账号数据盘已有检查点时直接复用，新账号缺失时先下载固定文件。离线环境须预先提供同一完整检查点，不会回退到其他模型。
 
 ```bash
 source env.sh
@@ -109,6 +109,15 @@ python3 scripts/prepare_bench_client021.py --output .venv-client
 本轮 smoke 覆盖健康与模型身份、单图、多图、多轮及图像 SSE。完整 OCR1000 另有 1000 个唯一输入 ID、1000 个唯一原始响应 ID、1000 个重建请求哈希与图片哈希全部相符；全部 `finish_reason=stop`，零失败、零 length 截断。原始回复文本与评分文本逐条一致，重新评分仍为 861。
 
 封装版相对实测固定入口只新增数据盘检查点复用及固定文件下载、数据目录回退、实际性能客户端 hook 和两阶段性能编排。检查点准备的缺失文件计划及固定20文件来源已做CPU验证，没有把另一次完整权重下载或新GPU复跑写成已完成。模型 driver、math hook、准确率 evaluator、数据和评分器保持实测原字节。封装前端的验证范围见第三章；尚未把另一台全新 Notebook 的整套新镜像复跑写成已完成。
+
+
+### 最终准备链路的实际功能验收（Session037）
+
+2026-10-28 17:00:23至17:05:47UTC，原A卡所有前项服务清理后，从本版固定309文件源码的精确归档提取到全新目录，按文档先加载`env.sh`，自动回退到镜像`/opt/guoxin-kimi021/data`。完整1000输入/图片SHA自检、根启动、环境、七功能smoke、自有stop五阶段全0。根启动复用固定20个模型文件并由原生启动器完整核验；实际服务配置与已完成OCR1000及性能的根配置逐键一致，仅项目目录和UUID变化。七功能检查全通过，最后精确自有PID均退出、七模型端口关闭；未重跑OCR1000、MMMU900或608性能。
+
+原始日志、实际config/final state、独立审计与本机清理见`publisher037/final-preparation-replay/INDEX.json`，完整原归档另行保留。最初验收脚本未先加载文档已有的env步骤，导致模型启动前找不到默认相对数据目录；原错误和包保留，该事件不表示镜像数据缺失或模型失败。后续只修正独立验收调用，生产推理、数据和评分源码不变。
+
+这一验收闭合最终准备与功能路径，不改变第六章MMMU52.3333%低于55%的事实。当前T02默认OCRBench+MMMU门槛未全部满足，因此本项目仍不是无条件可最终提交项目。当前精确源码集合以根`publisher-delivery-manifest037.json`为准；旧清单仍是其各自历史范围。
 
 ## 6. 精度测评
 

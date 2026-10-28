@@ -1,0 +1,305 @@
+{
+  "scope": "Final preparation and functionality; no OCR or performance resampling; MMMU gate failed",
+  "original_archive_sha256": "830af03f0f3dcaec3f480c55ca7ec054783e4569b78b61830b2cfbe41c77c78e",
+  "progress": {
+    "started_utc": "2026-10-28T17:00:15.935647+00:00",
+    "hostname": "crdnotebook-2112186448839770114-ac3p4mowhz-97046",
+    "purpose": "Prior-project final delivery preparation and functional replay only",
+    "accuracy_and_performance_resampled": false,
+    "B_service_accessed": false,
+    "plan_sha256": "d9b2d3ad73a22210dfa82a4ab7ece9ccebe9e6cac1d126c850c6635c8424530a",
+    "models": [
+      {
+        "model": "kimi",
+        "run_id": "1e68ddbc45ae37fb968260820b34feb2",
+        "source_commit": "9fbd87685a250086ea87b2775db22c63b4aa1315",
+        "source_files_verified": 309,
+        "started_utc": "2026-10-28T17:00:23.927509+00:00",
+        "steps": [
+          {
+            "label": "verify-selfcheck",
+            "command": [
+              "bash",
+              "-c",
+              "source ./env.sh; exec \"$PYTHON_BIN\" -B verify.py --selfcheck"
+            ],
+            "started_utc": "2026-10-28T17:00:23.939956+00:00",
+            "timeout_seconds": 180,
+            "exit_code": 0,
+            "log_sha256": "f5d14be958048ee721961d5e7641e9888f0b0208447a00c3cabb92810ae83392",
+            "ended_utc": "2026-10-28T17:00:29.492616+00:00"
+          },
+          {
+            "label": "launch",
+            "command": [
+              "bash",
+              "run.sh",
+              "--run-id",
+              "1e68ddbc45ae37fb968260820b34feb2"
+            ],
+            "started_utc": "2026-10-28T17:00:29.504339+00:00",
+            "timeout_seconds": 2400,
+            "exit_code": 0,
+            "log_sha256": "323ac7565035b6c0debe3664f77e123cf6fac70e68536b1ed2bc14f1e3a42a0c",
+            "ended_utc": "2026-10-28T17:04:55.647718+00:00"
+          },
+          {
+            "label": "environment",
+            "command": [
+              "bash",
+              "env_check.sh"
+            ],
+            "started_utc": "2026-10-28T17:04:55.898058+00:00",
+            "timeout_seconds": 180,
+            "exit_code": 0,
+            "log_sha256": "9a47a7f6ffe6356fa39326b69e11394f708f427a417e5f06669770e0132d8fec",
+            "ended_utc": "2026-10-28T17:05:17.773719+00:00"
+          },
+          {
+            "label": "functional-smoke",
+            "command": [
+              "bash",
+              "smoke.sh"
+            ],
+            "started_utc": "2026-10-28T17:05:17.989592+00:00",
+            "timeout_seconds": 900,
+            "exit_code": 0,
+            "log_sha256": "f450ba0e79fc61a49eb39ff441e6e1ea9251f6cc6380b639ff0678a028c027f3",
+            "ended_utc": "2026-10-28T17:05:31.062988+00:00"
+          },
+          {
+            "label": "owned-stop",
+            "command": [
+              "bash",
+              "stop.sh",
+              "--run-id",
+              "1e68ddbc45ae37fb968260820b34feb2"
+            ],
+            "started_utc": "2026-10-28T17:05:31.075752+00:00",
+            "timeout_seconds": 150,
+            "exit_code": 0,
+            "log_sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1",
+            "ended_utc": "2026-10-28T17:05:47.367123+00:00"
+          }
+        ],
+        "client_path": "/root/private_data/sglang-client-004c/bin/python",
+        "image_fallback_client_tested_here": false,
+        "new_Notebook_from_final_image_created": false,
+        "measured_client_help_passed_in_preserved001": true,
+        "actual_service_identity": {
+          "run_id": "1e68ddbc45ae37fb968260820b34feb2",
+          "status": "ready",
+          "created_utc": "2026-10-28T17:01:50.129704+00:00",
+          "supervisor_pid": 93075,
+          "supervisor_token": "323428573",
+          "config_path": "/root/private_data/guoxin-session037/kimi-final-delivery-replay002/kimi/project/tasks/kimi-vl-bw-vllm/runtime/config-1e68ddbc45ae37fb968260820b34feb2.json",
+          "url": "http://127.0.0.1:30129",
+          "max_runtime_seconds": 21600,
+          "framework": "vllm",
+          "precision": "bf16",
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "vllm.entrypoints.openai.api_server",
+            "--model",
+            "/root/private_data/guoxin-candidates/models/kimi-vl",
+            "--tokenizer",
+            "/root/private_data/guoxin-candidates/models/kimi-vl",
+            "--served-model-name",
+            "/root/private_data/guoxin-candidates/models/kimi-vl",
+            "--host",
+            "127.0.0.1",
+            "--port",
+            "30129",
+            "--dtype",
+            "bfloat16",
+            "--tensor-parallel-size",
+            "1",
+            "--max-model-len",
+            "32768",
+            "--gpu-memory-utilization",
+            "0.8",
+            "--max-num-seqs",
+            "4",
+            "--max-num-batched-tokens",
+            "32768",
+            "--enforce-eager",
+            "--no-enable-chunked-prefill",
+            "--no-enable-prefix-caching",
+            "--trust-remote-code",
+            "--limit-mm-per-prompt",
+            "{\"image\":{\"count\":5,\"width\":1024,\"height\":1024},\"video\":0}"
+          ],
+          "server_pid": 93140,
+          "server_token": "323428800",
+          "ready_utc": "2026-10-28T17:04:53.697259+00:00"
+        },
+        "same_formal_config_except_project_path_and_UUID": true,
+        "MMMU_gap_not_waived": true,
+        "functional_path_passed": true,
+        "ended_utc": "2026-10-28T17:05:47.380291+00:00",
+        "ports_after": {
+          "30000": false,
+          "30001": false,
+          "30002": false,
+          "30109": false,
+          "30119": false,
+          "30129": false,
+          "30139": false
+        },
+        "complete": true
+      }
+    ],
+    "complete": true,
+    "ended_utc": "2026-10-28T17:05:47.392109+00:00",
+    "no_original_materials_deleted": true,
+    "final_ports": {
+      "30000": false,
+      "30001": false,
+      "30002": false,
+      "30109": false,
+      "30119": false,
+      "30129": false,
+      "30139": false
+    }
+  },
+  "independent_audit": {
+    "UTC": "2026-10-28T17:08:16.365605+00:00",
+    "archive": "E:/hg20261019/dist/session037-kimi-final-delivery-replay002.zip",
+    "archive_sha256": "830af03f0f3dcaec3f480c55ca7ec054783e4569b78b61830b2cfbe41c77c78e",
+    "archive_bytes": 27415335,
+    "all_CRC_manifest_payload_SHA_sizes_verified": true,
+    "payloads": 332,
+    "unchanged_Python_shell_files": 80,
+    "source_commit": "9fbd87685a250086ea87b2775db22c63b4aa1315",
+    "run_id": "1e68ddbc45ae37fb968260820b34feb2",
+    "five_stages_exit0": true,
+    "same_formal_config_except_project_path_UUID": true,
+    "fixed20_model_files_native_validation_before_GPU": true,
+    "complete1000_data_selfcheck_all_image_SHA_passed": true,
+    "documented_image_data_fallback_actually_used": "/opt/guoxin-kimi021/data",
+    "seven_functional_checks": {
+      "run_id": "dad1cb88a97944aeaea978572f9eb2e3",
+      "utc": "2026-10-28T17:05:29.089008+00:00",
+      "case": "summary",
+      "functional_checks_passed": true,
+      "official_accuracy": false,
+      "results": [
+        {
+          "case": "health",
+          "passed": true
+        },
+        {
+          "case": "models",
+          "passed": true
+        },
+        {
+          "case": "single_image",
+          "passed": true
+        },
+        {
+          "case": "multiple_images",
+          "passed": true
+        },
+        {
+          "case": "multiturn_first",
+          "passed": true
+        },
+        {
+          "case": "multiturn_followup",
+          "passed": true
+        },
+        {
+          "case": "streaming_image",
+          "passed": true
+        }
+      ]
+    },
+    "owned_stop0_ports_closed_in_original": true,
+    "new_accuracy_performance_scores": 0,
+    "MMMU900_percent": 52.33333333333333,
+    "MMMU_lower": 55,
+    "MMMU_gate_pass": false,
+    "all_prior_failures_preserved": true,
+    "fresh_Notebook_created": false,
+    "sourcefind_published": false,
+    "submission_ready": false,
+    "submitted": false
+  },
+  "A_local_cleanup": {
+    "UTC": "2026-10-28T17:09:06.491190+00:00",
+    "hostname": "crdnotebook-2112186448839770114-ac3p4mowhz-97046",
+    "run_id": "1e68ddbc45ae37fb968260820b34feb2",
+    "own_processes": [
+      {
+        "pid": 92920,
+        "expected_start_token": "323419358",
+        "actual_start_token": null,
+        "own_original_process_present": false
+      },
+      {
+        "pid": 93140,
+        "expected_start_token": "323428800",
+        "actual_start_token": null,
+        "own_original_process_present": false
+      },
+      {
+        "pid": 93075,
+        "expected_start_token": "323428573",
+        "actual_start_token": null,
+        "own_original_process_present": false
+      }
+    ],
+    "model_ports": {
+      "30000": false,
+      "30001": false,
+      "30002": false,
+      "30109": false,
+      "30119": false,
+      "30129": false,
+      "30139": false
+    },
+    "A_local_cleanup_confirmed": true,
+    "functional_acceptance_complete": true,
+    "MMMU_failure_retained_not_waived": true,
+    "new_OCR_or608_trials": 0,
+    "B_not_accessed": true
+  },
+  "files": [
+    {
+      "path": "verify-selfcheck.log",
+      "bytes": 193,
+      "sha256": "f5d14be958048ee721961d5e7641e9888f0b0208447a00c3cabb92810ae83392"
+    },
+    {
+      "path": "launch.log",
+      "bytes": 2194,
+      "sha256": "323ac7565035b6c0debe3664f77e123cf6fac70e68536b1ed2bc14f1e3a42a0c"
+    },
+    {
+      "path": "environment.log",
+      "bytes": 3516,
+      "sha256": "9a47a7f6ffe6356fa39326b69e11394f708f427a417e5f06669770e0132d8fec"
+    },
+    {
+      "path": "functional-smoke.log",
+      "bytes": 8977,
+      "sha256": "f450ba0e79fc61a49eb39ff441e6e1ea9251f6cc6380b639ff0678a028c027f3"
+    },
+    {
+      "path": "owned-stop.log",
+      "bytes": 67,
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+    },
+    {
+      "path": "project/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "bytes": 1533,
+      "sha256": "759864ea95b25a203979cd063a5fdc0c5df2a3d58b72810f45aa79a2185c04e0"
+    },
+    {
+      "path": "project/tasks/kimi-vl-bw-vllm/runtime/config-1e68ddbc45ae37fb968260820b34feb2.json",
+      "bytes": 1840,
+      "sha256": "2da9a071704afb471ad1790dc785b02a528e099f99eedefb89e3fa1a444660e2"
+    }
+  ]
+}

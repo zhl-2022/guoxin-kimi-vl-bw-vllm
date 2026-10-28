@@ -1,0 +1,52 @@
+{"strategy": "reuse_persistent_for_native_full_hash_check", "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375", "file_count": 20, "destination": "/root/private_data/guoxin-candidates/models/kimi-vl", "command_if_missing_or_partial": ["/usr/bin/python3", "/root/private_data/guoxin-session037/kimi-final-delivery-replay002/kimi/project/scripts/download_kimi_vl_005.py", "download", "--provider", "modelscope", "--model-dir", "/root/private_data/guoxin-candidates/models/kimi-vl", "--max-seconds", "6900"], "GPU_requests": 0, "model_weights_in_image": false, "plan_only": false}
+Existing files retained; the native launcher performs full SHA256 validation.
+Verified profile patch already applied.
+{
+  "run_id": "1e68ddbc45ae37fb968260820b34feb2",
+  "status": "ready",
+  "created_utc": "2026-10-28T17:01:50.129704+00:00",
+  "supervisor_pid": 93075,
+  "supervisor_token": "323428573",
+  "config_path": "/root/private_data/guoxin-session037/kimi-final-delivery-replay002/kimi/project/tasks/kimi-vl-bw-vllm/runtime/config-1e68ddbc45ae37fb968260820b34feb2.json",
+  "url": "http://127.0.0.1:30129",
+  "max_runtime_seconds": 21600,
+  "framework": "vllm",
+  "precision": "bf16",
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/root/private_data/guoxin-candidates/models/kimi-vl",
+    "--tokenizer",
+    "/root/private_data/guoxin-candidates/models/kimi-vl",
+    "--served-model-name",
+    "/root/private_data/guoxin-candidates/models/kimi-vl",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "30129",
+    "--dtype",
+    "bfloat16",
+    "--tensor-parallel-size",
+    "1",
+    "--max-model-len",
+    "32768",
+    "--gpu-memory-utilization",
+    "0.8",
+    "--max-num-seqs",
+    "4",
+    "--max-num-batched-tokens",
+    "32768",
+    "--enforce-eager",
+    "--no-enable-chunked-prefill",
+    "--no-enable-prefix-caching",
+    "--trust-remote-code",
+    "--limit-mm-per-prompt",
+    "{\"image\":{\"count\":5,\"width\":1024,\"height\":1024},\"video\":0}"
+  ],
+  "server_pid": 93140,
+  "server_token": "323428800",
+  "ready_utc": "2026-10-28T17:04:53.697259+00:00"
+}
+Service ready. The supervisor continues enforcing its runtime limit.

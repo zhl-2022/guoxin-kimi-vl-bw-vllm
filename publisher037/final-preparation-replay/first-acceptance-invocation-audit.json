@@ -1,0 +1,11 @@
+{
+  "UTC": "2026-10-28T16:59:51.870898+00:00",
+  "archive_sha256": "f5c156b3ec106076234ba65db5bd78dedfef40624cbe6847c27492a2610ff5fc",
+  "all_CRC_manifest_SHA_sizes_passed": true,
+  "payloads": 312,
+  "model_launches": 0,
+  "failure": "Acceptance selfcheck invoked without sourcing documented env.sh; fixed-data image fallback not loaded",
+  "production_code_changed": false,
+  "new_controller_sha256": "9af76853d4f032dc2fbdee09935fd3058f8c346fefce63875d55316704698bb9",
+  "new_plan_sha256": "d9b2d3ad73a22210dfa82a4ab7ece9ccebe9e6cac1d126c850c6635c8424530a"
+}
