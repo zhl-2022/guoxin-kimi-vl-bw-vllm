@@ -1,0 +1,25 @@
+{
+  "updated_utc": "2026-10-28T15:24:42.137099+00:00",
+  "model": "kimi",
+  "source_parent_commit": "89033aa9c0a2a6d3912912490fea9a13d501cc86",
+  "branch": "codex/submission-ready037-final",
+  "material_revision_prepared": true,
+  "material_changes": {
+    "README.md": {
+      "old_sha256": "65e17b2dfeec04191635e4d4325e2994f5d2066cd669cbb6509d36d34b99ffd7",
+      "new_sha256": "6d96ba5b375e330987fd5d7fb5d8e16f3cdb1cacfd12407e9717f8cdf7217e4a"
+    }
+  },
+  "all_prior_tracked_paths_retained": true,
+  "all_prior_changed_files_preserved_byte_for_byte": true,
+  "all_existing_Python_and_shell_bytes_unchanged": true,
+  "SourceFind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session021",
+  "image_id": "2115214831904727041",
+  "image_url": "https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2115214831904727041",
+  "image_tag": "dtk2604-vllm018-kimi-final-20261028",
+  "new_SourceFind_revision_verified": false,
+  "reviewer_access_method_closed": false,
+  "submission_ready": false,
+  "submitted": false,
+  "new_GPU_model_requests_in_material_assembly": 0
+}

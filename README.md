@@ -26,6 +26,21 @@
 | `publisher021/` | 完整性能、固定根入口、独立复算及代码核验原件 |
 | `publisher016/` | 前两轮完整准确率与早期失败诊断 |
 
+### 最终提交材料绑定（Session037）
+
+原有全部资料保留；本次整理不重新采样、不改变推理或判分源码。实际发布版本和评审获取状态由 `CURRENT_SUBMISSION_STATE037.json` 及外部提交清单记录；尚未完成的门禁不写成通过。
+
+| 项目 | 固定引用 |
+| --- | --- |
+| 光合代码项目 | [项目入口](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-kimi-vl-bw-vllm-final-session021) |
+| SCNet镜像 | [实际镜像详情](https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2115214831904727041) |
+| 固定镜像tag | `dtk2604-vllm018-kimi-final-20261028` |
+| 已实测前版代码 | `89033aa9c0a2a6d3912912490fea9a13d501cc86` |
+| 本次材料分支 | `codex/submission-ready037-final`，以外部清单的完整commit为准 |
+
+**当前不作为无条件可提交项目：**OCRBench861已通过发布基线比较，但MMMU900的52.3333%低于55。当前T02默认仍要求OCRBench+MMMU，尚无本模型替代或豁免证据；仅保留OCR通过和披露失败不能代替该门槛。
+
+
 ## 2. 验证环境
 
 硬件为 BW 64GB × 1，区域华中一区 A 区；服务绑定 `127.0.0.1:30129`。DTK 26.04 原生环境，实读软件如下。
